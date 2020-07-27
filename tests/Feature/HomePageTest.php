@@ -12,6 +12,10 @@ class HomePageTest extends TestCase
      */
     function home_page_loads()
     {
-        $response = $this->get(route(''))
+        $this->withoutExceptionHandling();
+        $response = $this->get(route('FE_HOME_PAGE_SHOW'));
+
+        $response->assertStatus(200);
+        $response->assertSee('Let our tax professionals help you.');
     }
 }
