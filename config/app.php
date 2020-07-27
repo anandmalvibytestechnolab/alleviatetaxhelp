@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        //'Form' => Collective\Html\FormFacade::class,
+        //Collective\Html\HtmlServiceProvider::class,
 
     ],
 

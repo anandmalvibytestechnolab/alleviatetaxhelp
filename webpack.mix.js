@@ -11,5 +11,18 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/js/home.js', 'public/js')
+    .sass('resources/sass/home.scss', 'public/css');
+
+
+mix.options({processCssUrls: false})
+    .sourceMaps(false, `source-map`);
+
+//Live Reload, disabled in favor of npm run hot
+//https://komelin.com/articles/configuring-webpack-livereload-laravelmix
+let LiveReloadPlugin = require(`webpack-livereload-plugin`);
+mix.webpackConfig({
+    plugins: [
+        new LiveReloadPlugin()
+    ]
+});
