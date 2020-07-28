@@ -130,7 +130,7 @@ function html_error($field)
 
 function enable_live_reload()
 {
-    return config('app.env') == 'local' && config('app.enable_live_reload');
+    return config('app.env') == 'local';
 }
 
 function d($data)
