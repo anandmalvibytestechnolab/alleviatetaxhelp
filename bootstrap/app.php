@@ -11,9 +11,11 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application(
-    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
-);
+//$app = new Illuminate\Foundation\Application(
+//    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
+//);
+// This does not come with Laravel. Added it as a security measure
+$app = new \App\Src\FrameworkOverrides\FoundationApplicationOverride(realpath(__DIR__.'/../'));
 
 /*
 |--------------------------------------------------------------------------
