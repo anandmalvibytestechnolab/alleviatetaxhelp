@@ -30,7 +30,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #06b025;
+  background: $brand-primary-color;
   border: none;
 }
 
@@ -38,7 +38,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #06b025;
+  background: $brand-primary-color;
   border: none;
 }
 
@@ -49,5 +49,5 @@
 
 .range-slider input[type=range]:focus::-webkit-slider-thumb {
   outline: none !important;
-  background: #06b025 !important;
+  background: $brand-primary-color !important;
 }

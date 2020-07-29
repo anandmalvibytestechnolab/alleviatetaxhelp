@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Benefit Tax Solutions</title>
+    <title>Alleviate Tax</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{!! get_stylesheet('home') !!}">
     <meta name="robots" content="noindex">
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
 <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
         <div class="logo mr-auto">
-            <h1><a href="/"><span><img src="/img/benfittaxsolutions-logo.png"></span></a></h1>
+            <h1><a href="/"><span><img src="/img/logo.png"></span></a></h1>
         </div>
 
         <div class="nav-menu d-lg-block">
@@ -171,7 +172,7 @@
     <section id="testimonials" class="testimonials">
         <div class="container-fluid">
             <div class="section-title" data-aos="fade-up">
-                <h2>What clients say <br/>about Benefit Tax?</h2>
+                <h2>What clients say <br/>about Alleviate Tax?</h2>
             </div>
 
 
@@ -190,7 +191,7 @@
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <p>
-                            I never had to deal with this until last year. I found Benefit Tax Solutions online and with only a min 15 min call they were able to collect my information and within weeks my tax problem was fixed. Great staff, very affordable.
+                            I never had to deal with this until last year. I found Alleviate Tax online and with only a min 15 min call they were able to collect my information and within weeks my tax problem was fixed. Great staff, very affordable.
                         </p>
                     </div>
                 </div>
@@ -226,7 +227,7 @@
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <p>
-                            I was struggling to pay money back to the IRS because a tax firm told me I wasn't supposed to file when I retired. Benefit Tax Solutions saw fit to solve the problem. May God forever continue to bless you and your firm.
+                            I was struggling to pay money back to the IRS because a tax firm told me I wasn't supposed to file when I retired. Alleviate Tax saw fit to solve the problem. May God forever continue to bless you and your firm.
                         </p>
                     </div>
                 </div>
@@ -244,7 +245,7 @@
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <p>
-                            I never had to deal with this until last year. I found Benefit Tax Solutions online and with only a min 15 min call they were able to collect my information and within weeks my tax problem was fixed. Great staff, very affordable.
+                            I never had to deal with this until last year. I found Alleviate Tax online and with only a min 15 min call they were able to collect my information and within weeks my tax problem was fixed. Great staff, very affordable.
                         </p>
                     </div>
                 </div>
@@ -280,7 +281,7 @@
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <i class="fa fa-star checkedstar" aria-hidden="true"></i>
                         <p>
-                            I was struggling to pay money back to the IRS because a tax firm told me I wasn't supposed to file when I retired. Benefit Tax Solutions saw fit to solve the problem. May God forever continue to bless you and your firm.
+                            I was struggling to pay money back to the IRS because a tax firm told me I wasn't supposed to file when I retired. Alleviate Tax saw fit to solve the problem. May God forever continue to bless you and your firm.
                         </p>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 a:hover {
@@ -51,13 +51,13 @@ a:hover {
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: #12b489;
+    background: $brand-primary-color;
     color: #fff;
     transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-    background: #12b489;
+    background: $brand-primary-color;
     color: #fff;
 }
 
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #06b025;
+    color: $brand-primary-color;
     text-decoration: none;
 }
 .nav-menu .couter li {
@@ -190,7 +190,7 @@ a:hover {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 .nav-menu .drop-down > a:after {
@@ -259,7 +259,7 @@ a:hover {
 
 /* When the checkbox is checked, add a blue background */
 .chkbox input:checked ~ .checkmark {
-    background-color: #06b025;
+    background-color: $brand-primary-color;
     border: 3px solid #fff;
 }
 
@@ -820,7 +820,7 @@ video {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-    color: #06b025;
+    color: $brand-primary-color;
     text-decoration: none;
 }
 
@@ -924,7 +924,7 @@ video {
 }
 
 #hero h1 span{
-    color:#06b025;
+    color:$brand-primary-color;
 }
 
 #hero h2 {
@@ -946,12 +946,12 @@ video {
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #06b025;
-    border: 2px solid #06b025;
+    color: $brand-primary-color;
+    border: 2px solid $brand-primary-color;
 }
 
 #hero .btn-get-started:hover {
-    background: #06b025;
+    background: $brand-primary-color;
     color: #fff;
 }
 
@@ -980,7 +980,7 @@ video {
 }
 .list li i {
     color: #fff;
-    background: #06b025;
+    background: $brand-primary-color;
     padding: 4px;
     float: left;
     margin: 0 10px 10px 0;
@@ -1507,7 +1507,7 @@ section {
     left: 0;
     top: 2px;
     font-size: 20px;
-    color: #06b025;
+    color: $brand-primary-color;
     line-height: 1;
 }
 
@@ -1525,15 +1525,15 @@ section {
     border-radius: 50px;
     transition: 0.3s;
     line-height: 1;
-    color: #06b025;
+    color: $brand-primary-color;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     margin-top: 6px;
-    border: 2px solid #06b025;
+    border: 2px solid $brand-primary-color;
 }
 
 .about .content .btn-learn-more:hover {
-    background: #06b025;
+    background: $brand-primary-color;
     color: #fff;
     text-decoration: none;
 }
@@ -1549,7 +1549,7 @@ section {
 .form-card .fa.fa-check {
     color: #fff;
     font-size: 30px;
-    background: #06b025;
+    background: $brand-primary-color;
     padding: 12px;
     border-radius: 100%;
 }
@@ -1653,7 +1653,7 @@ section {
 }
 
 .ui-slider-range {
-    background: #06b025;
+    background: $brand-primary-color;
     height: 2px;
     position: absolute;
     transform: translateY(-1px);
@@ -1679,7 +1679,7 @@ section {
     transform: translate(-50%, -50%);
     border-radius: 100px;
     z-index: 10;
-    background: #06b025;
+    background: $brand-primary-color;
     cursor: move;
     /* fallback if grab cursor is unsupported */
     cursor: grab;
@@ -1726,7 +1726,7 @@ section {
     text-align: center;
     display: inline-block;
     transition: background 0.1s;
-    color: #06b025;
+    color: $brand-primary-color;
     font-size: 16px;
     padding-left: 5px;
     width: 100%;
@@ -1744,7 +1744,7 @@ section {
     width: 1px;
     height: 100%;
     content: '-';
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 .range-alert {
@@ -1791,7 +1791,7 @@ section {
     height: 2px;
 }
 .ui-slider-handle {
-    background: #06b025!important;
+    background: $brand-primary-color!important;
     border: 0px none!important;
     border-radius: 100%!important;
     top: -10px!important;
@@ -1801,7 +1801,7 @@ section {
     margin-top: 20px;
 }
 .newbread {
-    background: #06b025;
+    background: $brand-primary-color;
 }
 .breadcrumb{
     background: transparent;
@@ -1843,7 +1843,7 @@ button.close_btn {
     text-align: center;
     display: inline-block;
     transition: background 0.1s;
-    color: #06b025;
+    color: $brand-primary-color;
     font-size: 16px;
     padding-left: 5px;
     width: 100%;
@@ -2003,7 +2003,7 @@ button.close_btn {
 
 .intro{
     text-align:center;
-    background-image: url('/img/footer-bg.gif');
+    background-image: url('/img/footer-bg.jpg');
     background-size: cover;
     padding: 70px 0;
     background-position: 50%;
@@ -2056,7 +2056,7 @@ button.close_btn {
 }
 
 .services .icon-box:hover::before {
-    background: #06b025;
+    background: $brand-primary-color;
     right: 0;
     top: 0;
     width: 100%;
@@ -2072,7 +2072,7 @@ button.close_btn {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #06b025;
+    background: $brand-primary-color;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2107,7 +2107,7 @@ button.close_btn {
 }
 
 .services .icon-box:hover .icon i {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 /*--------------------------------------------------------------
@@ -2164,7 +2164,7 @@ button.close_btn {
 }
 
 .more-services .card:hover .card-body {
-    background: #06b025;
+    background: $brand-primary-color;
 }
 
 .more-services .card:hover .read-more a, .more-services .card:hover .card-title, .more-services .card:hover .card-title a, .more-services .card:hover .card-text {
@@ -2202,7 +2202,7 @@ button.close_btn {
 }
 
 .features .icon-box h3 a:hover {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 .features .icon-box:hover {
@@ -2227,7 +2227,7 @@ button.close_btn {
 .testimonials .testimonial-item .testimonial-img {
     width: 105px;
     border-radius: 100%;
-    border: 10px solid #76d088;
+    border: 10px solid $brand-primary-color;
     float: left;
     box-shadow: 0 12px 6px -6px #b8dabe;
 }
@@ -2329,7 +2329,7 @@ button.close_btn {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     color: #fff;
-    background: #06b025;
+    background: $brand-primary-color;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -2406,7 +2406,7 @@ button.close_btn {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -2459,7 +2459,7 @@ button.close_btn {
 }
 
 .team .member .social a:hover {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 
 .team .member .social i {
@@ -2520,7 +2520,7 @@ button.close_btn {
 
 .pricing .box h4 {
     font-size: 42px;
-    color: #06b025;
+    color: $brand-primary-color;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
@@ -2552,7 +2552,7 @@ button.close_btn {
 }
 
 .pricing .box ul i {
-    color: #06b025;
+    color: $brand-primary-color;
     font-size: 18px;
     padding-right: 4px;
 }
@@ -2571,8 +2571,8 @@ button.close_btn {
     display: inline-block;
     padding: 10px 40px 12px 40px;
     border-radius: 50px;
-    border: 2px solid #06b025;
-    color: #06b025;
+    border: 2px solid $brand-primary-color;
+    color: $brand-primary-color;
     font-size: 14px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
@@ -2581,16 +2581,16 @@ button.close_btn {
 }
 
 .pricing .box .btn-buy:hover {
-    background: #06b025;
+    background: $brand-primary-color;
     color: #fff;
 }
 
 .pricing .recommended {
-    border-color: #06b025;
+    border-color: $brand-primary-color;
 }
 
 .pricing .recommended .btn-buy {
-    background: #06b025;
+    background: $brand-primary-color;
     color: #fff;
 }
 
@@ -2657,7 +2657,7 @@ button.close_btn {
     font-size: 18px;
     display: inline-block;
     background: #fff;
-    color: #06b025;
+    color: $brand-primary-color;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -2666,11 +2666,11 @@ button.close_btn {
     width: 36px;
     height: 36px;
     transition: 0.3s;
-    border: 1px solid #06b025;
+    border: 1px solid $brand-primary-color;
 }
 
 .contact .social-links a:hover {
-    background: #06b025;
+    background: $brand-primary-color;
     color: #fff;
 }
 
@@ -2680,7 +2680,7 @@ button.close_btn {
 
 .contact .info i {
     font-size: 32px;
-    color: #06b025;
+    color: $brand-primary-color;
     float: left;
     line-height: 1;
 }
@@ -2744,7 +2744,7 @@ button.close_btn {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: #06b025;
+    background: $brand-primary-color;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -2837,7 +2837,7 @@ button.close_btn {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-    background-color: #06b025 !important;
+    background-color: $brand-primary-color !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -2869,13 +2869,13 @@ button.close_btn {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-    background: #12b489;
+    background: $brand-primary-color;
     padding: 20px 0;
     color: #fff;
     font-size: 16px;
 }
 #footer i {
-    color: #12b489;
+    color: $brand-primary-color;
     background: #fff;
     padding: 10px;
     font-size: 25px;
@@ -2899,7 +2899,7 @@ button.close_btn {
 }
 
 #footer .footer-links a:hover {
-    color: #06b025;
+    color: $brand-primary-color;
 }
 .progre_s span   {
     margin-left:20%;

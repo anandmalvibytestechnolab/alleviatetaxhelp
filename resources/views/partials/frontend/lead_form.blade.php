@@ -235,7 +235,7 @@
                     <label class="col-sm-6"><input type="text" name="zip_code" id='Zip' placeholder="Zip Code*"/></label>
 
                     <label class="col-sm-12 secure"> <i class="fa fa-lock"></i> Your email is safe and secure</label>
-                    <label class="chkbox col-sm-12 offer"><p>Please send special offers from <span>BENEFIT TAX SOLUTIONS</span></p>
+                    <label class="chkbox col-sm-12 offer"><p>Please send special offers from <span class="text-uppercase">Alleviate Tax</span></p>
                         <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
                     </label>
@@ -245,7 +245,7 @@
         </div>
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="" data-value='sixth_slide' data-last='fifth_slide' value="Submit"/>
         <p id='messag_validate'></p>
-        <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to BENEFIT TAX SOLUTION's Terms and Conditions and Privacy Policy and agree to have your information shared with BENEFIT TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g., autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of purchase.</p>
+        <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to <span class="text-uppercase">Alleviate Tax</span>'s Terms and Conditions and Privacy Policy and agree to have your information shared with BENEFIT TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g., autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of purchase.</p>
     </fieldset>
 
 
