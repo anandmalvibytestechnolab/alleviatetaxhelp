@@ -11,8 +11,8 @@
                         <a href="" id="contact">Contact Us</a>
                         <a href="online-terms-of-use.html">Terms Of Use</a>
                         <a href="privacy-policy.html">Privacy Policy</a>
-                        <a href="http://www.saturnperchphone.com/o-mlrk-h62-c9508dd25cbf9f11fa640cadd480ede9" target="_blank">Unsubscribe</a>
-                        <a href="ccpa.cfm">CCPA Request</a>
+                        <a href="#" target="_blank">Unsubscribe</a>
+                        <a href="{!! route('CCPA_PAGE_SHOW') !!}" target="_blank">CCPA Request</a>
                     </nav>
                     <p>Estimates based on prior results; individual results will vary based on circumstances, including your ability to provide BENEFIT TAX SOLUTIONS with information that is accurate and timely. We do not guarantee that your tax debts will be lowered by a specific amount or percentage, that your tax debt will be paid off within a specific period of time or guarantee you will qualify for any IRS programs. Penalties and interest will continue to accrue until your tax liability is paid in full to the IRS. BENEFIT TAX SOLUTIONS is a tax resolution firm independent from the IRS. We do not assume tax debt, make monthly payments to creditors or provide tax, bankruptcy, accounting or legal advice. By providing your contact information, you expressly request us to respond to your inquiry with information regarding our products and services, including by the use of automated or pre-recorded calls and/or SMS text messages at the number you provide. You represent that you are authorized to receive calls on any phone number you provide and acknowledge charges may be incurred as a result of those calls. Read and understand all program materials prior to enrollment. Not available in all states. Depending on the services, you may be able to obtain this service on your own without third party assistance. Please note that all calls with us may be recorded or monitored for quality assurance and training purposes.</p>
                 </div>

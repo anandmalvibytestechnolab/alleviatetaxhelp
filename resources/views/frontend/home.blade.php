@@ -1,4 +1,4 @@
-@extends('frontend._master')
+@extends('frontend._layout_with_wrap')
 
 @section('hero_content')
     <div class="col-lg-12 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -19,7 +19,7 @@
     </div>
 @endsection
 
-@section('content')
+@section('main')
     <main id="main">
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
