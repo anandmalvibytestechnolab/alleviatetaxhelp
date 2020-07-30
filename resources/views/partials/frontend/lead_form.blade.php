@@ -156,9 +156,9 @@
                 <div class="col-12 steps-outer">
                     <h3 class="steps">Step 5:</h3>
 
-                    <h4 class="fs-title">Please enter your <strong style="color:#00ae17;">name</strong>, <strong style="color:#00ae17;">email address</strong>,
-                        <strong style="color:#00ae17;">phone number</strong>, <strong style="color:#00ae17;">state</strong> and
-                        <strong style="color:#00ae17;">zip code</strong> so we may contact you to discuss your tax debt relief options:</h4>
+                    <h4 class="fs-title">Please enter your <strong class="text-brand-primary">name</strong>, <strong class="text-brand-primary">email address</strong>,
+                        <strong class="text-brand-primary">phone number</strong>, <strong class="text-brand-primary">state</strong> and
+                        <strong class="text-brand-primary">zip code</strong> so we may contact you to discuss your tax debt relief options:</h4>
 
                 </div>
             </div>

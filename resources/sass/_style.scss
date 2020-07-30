@@ -351,7 +351,7 @@ a:hover {
 #fifth_slide input:focus,
 #fifth_slide textarea:focus {
     outline-width: 0;
-    box-shadow: 0 0 0 0.2rem  #19d7c2!important;
+    box-shadow: 0 0 0 0.2rem  $brand-primary-color!important;
 }
 
 #sixth_slide h5 {
@@ -706,12 +706,12 @@ video {
     height: 5px;
 }
 .progress2 .progress-bar2 {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#19d7c2+0,3ce790+100 */
-    background: #19d7c2; /* Old browsers */
-    background: -moz-linear-gradient(left, #19d7c2 0%, #3ce790 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #19d7c2 0%,#3ce790 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #19d7c2 0%,#3ce790 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19d7c2', endColorstr='#3ce790',GradientType=1 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$brand-primary-color+0,3ce790+100 */
+    background: $brand-primary-color; /* Old browsers */
+    background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ); /* IE6-9 */
     position: relative;
     border-radius: 4px;
     height: 5px;
@@ -1594,23 +1594,23 @@ section {
     border-radius: 4px;
 }
 .progress .progress-bar_new {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#19d7c2+0,3ce790+100 */
-    background: #19d7c2; /* Old browsers */
-    background: -moz-linear-gradient(left, #19d7c2 0%, #3ce790 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #19d7c2 0%,#3ce790 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #19d7c2 0%,#3ce790 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19d7c2', endColorstr='#3ce790',GradientType=1 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$brand-primary-color+0,3ce790+100 */
+    background: $brand-primary-color; /* Old browsers */
+    background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ); /* IE6-9 */
     position: relative;
     border-radius: 4px;
     height: 5px;
 }
 .progress .progress-bar span {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#19d7c2+0,3ce790+100 */
-    background: #19d7c2; /* Old browsers */
-    background: -moz-linear-gradient(left, #19d7c2 0%, #3ce790 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #19d7c2 0%,#3ce790 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #19d7c2 0%,#3ce790 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19d7c2', endColorstr='#3ce790',GradientType=1 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$brand-primary-color+0,3ce790+100 */
+    background: $brand-primary-color; /* Old browsers */
+    background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ); /* IE6-9 */
     position: absolute;
     bottom: -20px;
     font-size: 10px;
@@ -1634,7 +1634,7 @@ section {
     margin-left: -5px;
 }
 .progre_s span {
-    color: #2bdfa8;
+    color: $brand-primary-color;
     font-weight: 500;
     font-size: 16px;
 }
@@ -1964,7 +1964,7 @@ button.close_btn {
 .counts .content .count-box img {
     display: block;
     float: left;
-    box-shadow: 0 12px 6px -6px #d3e7d5;
+    box-shadow: 0 12px 6px -6px rgba(29,41,116,.2);
     margin-right: 37px;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -2227,9 +2227,9 @@ button.close_btn {
 .testimonials .testimonial-item .testimonial-img {
     width: 105px;
     border-radius: 100%;
-    border: 10px solid $brand-primary-color;
+    border: 10px solid lighten($brand-primary-color, 9%);
     float: left;
-    box-shadow: 0 12px 6px -6px #b8dabe;
+    box-shadow: 0 12px 6px -6px rgba(29, 41, 116, 0.2);
 }
 
 .testimonials .testimonial-item h3 {
@@ -2241,7 +2241,7 @@ button.close_btn {
 
 .testimonials .testimonial-item h4 {
     font-size: 15px;
-    color: #5ec16c;
+    color: lighten($brand-primary-color, 18%);
     margin: 0 0 10px;
 }
 
@@ -2294,7 +2294,7 @@ button.close_btn {
 }
 
 .testimonials .owl-dot.active {
-    background-color: #3cc64a !important;
+    background-color: $brand-complementary-color !important;
 }
 
 
@@ -2905,11 +2905,11 @@ button.close_btn {
     margin-left:20%;
 }
 .prog_success{
-    background: #19d7c2 !important;
-    background: -moz-linear-gradient(left, #19d7c2 0%, #3ce790 100%) !important;
-    background: -webkit-linear-gradient(left, #19d7c2 0%,#3ce790 100%) !important;
-    background: linear-gradient(to right, #19d7c2 0%,#3ce790 100%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19d7c2', endColorstr='#3ce790',GradientType=1 ) !important;
+    background: $brand-primary-color !important;
+    background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%) !important;
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%) !important;
+    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ) !important;
 }
 .owl-carousel div{
     //width:300px !important;//Owl width issue
@@ -2921,4 +2921,8 @@ button.close_btn {
 #range_slide
 {
     padding:0px !important
+}
+
+.text-brand-primary{
+    color: $brand-primary-color;
 }
