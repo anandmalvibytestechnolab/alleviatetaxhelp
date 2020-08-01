@@ -16,8 +16,8 @@ class CcpaTest extends TestCase
         $response = $this->get(route('CCPA_PAGE_SHOW'));
 
         $response->assertStatus(200);
-        $response->assertSee('FOR CALIFORNIA RESIDENTS ONLY');
-        $response->assertSee('If you are a California resident, you have rights under the California Consumer Privacy Act ("CCPA"), including the right to opt-out of us');
-        $response->assertSee(route('FE_CCPA_LEAD_STORE'));
+        $response->assertSee('FOR CALIFORNIA RESIDENTS ONLY', false);
+        $response->assertSee('If you are a California resident, you have rights under the California Consumer Privacy Act ("CCPA"), including the right to opt-out of us', false);
+        $response->assertSee(route('FE_CCPA_LEAD_STORE'), false);
     }
 }

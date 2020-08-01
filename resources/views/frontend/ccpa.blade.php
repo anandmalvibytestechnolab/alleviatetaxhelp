@@ -28,7 +28,8 @@
                             There are other laws which may impact our ability to complete any requests under CCPA. If you would like to submit a request under CCPA, please complete and submit the form below:
                         </p>
                     </div>
-                    <form id="msformx" action="ccpa-confirm.cfm" method="post" onsubmit="return _CF_checkCFForm_1(this)">
+                    <form id="msformx" action="{!! route('FE_CCPA_LEAD_STORE') !!}" method="post">
+                        @csrf
                         <div class="row">
                             <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                 <label for="requestor">The Requestor is a:</label><br>
@@ -41,11 +42,11 @@
                         <div class="row">
                             <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                 <label for="city">I would like to submit the following request(s):</label><br>
-                                <input type="checkbox" class="request" name="requestoptions" value="What data is collected about me"> What data is collected about me <br>
-                                <input type="checkbox" class="request" name="requestoptions" value="Who has received my data"> Who has received my data<br>
-                                <input type="checkbox" class="request" name="requestoptions" value="Provide a portable version of my data"> Provide a portable version of my data<br>
-                                <input type="checkbox" class="request" name="requestoptions" value="Delete my data"> Delete my data<br>
-                                <input type="checkbox" class="request" name="requestoptions" value="Do not sell my data"> Do not sell my data<br>
+                                <input type="checkbox" class="request" name="requestoptions[]" value="What data is collected about me"> What data is collected about me <br>
+                                <input type="checkbox" class="request" name="requestoptions[]" value="Who has received my data"> Who has received my data<br>
+                                <input type="checkbox" class="request" name="requestoptions[]" value="Provide a portable version of my data"> Provide a portable version of my data<br>
+                                <input type="checkbox" class="request" name="requestoptions[]" value="Delete my data"> Delete my data<br>
+                                <input type="checkbox" class="request" name="requestoptions[]" value="Do not sell my data"> Do not sell my data<br>
                                 <label for="request" generated="true" class="error"></label>
                             </div>
 
@@ -159,7 +160,10 @@
                             <div class="row text-center">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                     <!-- <input type="submit" value="Submit" name="submit" class="submit_btn" id="ccpa_submit"> -->
-                                    <input type="submit" id="btn_first" name="submit" class="next_s action-button" data-id="40" data-value="second_slide" data-last="first_slide" value="Submit">
+                                    <button type="submit" class="next_s action" data-id="40" data-value="second_slide" data-last="first_slide">
+                                        Submit
+                                    </button>
+                                    {{--<input type="submit" id="btn_first" name="submit" class="next_s action-button" data-id="40" data-value="second_slide" data-last="first_slide" value="Submit">--}}
                                 </div>
                             </div>
                         </div>

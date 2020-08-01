@@ -2926,3 +2926,17 @@ button.close_btn {
 .text-brand-primary{
     color: $brand-primary-color;
 }
+
+button[type="submit"]{
+    width: auto;
+    background: #ff6000;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 20px 100px;
+    margin: 10px 0px 10px 5px;
+    font-size: 18px;
+    box-shadow: 0px 5px 10px -1px #ffd5bb;
+}
