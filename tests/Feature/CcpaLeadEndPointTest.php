@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\CcpaLead;
+use Models\CcpaLead;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
