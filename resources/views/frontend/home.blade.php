@@ -298,8 +298,9 @@
                 </div>
             </div>
         </div>
-
-
-        </div><!-- End Counts Section -->
     </section>
+@endsection
+
+@section('javascript')
+    <script src="{!! get_javascript_file('home') !!}"></script>
 @endsection

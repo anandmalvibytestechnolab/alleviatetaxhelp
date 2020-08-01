@@ -35,6 +35,6 @@
 @include('frontend._footer')
 
 @include('partials.live_reload')
-<script src="{!! get_javascript_file('home') !!}"></script>
+@yield('javascript')
 </body>
 </html>

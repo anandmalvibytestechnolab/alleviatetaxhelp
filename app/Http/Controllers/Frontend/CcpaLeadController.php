@@ -10,6 +10,7 @@ class CcpaLeadController extends Controller
 {
     public function store()
     {
+        d(request()->all());
         $rules = [
             'email_address' => ['required', 'email']
         ];

@@ -11,7 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/home.js', 'public/js')
+mix
+    .js('resources/js/home.js', 'public/js')
+    .js('resources/js/ccpa.js', 'public/js')
     .sass('resources/sass/home.scss', 'public/css');
 
 

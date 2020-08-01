@@ -1,0 +1,30 @@
+$spinner-color : aqua;
+@keyframes spinAround {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(359deg)
+  }
+}
+
+.is-loading:after {
+  -webkit-animation: spinAround 500ms infinite linear;
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-top-color: $spinner-color !important;
+  border-right-color: $spinner-color !important;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em;
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+}

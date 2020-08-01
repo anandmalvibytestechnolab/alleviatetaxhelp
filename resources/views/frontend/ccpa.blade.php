@@ -28,13 +28,13 @@
                             There are other laws which may impact our ability to complete any requests under CCPA. If you would like to submit a request under CCPA, please complete and submit the form below:
                         </p>
                     </div>
-                    <form id="msformx" action="{!! route('FE_CCPA_LEAD_STORE') !!}" method="post">
+                    <form id="msformx" action="{!! route('FE_CCPA_LEAD_STORE') !!}" method="post" data-parsley-focus="first">
                         @csrf
                         <div class="row">
                             <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                 <label for="requestor">The Requestor is a:</label><br>
-                                <input name="requestor" id="requestor" type="radio" value="California Resident"> California Resident<br>
-                                <input name="requestor" id="requestor" type="radio" value="Duly authorized third-party representative of a California Resident"> Duly authorized third-party representative of a California Resident<br>
+                                <input name="requestor" id="requestor" type="radio" value="California Resident" data-parsley-required data-parsley-required-message="Please select the type of requestor"> California Resident<br>
+                                <input name="requestor" id="requestor" type="radio" value="Duly authorized third-party representative of a California Resident" data-parsley-required data-parsley-reqiured-message="Please select the type of requestor"> Duly authorized third-party representative of a California Resident<br>
                                 <label for="requestor" generated="true" class="error"></label>
                             </div>
 
@@ -56,11 +56,11 @@
                             <div class="row">
                                 <div class="form-group col-lg-6 col-sm-6 col-xs-6">
                                     <label for="firstname">First Name</label>
-                                    <input name="first_name" type="text" class="form-control" id="first_name">
+                                    <input name="first_name" type="text" class="form-control" id="first_name" data-parsley-required>
                                 </div>
                                 <div class="form-group col-lg-6 col-sm-6 col-xs-6">
                                     <label for="lastname">Last Name</label>
-                                    <input name="last_name" type="text" class="form-control" id="last_name">
+                                    <input name="last_name" type="text" class="form-control" id="last_name" data-parsley-required>
                                 </div>
                             </div>
                             <div class="row">
@@ -148,7 +148,7 @@
                             <div class="row">
                                 <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                     <label for="email">Email Address </label>
-                                    <input name="email_address" type="email" class="form-control" id="email_address">
+                                    <input name="email_address" type="text" class="form-control" id="email_address" data-parsley-required data-parsley-email data-parsley-email-message="Please enter a valid email address">
                                 </div>
                             </div>
                             <div class="row">
@@ -183,4 +183,8 @@
             </div>
         </section><!-- End Services Section -->
     </main>
+@endsection
+
+@section('javascript')
+    <script src="{!! get_javascript_file('ccpa') !!}"></script>
 @endsection
