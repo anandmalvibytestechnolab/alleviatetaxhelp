@@ -32,7 +32,7 @@ class CcpaLeadController extends Controller
     {
         return collect($validData)
             ->merge([
-           'requestoptions' => $this->transformArrayToString($validData['requestoptions'])
+           'requestoptions' => $this->transformArrayToString($validData['requestoptions'] ?? null)
         ])
             ->toArray();
     }
