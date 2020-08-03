@@ -18,8 +18,10 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->check()) {
-            return redirect(RouteServiceProvider::HOME);
+        $route_name = request()->route()->getName();
+
+        if (auth()->guard($guard)->check() && auth()->user()->active == 1 && $route_name !== 'BE_LOGOUT') {
+            return redirect(route('BE_DASHBOARD_SHOW'));
         }
 
         return $next($request);
