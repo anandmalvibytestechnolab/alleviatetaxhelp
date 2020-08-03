@@ -2,10 +2,11 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{!! route('BE_DASHBOARD_SHOW') !!}">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-icon bg-white d-flex">
+            <img src="/img/logo.png" alt="Alleviate Tax" class="img-fluid">
+            {{--<i class="fas fa-money-bill"></i>--}}
         </div>
-        <div class="sidebar-brand-text mx-3">BH Track</div>
+        {{--<div class="sidebar-brand-text mx-3">Tax Benefits</div>--}}
     </a>
 
     <!-- Divider -->

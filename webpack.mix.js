@@ -14,7 +14,11 @@ const mix = require('laravel-mix');
 mix
     .js('resources/js/home.js', 'public/js')
     .js('resources/js/ccpa.js', 'public/js')
-    .sass('resources/sass/home.scss', 'public/css');
+    .sass('resources/sass/home.scss', 'public/css')
+    .sass('resources/sass/login.scss', 'public/css')
+    .js('resources/js/backend.home.js', 'public/js')
+    .sass(`resources/sass/platform.scss`, `public/css`)
+;
 
 
 mix.options({processCssUrls: false})

@@ -1,0 +1,280 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import './../../node_modules/startbootstrap-sb-admin-2/scss/sb-admin-2';
+@import "~flatpickr/dist/flatpickr.css";
+@import "~flatpickr/dist/themes/material_blue.css";
+@import "~select2/dist/css/select2.min.css";
+
+$brand_color: gray;
+
+@import './../spin_around_animation';
+
+.btn {
+  position: relative;
+}
+
+
+//@import (less) 'font-awesome/font-awesome.less';
+//@import (inline) 'fileinput.css';
+body {
+  //padding-top: 70px;
+  //padding-bottom: 70px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+td > .btn, td > form {
+  float: left;
+
+}
+
+td > form {
+  margin-left: 10px;
+}
+
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.uc-has-errors {
+  color: yellow;
+}
+
+label {
+  .glyphicon {
+
+    &:before {
+      color: orange;
+      font-weight: normal;
+    }
+  }
+}
+
+span.glyphicon.glyphicon-question-sign {
+  cursor: pointer;
+}
+
+div.actions-wrap {
+  display: flex;
+
+  .btn {
+    margin-right: 1rem;
+  }
+}
+
+div.permissions_selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  > label {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    height: 4rem;
+    padding: .25rem;
+    align-items: center;
+    background: rgba(0, 0, 0, .1);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: darken(white, 5%);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+span.status {
+  display: inline-block;
+  width: .72rem;
+  height: .72rem;
+  border-radius: 50%;
+
+  &.green {
+    background: #23d160;
+  }
+  &.red {
+    background: #ff3860;
+  }
+}
+
+/**
+Vuejs transitions
+ */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
+}
+
+*[v-cloak] {
+  display: none;
+}
+
+label.icon-wrap {
+
+  > div {
+    background: aliceblue;
+
+  }
+
+  svg {
+    fill: gray;
+  }
+
+  .checkbox-wrap {
+    background: #163355;
+    font-size: .81rem;
+    color: #fff;
+
+    span:first-of-type {
+      margin-right: .36rem;
+    }
+  }
+  .html-use-wrap {
+    background: gray;
+    font-size: .81rem;
+    color: #fff;
+  }
+  .svg-wrap {
+  }
+}
+
+.modal-dialog {
+  max-width: 54vw;
+}
+
+@import "~datatables.net-bs4/css/dataTables.bootstrap4.css";
+
+ul.picked-icons{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  li{
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+    grid-column-gap: 9px;
+    margin-bottom: 1.08rem;
+
+    span{
+    }
+
+
+    span.icon-wrap{
+      display: flex;
+      flex-flow: row;
+      overflow: hidden;
+      background: aqua;
+      padding: .18rem;
+      cursor: default;
+
+      svg{
+        fill: lighten($brand_color, 18%);
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn{
+  cursor: pointer;
+}
+
+span.spinner {
+  &.absolute {
+    position: absolute;
+  }
+
+  &:after {
+    animation: spinAround 500ms infinite linear;
+    border: 2px solid #163355;
+    border-top-color: #163355;
+    border-right-color: #163355;
+    border-bottom-color: #163355;
+    border-left-color: #163355;
+    border-radius: 290486px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 3em;
+    position: relative;
+    width: 3em;
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+    position: absolute !important;
+  }
+}
+
+.parsley-errors-list{
+  list-style-type: none;
+  color: red;
+}
+
+#accordionSidebar{
+  //background: $brand_color;
+}
+
+.sidebar-brand-icon{
+  svg{
+    fill: #fff;
+  }
+}
+
+@import 'datatables.net-fixedheader';
+
+.fixedHeader-floating thead tr{
+  background: tomato;
+}
+
+table[id^=DataTables_Table_]{
+  width: 100%;
+}
+
+#DataTables_Table_0_wrapper{
+  width: 100%;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  width: 100% !important;
+}
+[disabled]{
+  cursor: not-allowed;
+}
+
+.text-bold{
+  font-weight: 600;
+}
+
+.clipboard-copy{
+  cursor: pointer;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

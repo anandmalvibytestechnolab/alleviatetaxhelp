@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico?ver=1.0"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{!! $page_title ?? 'Bhtrack' !!} | Bhtrack</title>
+    <title>{!! $page_title ?? 'Tax Benefits' !!} | Tax Benefits</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{!! get_stylesheet('platform') !!}">

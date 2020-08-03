@@ -13,7 +13,7 @@ Route::group(['namespace' => 'Frontend'], function () {
 
 Route::group(['namespace' => 'Backend\Auth', 'prefix' => config('app.backend_route_prefix')], function () {
     Route::get('/login', 'LoginController@show')->name('BE_LOGIN_FORM');
-    Route::post('/login', 'LoginController@authenticate')->name('BE_LOGIN');
+    Route::post('/login', 'LoginController@authenticate')->name('BE_AUTHENTICATE');
     Route::any('/logout', 'LoginController@logout')->name('BE_LOGOUT');
 });
 

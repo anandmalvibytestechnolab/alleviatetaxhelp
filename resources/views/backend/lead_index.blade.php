@@ -7,7 +7,7 @@
 @section('head')
     @parent
     <link rel="stylesheet" href="{!! get_stylesheet('app') !!}">
-@endsection
+@endsection|
 
 @section('modal_buttons')
     @if(!$is_excel_export)
