@@ -27,7 +27,7 @@
             <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow">
 
                 @if(!empty($page_title))
-                <h1 class="d-flex justify-content-center w-100"><span>{!! $page_title !!}</span></h1>
+                    <h1 class="d-flex justify-content-center w-100"><span>{!! $page_title !!}</span></h1>
                 @endif
 
                 @hasSection('modal_buttons')
@@ -55,8 +55,8 @@
                             <div class="dropdown-divider"></div>
                             {{--<a class="dropdown-item" href="{!! route('BE_LOGOUT') !!}">--}}
                             {{--<a class="dropdown-item" href="{!! route('BE_USER_PROFILE_SHOW', [auth()->user()->id]) !!}">--}}
-                                {{--<i class="fas fa-user mr-2 text-gray-400"></i>--}}
-                                {{--Profile--}}
+                            {{--<i class="fas fa-user mr-2 text-gray-400"></i>--}}
+                            {{--Profile--}}
                             {{--</a>--}}
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{!! route('BE_LOGOUT') !!}">
@@ -93,12 +93,11 @@
             </div>
         </div>
     </div>
-
 </main>
 {{--<script>--}}
-    {{--window.additionalQueryFields = {!! collect(session('additional_query_fields') ?? [])->toJson() !!};--}}
-    {{--window.updateSortingEndPoint = '{!! route('BE_TABLE_SORTING_UPDATE') !!}';--}}
-    {{--window.sortOptions = {!! collect(session('sort_options') ?? [])->toJson() !!};--}}
+{{--window.additionalQueryFields = {!! collect(session('additional_query_fields') ?? [])->toJson() !!};--}}
+{{--window.updateSortingEndPoint = '{!! route('BE_TABLE_SORTING_UPDATE') !!}';--}}
+{{--window.sortOptions = {!! collect(session('sort_options') ?? [])->toJson() !!};--}}
 {{--</script>--}}
 @hasSection('local_javascript')
 

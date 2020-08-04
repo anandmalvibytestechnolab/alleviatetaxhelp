@@ -19,7 +19,7 @@ Route::group(['namespace' => 'Backend\Auth', 'prefix' => config('app.backend_rou
 
 Route::group(['namespace' => 'Backend', 'prefix' => config('app.backend_route_prefix')], function () {
     Route::get('/admin/dashboard', 'DashboardController@show')->name('BE_DASHBOARD_SHOW');
-    Route::get('/leads', 'LeadsController@index')->name('BE_LEADS_INDEX');
+    Route::get('/leads/{modelSlug}', 'LeadsController@index')->name('BE_LEADS_INDEX');
     Route::post('/leads', 'LeadsController@index')->name('BE_LEADS_QUERY_INDEX');
     Route::any('/export-leads', 'LeadsExportController@index')->name('BE_LEADS_EXPORT_INDEX');
 });

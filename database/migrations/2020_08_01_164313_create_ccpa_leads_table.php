@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
+use database\migrations\OnlyLocalMigration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCcpaLeadsTable extends Migration
+class CreateCcpaLeadsTable extends OnlyLocalMigration
 {
     /**
      * Run the migrations.

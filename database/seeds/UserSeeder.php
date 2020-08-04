@@ -1,9 +1,10 @@
 <?php
 
 use App\User;
+use database\seeds\OnlyLocalSeeder;
 use Illuminate\Database\Seeder;
 
-class UserSeeder extends Seeder
+class UserSeeder extends OnlyLocalSeeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +13,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        User::truncate();
         factory(User::class)->create(['email' => 'admin@admin.com']);
     }
 }

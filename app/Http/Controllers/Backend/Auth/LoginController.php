@@ -41,8 +41,8 @@ class LoginController extends Controller
             return redirect()->intended(route('BE_DASHBOARD_SHOW'));
         }
 
-        flash_message('Las credenciales no son correctas', 'danger');
-        return redirect()->route('BE_LOGIN');
+        flash_message('Wrong credentials', 'danger');
+        return redirect()->route('BE_LOGIN_FORM');
     }
 
     public function logout()

@@ -139,3 +139,23 @@ function d($data)
     echo 'Dumping from ', $backtrace[0]['file'] . ':' . $backtrace[0]['line'];
     dd($data);
 }
+
+/**
+ * Remove time from a mysql timestap
+ *
+ * @param $mysql_timestamp
+ * @return string
+ */
+function remove_time_from_date($mysql_timestamp)
+{
+    return substr($mysql_timestamp, 0, 10);
+}
+
+function get_last_url_segment($turn_dashes_into_underscores = true)
+{
+    $segment_count = count(request()->segments());
+    if ($turn_dashes_into_underscores) {
+        return str_replace('-', '_', request()->segment($segment_count));
+    }
+    return request()->segment($segment_count);
+}

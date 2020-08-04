@@ -17,7 +17,7 @@ class LeadAccessTest extends TestCase
         $this->withoutExceptionHandling();
         $response = $this->get(route('BE_LEADS_INDEX', ['leads']));
 
-        $response->assertRedirect(route('BE_LOGIN'));
+        $response->assertRedirect(route('BE_LOGIN_FORM'));
     }
 
     /**
@@ -28,7 +28,7 @@ class LeadAccessTest extends TestCase
         $this->withoutExceptionHandling();
         $response = $this->get(route('BE_LEADS_INDEX', ['ccpa']));
 
-        $response->assertRedirect(route('BE_LOGIN'));
+        $response->assertRedirect(route('BE_LOGIN_FORM'));
     }
 
     /**
@@ -39,7 +39,7 @@ class LeadAccessTest extends TestCase
         $this->withoutExceptionHandling();
         $response = $this->post(route('BE_LEADS_EXPORT_INDEX', ['leads']));
 
-        $response->assertRedirect(route('BE_LOGIN'));
+        $response->assertRedirect(route('BE_LOGIN_FORM'));
     }
 
     /**
@@ -49,7 +49,7 @@ class LeadAccessTest extends TestCase
     {
         $response = $this->post(route('BE_LEADS_EXPORT_INDEX', ['ccpa']));
 
-        $response->assertRedirect(route('BE_LOGIN'));
+        $response->assertRedirect(route('BE_LOGIN_FORM'));
     }
 
     /**

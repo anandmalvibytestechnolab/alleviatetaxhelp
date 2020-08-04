@@ -6,7 +6,7 @@ export default {
     methods : {
         enableDatePickers() {
             flatpickr(`[data-date-picker]`, {
-                locale: Spanish,
+                //locale: Spanish,
                 //dateFormat: "yy-mm-dd"
             });
         }

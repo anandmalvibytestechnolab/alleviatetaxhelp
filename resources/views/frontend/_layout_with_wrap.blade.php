@@ -1,4 +1,4 @@
-@extends('frontend._master')
+@extends('frontend._frontend_master')
 
 @section('wrap')
     <section class="wrap">

@@ -4,8 +4,9 @@
 
 use App\Model;
 use Faker\Generator as Faker;
+use Models\Lead;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Lead::class, function (Faker $faker) {
     return [
         'current_sit' => 'test',
         'other_current_situation' => 'test',

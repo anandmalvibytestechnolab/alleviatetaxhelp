@@ -13,7 +13,7 @@ export default {
                     fixedHeader: true,
                     // responsive: true,
                     language: {
-                        search: `Filtrar`,
+                        search: `Filter this page`,
                         info: ``,
                         infoFiltered: ``,
                     }

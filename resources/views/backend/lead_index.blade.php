@@ -1,4 +1,4 @@
-@extends('backend.master')
+@extends('backend._backend_master')
 
 @section('window_title')
     Leads
@@ -7,10 +7,10 @@
 @section('head')
     @parent
     <link rel="stylesheet" href="{!! get_stylesheet('app') !!}">
-@endsection|
+@endsection
 
 @section('modal_buttons')
-    @if(!$is_excel_export)
+    @if(empty($is_excel_export))
         <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#exampleModal" title="Filter Records">
             <i class="fa fa-search" aria-hidden="true"></i>
         </button>
@@ -20,14 +20,14 @@
     @endif
 @endsection
 
-@section('page_content')
+@section('content')
     @if(!$is_excel_export)
         @component('backend._leads_query_form')
         @endcomponent
         @if($rows->count())
             <div class="d-flex flex-column">
                 <div class="result-count">
-                    <strong>{!! $rows->total() !!} Leads </strong> between {!!Session::get('start_date')!!} and {!!Session::get('end_date')!!}
+                    <strong>{!! $rows->total() !!} {!! $readable_lead_model !!} </strong> between {!!Session::get('start_date')!!} and {!!Session::get('end_date')!!}
                 </div>
                 <div>
                     @if(!$is_excel_export)
@@ -40,26 +40,7 @@
     @if(count($rows))
         <div class="w-100">
             <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Created</th>
-                    <th>Email</th>
-                    <th>Url</th>
-                    <th>Api Response</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($rows as $row)
-                    <tr>
-                        <td>{!! $row->id !!}</td>
-                        <td>{!! $row->created_at !!}</td>
-                        <td>{!! $row->email !!}</td>
-                        <td>{!! $row->url !!}</td>
-                        <td>{!! $row->api_response !!}</td>
-                    </tr>
-                @endforeach
-                </tbody>
+                @include($lead_loop_view)
             </table>
         </div>
     @else

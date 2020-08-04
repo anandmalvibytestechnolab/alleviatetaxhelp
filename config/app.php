@@ -123,6 +123,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'REGISTERED_DEVELOPER_MACHINE_HOSTNAMES' => env('REGISTERED_DEVELOPER_MACHINE_HOSTNAMES'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

@@ -1,1 +1,1 @@
-@extends('backend.master')
+@extends('backend._backend_master')

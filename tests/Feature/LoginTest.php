@@ -16,7 +16,7 @@ class LoginTest extends TestCase
     function non_existing_user_can_not_log_in()
     {
         $this->withoutExceptionHandling();
-        $response= $this->post(route('BE_LOGIN'), ['email' => 'non-existing-user@example.com' , 'password' => 'fake-pasword']);
+        $response= $this->post(route('BE_LOGIN_FORM'), ['email' => 'non-existing-user@example.com' , 'password' => 'fake-pasword']);
 
         $this->assertNull(auth()->user());
         $response->assertRedirect(route('BE_LOGIN_FORM'));
@@ -27,7 +27,7 @@ class LoginTest extends TestCase
      */
     function email_and_password_fields_are_required_to_log_in()
     {
-        $response= $this->post(route('BE_LOGIN'), ['email' => '' , 'password' => '']);
+        $response= $this->post(route('BE_LOGIN_FORM'), ['email' => '' , 'password' => '']);
 
         $response->assertSessionHasErrors(['email' , 'password']);
     }
@@ -37,7 +37,7 @@ class LoginTest extends TestCase
      */
     function email_field_must_have_email_format()
     {
-        $response= $this->post(route('BE_LOGIN'), ['email' => 'this-is-not-an-email-addres' , 'password' => 'password']);
+        $response= $this->post(route('BE_LOGIN_FORM'), ['email' => 'this-is-not-an-email-addres' , 'password' => 'password']);
 
         $response->assertSessionHasErrors(['email']);
     }
@@ -50,7 +50,7 @@ class LoginTest extends TestCase
         $this->withoutExceptionHandling();
         $validUser = factory(User::class)->create(['email' => 'jane@example.com']);
 
-        $response= $this->post(route('BE_LOGIN'), ['email' => $validUser->email , 'password' => 'password']);
+        $response= $this->post(route('BE_LOGIN_FORM'), ['email' => $validUser->email , 'password' => 'password']);
 
         $this->assertNull(session('errors'));
         $this->assertNotNull(auth()->user());
@@ -65,9 +65,9 @@ class LoginTest extends TestCase
     {
         $validUser = factory(User::class)->create(['email' => 'jane@example.com' , 'active' => 0]);
 
-        $response= $this->post(route('BE_LOGIN'), ['email' => $validUser->email , 'password' => 'password']);
+        $response= $this->post(route('BE_LOGIN_FORM'), ['email' => $validUser->email , 'password' => 'password']);
 
-        $response->assertRedirect(route('BE_LOGIN'));
+        $response->assertRedirect(route('BE_LOGIN_FORM'));
         $this->assertNull(auth()->user());
     }
 
@@ -79,7 +79,7 @@ class LoginTest extends TestCase
         $this->withoutExceptionHandling();
         $validUser = factory(User::class)->create();
 
-        $response= $this->post(route('BE_LOGIN'), ['email' => $validUser->email, 'password' => 'password']);
+        $response= $this->post(route('BE_LOGIN_FORM'), ['email' => $validUser->email, 'password' => 'password']);
 
         $response->assertRedirect(route('BE_DASHBOARD_SHOW'));
         $this->assertNull(session('errors'));
@@ -94,7 +94,7 @@ class LoginTest extends TestCase
         $new_response = $this->actingAs($logged_in_user)->from(route('BE_DASHBOARD_SHOW'))->get(route('BE_DASHBOARD_SHOW'));
 
         $this->assertFalse(auth()->check());
-        $new_response->assertRedirect(route('BE_LOGIN'));
+        $new_response->assertRedirect(route('BE_LOGIN_FORM'));
     }
 
     /**
@@ -135,6 +135,6 @@ class LoginTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertViewIs('backend.login');
-        $response->assertSee(url(route('BE_LOGIN')));
+        $response->assertSee(url(route('BE_LOGIN_FORM')));
     }
 }

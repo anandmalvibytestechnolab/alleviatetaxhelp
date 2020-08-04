@@ -10,6 +10,7 @@ class LeadsController extends BaseLeadController
     private $leadsStartDate;
     private $leadsEndDate;
     private $rules;
+    private $leadModel;
 
     public function __construct()
     {
@@ -41,10 +42,13 @@ class LeadsController extends BaseLeadController
 
     public function queryLeadsOnGetRequest()
     {
+        $this->leadModel = $this->getLeadModel();
         return view('backend.lead_index')->with([
             'rows' => $this->fetchLeads(session('start_date'), session('end_date'), session('email'), session('url')),
             'is_excel_export' => false,
             'rows_count' => $this->rowsCount,
+            'readable_lead_model' => $this->getReadableLeadModel(get_last_url_segment()),
+            'lead_loop_view' => $this->leadModel::getLoopView()
         ]);
     }
 
@@ -53,7 +57,8 @@ class LeadsController extends BaseLeadController
         $validParams = request()->validate($this->rules);
         $this->setQueryParamsForNextPaginatedResults($validParams);
 
-        return redirect()->route('BE_LEADS_INDEX');
+        return redirect()->back();
+        //return redirect()->route('BE_LEADS_INDEX');
     }
 
     private function setQueryParamsForNextPaginatedResults($validData)
@@ -66,8 +71,13 @@ class LeadsController extends BaseLeadController
         $validData['email'] ? $this->queriedEmail = $validData['email'] : null;
         $validData['email'] ? session(['email' => $validData['email']]) : session()->forget('email');
 
-        $validData['url'] ? $this->queriedCampaign = $validData['url'] : null;
-        $validData['url'] ? session(['url' => $validData['url']]) : session()->forget('url');
+//        $validData['url'] ? $this->queriedCampaign = $validData['url'] : null;
+//        $validData['url'] ? session(['url' => $validData['url']]) : session()->forget('url');
+    }
+
+    private function getReadableLeadModel()
+    {
+        return $this->leadModel::$readableLeadModel;
     }
 
 }
