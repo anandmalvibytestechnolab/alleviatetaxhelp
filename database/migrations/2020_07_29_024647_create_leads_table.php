@@ -27,6 +27,8 @@ class CreateLeadsTable extends OnlyLocalMigration
             $table->string('primary_phone')->nullable();
             $table->string('state')->nullable();
             $table->string('zip_code')->nullable();
+            $table->string('crm_response')->nullable();
+            $table->string('case_id')->nullable();
         });
     }
 

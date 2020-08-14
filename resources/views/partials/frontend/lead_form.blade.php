@@ -236,7 +236,7 @@
 
                     <label class="col-sm-12 secure"> <i class="fa fa-lock"></i> Your email is safe and secure</label>
                     <label class="chkbox col-sm-12 offer"><p>Please send special offers from <span class="text-uppercase">Alleviate Tax</span></p>
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox" checked="checked" name="wants_special_offers">
                         <span class="checkmark"></span>
                     </label>
                 </div>
