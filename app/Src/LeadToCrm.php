@@ -14,13 +14,22 @@ class LeadToCrm
         //d($lead->toArray());
         $params = [
             'FNAME' => $lead->first_name,
-            'LNAME' => $lead->first_name,
+            'LNAME' => $lead->last_name,
+            'TAX_RELIEF_TAX_AMOUNT' => $lead->tax_debt,
+            'TAX_RELIEF_PRIMARY_PROBLEM' => $lead->current_sit,
+            'UDF1' => $lead->enrolled_irs,
+            'UDF2' => $lead->current_monthly_income,
+            'EMAIL' => $lead->email_address,
+            'CELL_PHONE' => $lead->primary_phone,
+            'STATE' => $lead->state,
+            'ZIP' => $lead->zip_code,
         ];
+        //d($params);
         $response = Http::get('https://alleviatetax.irslogics.com/postLead.aspx', $params);
 
         $this->saveCaseId($lead, $response);
 //d($response->status());
-        d($response->body());
+        //d($response->body());
     }
 
     private function saveCaseId(Lead $lead, Response $response)

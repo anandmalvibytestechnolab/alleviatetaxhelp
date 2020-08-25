@@ -137,11 +137,11 @@
             <div class="box2">
                 <div class="row">
                     <label class="chkbox col-sm-2">Yes
-                        <input type="checkbox" name="Employment_status" value="yes" id="frta" onclick="document.getElementById('frtb').checked = false;">
+                        <input type="checkbox" name="current_monthly_income" value="Over 1000" id="frta" onclick="document.getElementById('frtb').checked = false;">
                         <span class="checkmark"></span>
                     </label>
                     <label class="chkbox col-sm-2">No
-                        <input type="checkbox" name="Employment_status" value="No" id="frtb" onclick="document.getElementById('frta').checked = false;">
+                        <input type="checkbox" name="current_monthly_income" value="Under 1000" id="frtb" onclick="document.getElementById('frta').checked = false;">
                         <span class="checkmark"></span>
                     </label>
                 </div>

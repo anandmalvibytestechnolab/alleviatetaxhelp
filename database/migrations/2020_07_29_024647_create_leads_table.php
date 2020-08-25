@@ -20,7 +20,7 @@ class CreateLeadsTable extends OnlyLocalMigration
             $table->string('other_current_situation')->nullable();
             $table->string('tax_debt')->nullable();
             $table->string('enrolled_irs')->nullable();
-            $table->string('Employment_status')->nullable();
+            $table->string('current_monthly_income')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email_address')->nullable();

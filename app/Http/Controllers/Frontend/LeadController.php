@@ -20,13 +20,13 @@ class LeadController extends Controller
 
     public function store()
     {
-        d(request()->all());
+        //d(request()->all());
         $rules = [
             'current_sit' => ['nullable'],
             'other_current_situation' => ['nullable'],
             'tax_debt' => ['nullable'],
             'enrolled_irs' => ['nullable'],
-            'Employment_status' => ['nullable'],
+            'current_monthly_income' => ['nullable'],
             'first_name' => ['nullable'],
             'last_name' => ['nullable'],
             'email_address' => ['required', 'email'],
