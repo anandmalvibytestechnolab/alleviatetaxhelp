@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Database\Seeder;
+use database\seeds\OnlyLocalSeeder;
 use Models\CcpaLead;
 
-class CcpaLeadSeeder extends Seeder
+class CcpaLeadSeeder extends OnlyLocalSeeder
 {
     /**
      * Run the database seeds.

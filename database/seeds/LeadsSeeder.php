@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Database\Seeder;
+use database\seeds\OnlyLocalSeeder;
 use Models\Lead;
 
-class LeadsSeeder extends Seeder
+class LeadsSeeder extends OnlyLocalSeeder
 {
     /**
      * Run the database seeds.
