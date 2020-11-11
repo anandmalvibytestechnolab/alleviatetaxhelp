@@ -11,7 +11,7 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/ccpa-confirmation', 'CcpaConfirmationPageController@show')->name('CCPA_CONFIRMATION_PAGE_SHOW');
 });
 
-Route::group(['namespace' => 'Backend\Auth', 'prefix' => config('app.backend_route_prefix')], function () {
+Route::group(['namespace' => 'Backend\Auth', 'prefix' => config('app.BACKEND_ROUTE_PREFIX')], function () {
     Route::get('/login', 'LoginController@show')->name('BE_LOGIN_FORM');
     Route::post('/login', 'LoginController@authenticate')->name('BE_AUTHENTICATE');
     Route::any('/logout', 'LoginController@logout')->name('BE_LOGOUT');

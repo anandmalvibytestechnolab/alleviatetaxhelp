@@ -25,20 +25,31 @@ class LeadToCrm
             'ZIP' => $lead->zip_code,
         ];
         //d($params);
-        $response = Http::get('https://alleviatetax.irslogics.com/postLead.aspx', $params);
+        try {
+            $response = Http::get('https://alleviatetax.irslogics.com/postLead.aspx', $params);
+        } catch (\Exception $e) {
+            $response = $e->getMessage();
+        }
 
         $this->saveCaseId($lead, $response);
 //d($response->status());
         //d($response->body());
     }
 
-    private function saveCaseId(Lead $lead, Response $response)
+    private function saveCaseId(Lead $lead, $response)
     {
-        if ($this->leadWasAccepted($response)) {
+        if ($response instanceof Response && $this->leadWasAccepted($response)) {
             $lead->case_id = $this->getCaseId($response);
-        } else {
-            $lead->crm_response = collect($response->body())->toJson();
+            $lead->save();
+            return;
         }
+        if ($response instanceof Response && !$this->leadWasAccepted($response)) {
+            $lead->case_id = $this->getCaseId($response);
+            $lead->save();
+            return;
+        }
+
+        $lead->case_id = collect($response)->toJson();
         $lead->save();
     }
 

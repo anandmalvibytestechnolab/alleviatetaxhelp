@@ -124,6 +124,7 @@ return [
     'cipher' => 'AES-256-CBC',
 
     'REGISTERED_DEVELOPER_MACHINE_HOSTNAMES' => env('REGISTERED_DEVELOPER_MACHINE_HOSTNAMES'),
+    'BACKEND_ROUTE_PREFIX' => env('BACKEND_ROUTE_PREFIX'),
 
     /*
     |--------------------------------------------------------------------------
