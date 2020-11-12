@@ -273,7 +273,7 @@ window.addDashes = function addDashes(f) {
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     margin: 10,
-    loop: true,
+    loop: false,
     responsive: {
         0: {
             items: 1

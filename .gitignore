@@ -16,3 +16,4 @@ public/mix-manifest.json
 _ide_helper.php
 storage/debugbar/
 public/js/*.LICENSE.txt
+public/*/*.map

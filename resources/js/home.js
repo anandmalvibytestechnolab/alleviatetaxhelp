@@ -11,3 +11,4 @@ require('./owl.carousel');
 window.AOS = require('./aos');
 require('./main');
 require('./inline-scripts');
+require('./custom');

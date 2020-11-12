@@ -1,6 +1,6 @@
 <form id="msform" action="{!! route('FE_LEAD_STORE') !!}" method="post">
-    @csrf
-    <!-- <input type="hidden" name="ckm_offer_id" value="4"> -->
+@csrf
+<!-- <input type="hidden" name="ckm_offer_id" value="4"> -->
     <input type="hidden" name="current_situation" id="current_situation" value="">
     {{--<input type="hidden" name="page" id="page" value="http://benefittaxrelief.com/">--}}
     {{--<input type="hidden" name="affid" value="" id="affid" />--}}
@@ -31,37 +31,76 @@
             <div class="row">
                 <div class="col-12 steps-outer">
                     <h3 class="steps">Step 1:</h3>
-                    <h3 class="fs-title">Which of the following caused your tax debt?</h3>
+                    {{--                    <h3 class="fs-title">Which of the following caused your tax debt?</h3>--}}
+                    <h3 class="fs-title">Was one of the following part of what caused your tax debt?</h3>
                     <span class="apply">( select all that apply )</span>
                 </div>
             </div>
+            {{--            <div class="box">--}}
+            {{--                <div class="row">--}}
+            {{--                    <label class="chkbox col-sm-4">Business Tax Issues--}}
+            {{--                        <input type="checkbox" name='current_sit' value="Business Tax Issues">--}}
+            {{--                        <span class="checkmark"></span>--}}
+            {{--                    </label>--}}
+            {{--                    <label class="chkbox col-sm-4">Owe More Than Expected--}}
+            {{--                        <input type="checkbox" name='current_sit' value="Owe More Than Expected">--}}
+            {{--                        <span class="checkmark"></span>--}}
+            {{--                    </label>--}}
+            {{--                    <label class="chkbox col-sm-4">Divorce--}}
+            {{--                        <input type="checkbox" name='current_sit' value="Divorce">--}}
+            {{--                        <span class="checkmark"></span>--}}
+            {{--                    </label>--}}
+            {{--                    <label class="chkbox col-sm-4">Unfiled Taxes--}}
+            {{--                        <input type="checkbox" name='current_sit' value="Unfiled Taxes">--}}
+            {{--                        <span class="checkmark"></span>--}}
+            {{--                    </label>--}}
+            {{--                    <label class="chkbox col-sm-4">Self-Employed--}}
+            {{--                        <input type="checkbox" name='current_sit' value="self Employed">--}}
+            {{--                        <span class="checkmark"></span>--}}
+            {{--                    </label>--}}
+            {{--                    <label class="chkbox col-sm-4">--}}
+            {{--                        <input type="checkbox" name='current_sit' value='Others' id="other">--}}
+            {{--                        <span class="checkmark"></span>--}}
+            {{--                        <input type="text" name="other_current_situation" id='others' placeholder="Others"/>--}}
+            {{--                    </label>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="box">
                 <div class="row">
-                    <label class="chkbox col-sm-4">Business Tax Issues
-                        <input type="checkbox" name='current_sit' value="Business Tax Issues">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-4">Owe More Than Expected
-                        <input type="checkbox" name='current_sit' value="Owe More Than Expected">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-4">Divorce
-                        <input type="checkbox" name='current_sit' value="Divorce">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-4">Unfiled Taxes
-                        <input type="checkbox" name='current_sit' value="Unfiled Taxes">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-4">Self-Employed
-                        <input type="checkbox" name='current_sit' value="self Employed">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-4">
-                        <input type="checkbox" name='current_sit' value='Others' id="other">
-                        <span class="checkmark"></span>
-                        <input type="text" name="other_current_situation" id='others' placeholder="Others"/>
-                    </label>
+                    <div class="col-sm-4 p-3">
+                        <label class="btn btn-secondary d-flex button-label">Business Tax Issues
+                            <input type="checkbox" name='current_sit' value="Business Tax Issues" class="d-none">
+                        </label>
+                    </div>
+
+                    <div class="col-sm-4 p-3">
+                        <label class="btn btn-secondary d-flex button-label">Owe More Than Expected
+                            <input type="checkbox" name='current_sit' value="Owe More Than Expected" class="d-none">
+                        </label>
+                    </div>
+
+                    <div class="col-sm-4 p-3">
+                        <label class="btn btn-secondary d-flex button-label">Divorce
+                            <input type="checkbox" name='current_sit' value="Divorce" class="d-none">
+                        </label>
+                    </div>
+
+                    <div class="col-sm-4 p-3">
+                        <label class="btn btn-secondary d-flex button-label">Unfiled Taxes
+                            <input type="checkbox" name='current_sit' value="Unfiled Taxes" class="d-none">
+                        </label>
+                    </div>
+
+                    <div class="col-sm-4 p-3">
+                        <label class="btn btn-secondary d-flex button-label">Self-Employed
+                            <input type="checkbox" name='current_sit' value="self Employed" class="d-none">
+                        </label>
+                    </div>
+
+                    <div class="col-sm-4 p-3">
+                            <input type="checkbox" name='current_sit' value='Others' id="other" class="d-none">
+                            <input type="text" name="other_current_situation" id='others' placeholder="Others"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,7 +113,8 @@
                 <div class="col-12 steps-outer">
                     <h3 class="steps">Step 2:</h3>
 
-                    <h3 class="fs-title">How Much In Unpaid Taxes Do You Owe?</h3>
+{{--                    <h3 class="fs-title">How Much In Unpaid Taxes Do You Owe?</h3>--}}
+                    <h3 class="fs-title">Approximately, how much does the IRS claim you owe?</h3>
 
                 </div>
             </div>
@@ -82,13 +122,13 @@
             <p class="price-picker">$10,000 - $19,999</p>
 
 
-            <input type="hidden" name='tax_debt' id="price-picker_s" value="10000">
+            <input type="hidden" name='tax_debt' id="price-picker_s" value="0">
             <div class="range-slider">
                 <input type="range" class="custom-range" min="0" max="5" id="customRange2" value="2">
                 <!-------div id="slider"></div>
                 <input type="hidden" class="taxval"------>
                 <div class="range-value">
-                    <span class="left-val"><i class="fa fa-long-arrow-down" aria-hidden="true"></i> $10,000</span>
+                    <span class="left-val"><i class="fa fa-long-arrow-down" aria-hidden="true"></i> $0</span>
                     <span class="right-val">$100,000 <i class="fa fa-long-arrow-up" aria-hidden="true"></i></span>
                 </div>
             </div>
@@ -245,7 +285,11 @@
         </div>
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="" data-value='sixth_slide' data-last='fifth_slide' value="Submit"/>
         <p id='messag_validate'></p>
-        <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to <span class="text-uppercase">Alleviate Tax</span>'s Terms and Conditions and Privacy Policy and agree to have your information shared with BENEFIT TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g., autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of purchase.</p>
+        <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to <span class="text-uppercase">Alleviate Tax</span>'s Terms and Conditions and Privacy Policy
+            and agree to have your information shared with BENEFIT TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g.,
+            autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone
+            number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of
+            purchase.</p>
     </fieldset>
 
 

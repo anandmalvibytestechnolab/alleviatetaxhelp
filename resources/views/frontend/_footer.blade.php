@@ -14,7 +14,7 @@
 {{--                        <a href="#" target="_blank">Unsubscribe</a>--}}
                         <a href="{!! route('CCPA_PAGE_SHOW') !!}" target="_blank">CCPA Request</a>
                     </nav>
-                    <p>Estimates based on prior results; individual results will vary based on circumstances, including your ability to provide BENEFIT TAX SOLUTIONS with information that is accurate and timely. We do not guarantee that your tax debts will be lowered by a specific amount or percentage, that your tax debt will be paid off within a specific period of time or guarantee you will qualify for any IRS programs. Penalties and interest will continue to accrue until your tax liability is paid in full to the IRS. BENEFIT TAX SOLUTIONS is a tax resolution firm independent from the IRS. We do not assume tax debt, make monthly payments to creditors or provide tax, bankruptcy, accounting or legal advice. By providing your contact information, you expressly request us to respond to your inquiry with information regarding our products and services, including by the use of automated or pre-recorded calls and/or SMS text messages at the number you provide. You represent that you are authorized to receive calls on any phone number you provide and acknowledge charges may be incurred as a result of those calls. Read and understand all program materials prior to enrollment. Not available in all states. Depending on the services, you may be able to obtain this service on your own without third party assistance. Please note that all calls with us may be recorded or monitored for quality assurance and training purposes.</p>
+                    <p>Estimates based on prior results; individual results will vary based on circumstances, including your ability to provide ALLEVIATE TAX with information that is accurate and timely. We do not guarantee that your tax debts will be lowered by a specific amount or percentage, that your tax debt will be paid off within a specific period of time or guarantee you will qualify for any IRS programs. Penalties and interest will continue to accrue until your tax liability is paid in full to the IRS. ALLEVIATE TAX is a tax resolution firm independent from the IRS. We do not assume tax debt, make monthly payments to creditors or provide tax, bankruptcy, accounting or legal advice. By providing your contact information, you expressly request us to respond to your inquiry with information regarding our products and services, including by the use of automated or pre-recorded calls and/or SMS text messages at the number you provide. You represent that you are authorized to receive calls on any phone number you provide and acknowledge charges may be incurred as a result of those calls. Read and understand all program materials prior to enrollment. Not available in all states. Depending on the services, you may be able to obtain this service on your own without third party assistance. Please note that all calls with us may be recorded or monitored for quality assurance and training purposes.</p>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
         <div class="row d-flex align-items-center">
             <div class="col-lg-10 text-lg-left text-center">
                 <div class="copyright">
-                    Copyright  &copy; {!! date('Y') !!}. BenefitTaxSolutions.com
+                    Copyright  &copy; {!! date('Y') !!}. AlleviateTaxService.com
                 </div>
                 <div class="credits">
 
@@ -52,10 +52,10 @@
                 <button type="button" class="close_btn" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Benefit Tax Solutions <br>
-                    3338 Robert Trent Jones Dr. #303 <br>
-                    Orlando, FL 32835 <br>
-                    Contact us at <a href="mailto:wecare@benefittaxsolutions.com">wecare@benefittaxsolutions.com</a></p>
+                <p>Alleviate Tax <br>
+                    4 Park Plaza / Suite 2050 <br>
+                    Irvine, CA 92614 <br>
+                    Contact us at <a href="mailto:wecare@alleviatetaxservice.com">wecare@alleviatetaxservice.com</a></p>
             </div>
         </div>
 
