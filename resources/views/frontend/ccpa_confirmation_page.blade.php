@@ -26,7 +26,7 @@
                                         <br><br>
                                         <div class="row justify-content-center">
                                             <div class="col-12 text-center">
-                                                <h5 class="purple-text text-center">Please keep your phone nearby, an experienced tax debt specialist from Benefit Tax Solutions will be reaching out to you shortly, or once business hours resume.</h5>
+                                                <h5 class="purple-text text-center">Please keep your phone nearby, an experienced tax debt specialist from Alleviate Tax will be reaching out to you shortly, or once business hours resume.</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -45,5 +45,5 @@
 @section('content')
     {{--Thank you for submitting your information to us.--}}
 
-    {{--Thank you for submitting your information to us.' contains "Please keep your phone nearby, an experienced tax debt specialist from Benefit Tax Solutions will be reaching out to you shortly, or once business hours resume.--}}
+    {{--Thank you for submitting your information to us.' contains "Please keep your phone nearby, an experienced tax debt specialist from Alleviate Tax will be reaching out to you shortly, or once business hours resume.--}}
 @endsection
