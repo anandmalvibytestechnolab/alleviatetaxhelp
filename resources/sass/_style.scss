@@ -2953,3 +2953,8 @@ span.myphonenumber{
         padding-right: 2.7vw;
     }
 }
+
+.button-label:not(.btn-warning){
+    background: lighten(#6c757d, 15.3%);
+    border-color: lighten(#545b62, 15.3%)
+}

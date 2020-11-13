@@ -34,3 +34,8 @@ ul.parsley-errors-list{
   margin-top: -18px;
 }
 
+.main-subtitle{
+  @media(max-width: 450px){
+    display: none;
+  }
+}

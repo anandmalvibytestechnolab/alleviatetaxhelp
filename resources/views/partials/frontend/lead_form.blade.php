@@ -67,39 +67,33 @@
             {{--            </div>--}}
             <div class="box">
                 <div class="row">
-                    <div class="col-sm-4 p-3">
-                        <label class="btn btn-secondary d-flex button-label">Business Tax Issues
-                            <input type="checkbox" name='current_sit' value="Business Tax Issues" class="d-none">
-                        </label>
-                    </div>
-
-                    <div class="col-sm-4 p-3">
-                        <label class="btn btn-secondary d-flex button-label">Owe More Than Expected
-                            <input type="checkbox" name='current_sit' value="Owe More Than Expected" class="d-none">
-                        </label>
-                    </div>
-
-                    <div class="col-sm-4 p-3">
-                        <label class="btn btn-secondary d-flex button-label">Divorce
-                            <input type="checkbox" name='current_sit' value="Divorce" class="d-none">
-                        </label>
-                    </div>
-
-                    <div class="col-sm-4 p-3">
+                    <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label">Unfiled Taxes
                             <input type="checkbox" name='current_sit' value="Unfiled Taxes" class="d-none">
                         </label>
                     </div>
-
-                    <div class="col-sm-4 p-3">
+                    <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label">Owe More Than Expected
+                            <input type="checkbox" name='current_sit' value="Owe More Than Expected" class="d-none">
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label">Business Tax Issues
+                            <input type="checkbox" name='current_sit' value="Business Tax Issues" class="d-none">
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label">Self-Employed
                             <input type="checkbox" name='current_sit' value="self Employed" class="d-none">
                         </label>
                     </div>
 
-                    <div class="col-sm-4 p-3">
-                            <input type="checkbox" name='current_sit' value='Others' id="other" class="d-none">
-                            <input type="text" name="other_current_situation" id='others' placeholder="Others"/>
+                    <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label">Others
+                            <input type="checkbox" name='current_sit' value="self Employed" class="d-none" data-display-current-situation-text-field>
+                        </label>
+                        <input type="checkbox" name='current_sit' value='Others' id="other" class="d-none">
+                        <input type="text" name="other_current_situation" id='others' placeholder="Please describe" class="d-none"/>
                     </div>
                 </div>
             </div>
@@ -113,23 +107,23 @@
                 <div class="col-12 steps-outer">
                     <h3 class="steps">Step 2:</h3>
 
-{{--                    <h3 class="fs-title">How Much In Unpaid Taxes Do You Owe?</h3>--}}
+                    {{--                    <h3 class="fs-title">How Much In Unpaid Taxes Do You Owe?</h3>--}}
                     <h3 class="fs-title">Approximately, how much does the IRS claim you owe?</h3>
 
                 </div>
             </div>
 
-            <p class="price-picker">$10,000 - $19,999</p>
+            <p class="price-picker">$500</p>
 
 
-            <input type="hidden" name='tax_debt' id="price-picker_s" value="0">
+            <input type="hidden" name='tax_debt' id="price-picker_s" value="500">
             <div class="range-slider">
-                <input type="range" class="custom-range" min="0" max="5" id="customRange2" value="2">
+                <input type="range" class="custom-range" min="0" max="100000" step="500" id="customRange2" value="500">
                 <!-------div id="slider"></div>
                 <input type="hidden" class="taxval"------>
                 <div class="range-value">
-                    <span class="left-val"><i class="fa fa-long-arrow-down" aria-hidden="true"></i> $0</span>
-                    <span class="right-val">$100,000 <i class="fa fa-long-arrow-up" aria-hidden="true"></i></span>
+                    <span class="left-val">$0</span>
+                    <span class="right-val">$100,000</i></span>
                 </div>
             </div>
 
@@ -143,62 +137,68 @@
 
                 <div class="col-12 steps-outer">
                     <h3 class="steps">Step 3:</h3>
-
                     <h3 class="fs-title">Are you enrolled in any IRS debt forgiveness program?</h3>
-
                 </div>
             </div>
             <div class="box2">
-                <div class="row">
-                    <label class="chkbox col-sm-2">Yes
-                        <input type="checkbox" name='enrolled_irs' value='Yes' id="trda" onclick="document.getElementById('trdb').checked = false;">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-2">No
-                        <input type="checkbox" name='enrolled_irs' value='No' id="trdb" onclick="document.getElementById('trda').checked = false;">
-                        <span class="checkmark"></span>
-                    </label>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label-radio">Yes
+                            <input type="radio" name='enrolled_irs' class="d-none" value='Yes' id="trda">
+                        </label>
+                    </div>
+                    <div class="col-6 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label-radio">No
+                            <input type="radio" name='enrolled_irs' class="d-none" value='No' id="trdb">
+                        </label>
+                    </div>
+                    {{--                    <label class="chkbox col-sm-2">Yes--}}
+                    {{--                        <input type="checkbox" name='enrolled_irs' value='Yes' id="trda" onclick="document.getElementById('trdb').checked = false;">--}}
+                    {{--                        <span class="checkmark"></span>--}}
+                    {{--                    </label>--}}
+                    {{--                    <label class="chkbox col-sm-2">No--}}
+                    {{--                        <input type="checkbox" name='enrolled_irs' value='No' id="trdb" onclick="document.getElementById('trda').checked = false;">--}}
+                    {{--                        <span class="checkmark"></span>--}}
+                    {{--                    </label>--}}
                 </div>
             </div>
         </div>
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="80" data-value='forth_slide' data-last='third_slide' value="Submit"/>
     </fieldset>
+{{--    <fieldset id='forth_slide' class='field_set'>--}}
+{{--        <div class="form-card">--}}
+{{--            <div class="row">--}}
+
+{{--                <div class="col-12 steps-outer">--}}
+{{--                    <h3 class="steps">Step 4:</h3>--}}
+
+{{--                    <h3 class="fs-title">Is your current monthly income more than $1,000?</h3>--}}
+
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="box2">--}}
+{{--                <div class="row">--}}
+{{--                    <label class="chkbox col-sm-2">Yes--}}
+{{--                        <input type="checkbox" name="current_monthly_income" value="Over 1000" id="frta" onclick="document.getElementById('frtb').checked = false;">--}}
+{{--                        <span class="checkmark"></span>--}}
+{{--                    </label>--}}
+{{--                    <label class="chkbox col-sm-2">No--}}
+{{--                        <input type="checkbox" name="current_monthly_income" value="Under 1000" id="frtb" onclick="document.getElementById('frta').checked = false;">--}}
+{{--                        <span class="checkmark"></span>--}}
+{{--                    </label>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <input type="button" id='btn' name="next" class="next_s action-button" data-id="100" data-value='fifth_slide' data-last='forth_slide' value="Submit"/>--}}
+{{--    </fieldset>--}}
     <fieldset id='forth_slide' class='field_set'>
-        <div class="form-card">
-            <div class="row">
-
-                <div class="col-12 steps-outer">
-                    <h3 class="steps">Step 4:</h3>
-
-                    <h3 class="fs-title">Is your current monthly income more than $1,000?</h3>
-
-                </div>
-            </div>
-            <div class="box2">
-                <div class="row">
-                    <label class="chkbox col-sm-2">Yes
-                        <input type="checkbox" name="current_monthly_income" value="Over 1000" id="frta" onclick="document.getElementById('frtb').checked = false;">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="chkbox col-sm-2">No
-                        <input type="checkbox" name="current_monthly_income" value="Under 1000" id="frtb" onclick="document.getElementById('frta').checked = false;">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="100" data-value='fifth_slide' data-last='forth_slide' value="Submit"/>
-    </fieldset>
-    <fieldset id='fifth_slide' class='field_set'>
         <div class="form-card">
             <div class="row">
 
                 <div class="col-12 steps-outer">
                     <h3 class="steps">Step 5:</h3>
 
-                    <h4 class="fs-title">Please enter your <strong class="text-brand-primary">name</strong>, <strong class="text-brand-primary">email address</strong>,
-                        <strong class="text-brand-primary">phone number</strong>, <strong class="text-brand-primary">state</strong> and
-                        <strong class="text-brand-primary">zip code</strong> so we may contact you to discuss your tax debt relief options:</h4>
+                    <h4 class="fs-title">Please enter your contact information to get started on your <strong class="text-brand-primary">free consultation</strong>.</h4>
 
                 </div>
             </div>
@@ -286,14 +286,14 @@
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="" data-value='sixth_slide' data-last='fifth_slide' value="Submit"/>
         <p id='messag_validate'></p>
         <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to <span class="text-uppercase">Alleviate Tax</span>'s Terms and Conditions and Privacy Policy
-            and agree to have your information shared with BENEFIT TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g.,
+            and agree to have your information shared with ALLEVIATE TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g.,
             autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone
             number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of
             purchase.</p>
     </fieldset>
 
 
-    <fieldset id='sixth_slide' class='field_set'>
+    <fieldset id='fifth_slide' class='field_set'>
         <div class="form-card success">
             <h2 class="text-center"><strong>Loading...</strong></h2> <br>
             <br><br>

@@ -4,7 +4,7 @@
     <div class="col-lg-12 pt-4 pt-md-5 pt-lg-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
         <!---  <img src="/img/b-icon.png" class="topicon" alt=""> --->
         <h1 data-aos="fade-up"><span>Alleviate</span> Saves Clients Tens Of Millions <br>Annually in Tax Debt</h1>
-        <h2 data-aos="fade-up" data-aos-delay="400">Do you need help with <span>your tax problems?</span> Let our tax professionals help you.</h2>
+        <h2 data-aos="fade-up" data-aos-delay="400" class="main-subtitle">Do you need help with <span>your tax problems?</span> Let our tax professionals help you.</h2>
         <div data-aos="fade-up" data-aos-delay="800">
             <div class="container-fluid">
                 <div class="row justify-content-center">

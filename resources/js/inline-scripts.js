@@ -1,9 +1,6 @@
-var displayText = ["UNDER $7,500",
-    "$7,500 - $9,999", "$10,000 - $19,999", "$20,000 - $49,999", "$50,000 - $99,999", "$100,000 OR MORE"];
-var taxVal = ["5000", "7500", "10000", "20000", "50000", "100000"];
 $("#slider").slider({
     min: 0,
-    max: taxVal.length - 1,
+    max: 100000,
     step: 1,
     slide: function(event, ui) {
         $(".price-picker").text(displayText[ui.value]);
@@ -11,7 +8,7 @@ $("#slider").slider({
         $("#tax_debt").val(taxVal[ui.value]);
     },
     create: function(event, ui) {
-        $(this).slider('value', '2');
+        $(this).slider('value', '500');
     }
 });
 $("#slider").scroll(function()
@@ -22,38 +19,10 @@ $("#slider").scroll(function()
 
 /////////////////
 $(document).on('input', '#customRange2', function() {
-    var d = $(this).val();
-    //alert(d);
-    if(d == 0)
-    {
-        $('.price-picker').text("UNDER $7,500");
-        document.getElementById('price-picker_s').value = '5000';
-    }
-    else if( d == 1)
-    {
-        $('.price-picker').text("$7,500 - $9,999");
-        document.getElementById('price-picker_s').value = '7500';
-    }
-    else if( d == 2 )
-    {
-        $('.price-picker').text("$10,000 - $19,999");
-        document.getElementById('price-picker_s').value = '10000';
-    }
-    else if( d == 3 )
-    {
-        $('.price-picker').text("$20,000 - $49,999");
-        document.getElementById('price-picker_s').value = '20000';
-    }
-    else if( d == 4 )
-    {
-        $('.price-picker').text("$50,000 - $99,999");
-        document.getElementById('price-picker_s').value = '50000';
-    }
-    else if( d == 5)
-    {
-        $('.price-picker').text("$100,000 OR MORE");
-        document.getElementById('price-picker_s').value = '100000';
-    }
+    var selectedValue = $(this).val();
+    document.querySelector('.price-picker').innerText = `$${selectedValue}`;
+    document.querySelector('#price-picker_s').setAttribute('value', selectedValue);
+    console.log(selectedValue);
 });
 
 
@@ -86,7 +55,7 @@ $(document).ready(function()
         if(val == 'second_slide' || val == 'forth_slide')
         {
 
-            if($('#'+vals+ ' input[type=checkbox]:checked').length >= 1)
+            if($('#'+vals+ ' input[type=checkbox]:checked').length >= 1 || $('#'+vals+ ' input[type=radio]:checked').length >= 1)
             {
                 if($('#other').prop("checked") == true && $('#others').val() == '')
                 {
@@ -111,7 +80,7 @@ $(document).ready(function()
         }
         else if(val == 'fifth_slide')
         {
-            if($('#'+vals+ ' input[type=checkbox]:checked').length >= 1)
+            if($('#'+vals+ ' input[type=checkbox]:checked').length >= 1 || $('#'+vals+ ' input[type=radio]:checked').length >= 1)
             {
                 $('.field_set').hide();
                 $('#'+val).show();

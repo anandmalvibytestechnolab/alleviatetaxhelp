@@ -26,13 +26,13 @@
                                         <br><br>
                                         <div class="row justify-content-center">
                                             <div class="col-12 text-center">
-                                                <h5 class="purple-text text-center">Please keep your phone nearby, an experienced tax debt specialist from Alleviate Tax will be reaching out to you shortly, or once business hours resume.</h5>
+                                                <h5 class="purple-text text-center">Please keep your phone nearby, an experienced tax debt specialist from Alleviate Tax
+                                                    will be reaching out to you shortly, or once business hours resume.</h5>
                                             </div>
                                         </div>
                                     </div>
                                 </fieldset>
                                 <p id="message_validate"></p>
-                                <input type="hidden" name="debt" value="10000"><input type="hidden" name="leadid" value="5BC161D0"><input type="hidden" name="affid" value="#affid#"><input type="hidden" name="subid" value="#subid#"><input type="hidden" name="s1" value="#s1#"><input type="hidden" name="LPUrl" value="https%3A%2F%2Fwww.benefittaxrelief.com%2Fthankyou.php%3Fdebt%3D10000%26leadid%3D5BC161D0%26affid%3D%23affid%23%26subid%3D%23subid%23%26s1%3D%23s1%23"><input type="hidden" name="ClientGuid" value="00E75083-7003-4C4A-BCE5-91B21D0AEA7D"><input type="hidden" name="VendorGuid" value="01ef1cab-f62a-4067-92c3-cd6edece8bd2"><input type="hidden" name="LocationCode" value="CRSS2373-110"><input type="hidden" name="SubmitType" value="TALK"><input type="hidden" name="aff_sub" value="+18449950574">
                             </form>
                         </div>
                     </div>
