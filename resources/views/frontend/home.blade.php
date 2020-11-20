@@ -8,7 +8,7 @@
         <div data-aos="fade-up" data-aos-delay="800">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 text-center p-0 mt-3 mb-2">
+                    <div class="col-sm-12 text-center p-0 mt-0 mt-md-3 mb-2">
                         <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                             @include('partials.frontend.lead_form')
                         </div>
@@ -21,84 +21,13 @@
 
 @section('main')
     <main id="main">
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
-            <div class="container-fluid">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>What clients say <br/>about Alleviate Tax?</h2>
-                </div>
-
-
-                <div class="owl-carousel" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-item">
-                            <div class="cimage">
-                                <img src="/img/c3.gif" class="testimonial-img" alt="">
-                            </div>
-                            <h3>Timmy M.</h3>
-                            <h4>Manager</h4>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <p>
-                                I was struggling to pay money back to the IRS because a tax firm told me I wasn't supposed to file when I retired. Alleviate Tax saw fit to solve the problem. May God forever continue to bless you and your firm.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-item">
-                            <div class="cimage">
-                                <img src="/img/c1.gif" class="testimonial-img" alt="">
-                            </div>
-                            <h3>Mark W.</h3>
-                            <h4>Sales Manager</h4>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <p>
-                                I never had to deal with this until last year. I found Alleviate Tax online and with only a min 15 min call they were able to collect my information and within weeks my tax problem was fixed. Great staff, very affordable.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-item">
-                            <div class="cimage">
-                                <img src="/img/c2.gif" class="testimonial-img" alt="">
-                            </div>
-                            <h3>Amanda E.</h3>
-                            <h4>Teacher</h4>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <i class="fa fa-star checkedstar" aria-hidden="true"></i>
-                            <p>
-                                I was devastated when my wages were getting garnished. I had no idea it could be stopped. Called BTS and within a week they put a stop to it. Thank you for saving me.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-        </section><!-- End Testimonials Section -->
-
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about">
             <div class="container">
                 <div class="row content">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
                         <div class="section-title" data-aos="fade-up">
-                            <h2>Why Alleviate Tax is unique?</h2>
+                            <h2>Get to Know Alleviate Tax</h2>
                         </div>
                         <p>
                             At Alleviate Tax Solutions we've been helping thousands of citizens with their tax problems. We have a solution for all your tax problems, from wage garnishment to bank levies and even completing your back taxes, we have tax professionals that can help you!</p>
@@ -143,6 +72,76 @@
 @endsection
 
 @section('counts_section')
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+        <div class="container-fluid">
+            <div class="section-title" data-aos="fade-up">
+                <h2>What clients say <br/>about Alleviate Tax?</h2>
+            </div>
+
+
+            <div class="owl-carousel" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <div class="cimage">
+                            <img src="/img/c3.gif" class="testimonial-img" alt="">
+                        </div>
+                        <h3>Bill D</h3>
+                        <h4>(WA)</h4>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <p>
+                            If you are trying to find the right tax help or advise this is the place to handle your tax problems or concerns. They are very up on current tax laws and regulations, and always professional. Plus the fee they charge is very fair!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <div class="cimage">
+                            <img src="/img/c1.gif" class="testimonial-img" alt="">
+                        </div>
+                        <h3>Lloyd P</h3>
+                        <h4>(CA)</h4>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <p>
+                            I started my experience last year with Matthew J from Alleviate tax. He is the real reason why I chose Alleviate Tax over 3 other companies to help me with this horrible problem. He is very professional, persistent and kept me informed each step of the way. Your company and those of us that get to work with him are so very fortunate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <div class="cimage">
+                            <img src="/img/c2.gif" class="testimonial-img" alt="">
+                        </div>
+                        <h3>Moe M.</h3>
+                        <h4>(NY)</h4>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <i class="fa fa-star checkedstar" aria-hidden="true"></i>
+                        <p>
+                            The folks at Alleviate tax relief were so awesome, I talked with John the guy was so patient and understanding he stayed with me on the phone 3 different times and spent more then 30 minutes each time explaining things to me ,calming me down reassuring me that he will do his very best for me and that he has alot of experience with the IRS...they were very comforting and polite...I would recommend Alleviate to anyone from any state…they are the best...
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
 
@@ -150,9 +149,11 @@
             <div class="container">
 
                 <div class="row">
-
                     <div class="col-xl-12 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
                         <div class="content d-flex flex-column justify-content-center">
+                            <div class="section-title">
+                                <h2>Why You Shouldn’t Ignore Your Tax Debt</h2>
+                            </div>
                             <div class="row">
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box">

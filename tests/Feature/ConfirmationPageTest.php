@@ -18,6 +18,6 @@ class ConfirmationPageTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertSee('Thank you for submitting your information to us.');
-        $response->assertSee('Please keep your phone nearby, an experienced tax debt specialist from Benefit Tax Solutions will be reaching out to you shortly, or once business hours resume.');
+        $response->assertSee('Someone from Alleviate Tax will be calling you shortly');
     }
 }

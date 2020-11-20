@@ -18,15 +18,19 @@
                                 <br>
                                 <fieldset id="first_slide" class="field_set">
                                     <div class="form-card success">
-                                        <h2 class="text-center"><strong>Thank you for submitting your information to us.</strong></h2>
+                                        <h2 class="text-center px-0">
+                                            <strong>Thank you for submitting your information to us.</strong>
+                                        </h2>
                                         <br>
                                         <div class="row justify-content-center">
                                             <i class="fa fa-check"></i>
                                         </div>
-                                        <br><br>
+                                        <br>
                                         <div class="row justify-content-center">
                                             <div class="col-12 text-center">
-                                                <h5 class="purple-text text-center">Please keep your phone nearby, an experienced tax debt specialist from Alleviate Tax will be reaching out to you shortly, or once business hours resume.</h5>
+                                                <h5 class="purple-text text-center">Someone from Alleviate Tax will be calling you shortly, or when business hours resume. If you would rather call or text now, call
+                                                    <a href="tel:+18002353333" target="_blank" class="text-info">18002353333</a> (we’re open Monday – Friday from 8AM – 4:30PM PST) or text
+                                                    <strong>“taxhelp”</strong> to <strong>12345</strong></h5>
                                             </div>
                                         </div>
                                     </div>

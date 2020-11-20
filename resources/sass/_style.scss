@@ -5,7 +5,7 @@ body {
     color: #212121;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -17,19 +17,20 @@ a:hover {
     color: #5faee3;
     text-decoration: none;
 }
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #696969!important;
-    opacity:1!important;
+    color: #696969 !important;
+    opacity: 1 !important;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #696969!important;
-    opacity:1!important;
+    color: #696969 !important;
+    opacity: 1 !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #696969!important;
-    opacity:1!important;
+    color: #696969 !important;
+    opacity: 1 !important;
 }
 
 /*--------------------------------------------------------------
@@ -128,14 +129,17 @@ a:hover {
     color: $brand-primary-color;
     text-decoration: none;
 }
+
 .nav-menu .couter li {
     display: block;
     float: none !important;
     text-align: right;
 }
+
 .nav-menu .couter li a {
     padding: 0;
 }
+
 .nav-menu .call a {
     color: #9b9b9b;
     border-radius: 50px;
@@ -144,14 +148,17 @@ a:hover {
     font-weight: bold;
     font-size: 16px;
 }
+
 .nav-menu .calltitle {
     color: #6b6b6b;
     font-weight: 500;
 }
+
 .nav-menu .call i {
     color: #d8b65b;
     font-size: 17px;
 }
+
 .nav-menu .call a:hover {
     color: #9b9b9b;
 }
@@ -220,15 +227,17 @@ a:hover {
     position: absolute;
     right: 15px;
 }
+
 .steps-outer {
     padding: 0 0 30px;
 }
+
 .chkbox {
     position: relative;
     padding-left: 35px;
     cursor: pointer;
     font-size: 17px;
-    color:#696969;
+    color: #696969;
     line-height: 17px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -283,6 +292,7 @@ a:hover {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .chkbox select {
     border: 0px none;
     border-bottom: 1px solid #acacac;
@@ -291,6 +301,7 @@ a:hover {
     top: -4px;
     width: 100%;
 }
+
 #msform {
     text-align: center;
     position: relative;
@@ -331,14 +342,15 @@ a:hover {
     letter-spacing: 1px;
     font-weight: 500;
 }
-#msform #range_slide
-{
-    padding:0px !important
+
+#msform #range_slide {
+    padding: 0px !important
 }
-.range-slider #slider
-{
-    display:none;
+
+.range-slider #slider {
+    display: none;
 }
+
 #msform input:focus,
 #msform textarea:focus {
     -moz-box-shadow: none;
@@ -351,15 +363,17 @@ a:hover {
 #fifth_slide input:focus,
 #fifth_slide textarea:focus {
     outline-width: 0;
-    box-shadow: 0 0 0 0.2rem  $brand-primary-color!important;
+    box-shadow: 0 0 0 0.2rem $brand-primary-color !important;
 }
 
 #sixth_slide h5 {
     line-height: 30px;
 }
+
 .icofont-navigation-menu {
     display: none;
 }
+
 #msform .action-button {
     width: auto;
     background: #ff6000;
@@ -396,7 +410,6 @@ a:hover {
 #msform .action-button-previous:focus {
     background-color: #000000
 }
-
 
 
 #msformx .action-button {
@@ -437,51 +450,52 @@ a:hover {
 }
 
 
-
-
-
-
-
-
 .secure, .offer {
     color: #626262;
     font-size: 14px;
 }
-.offer span{
-    font-weight:500;
+
+.offer span {
+    font-weight: 500;
 }
-.secure i{
+
+.secure i {
     color: #000;
     font-size: 17px;
     float: left;
     margin-right: 12px;
 }
+
 .offer .checkmark {
     left: 11px;
 }
+
 .terms {
     color: #9f9f9f;
     font-size: 13px;
     padding: 12px 0 0;
     margin: 0;
 }
+
 .box .row {
     margin: auto;
     padding: 0 50px;
 }
+
 .box2 .row {
     display: inherit;
     margin: auto;
     text-align: center;
     padding: 0 220px;
 }
+
 .card {
     z-index: 0;
     border: none;
     position: relative;
     background: rgba(255, 255, 255, 0.6);
-    padding: 20px!important;
-    border-radius:0;
+    padding: 20px !important;
+    border-radius: 0;
     margin-bottom: 30px !important;
 }
 
@@ -593,6 +607,7 @@ a:hover {
 .progress-bar {
     background-color: #31e29f;
 }
+
 @-webkit-keyframes progress-bar-stripes2 {
     from {
         background-position: 40px 0;
@@ -601,6 +616,7 @@ a:hover {
         background-position: 0 0;
     }
 }
+
 @-o-keyframes progress-bar-stripes2 {
     from {
         background-position: 40px 0;
@@ -609,6 +625,7 @@ a:hover {
         background-position: 0 0;
     }
 }
+
 @keyframes progress-bar-stripes2 {
     from {
         background-position: 40px 0;
@@ -617,14 +634,16 @@ a:hover {
         background-position: 0 0;
     }
 }
+
 .progress2 {
     height: 20px;
     margin-bottom: 20px;
     overflow: hidden;
     background-color: #f5f5f5;
     border-radius: 4px;
-    height:5px;
+    height: 5px;
 }
+
 .progress-bar2 {
     float: left;
     width: 0;
@@ -638,52 +657,63 @@ a:hover {
     -o-transition: width .6s ease;
     transition: width .6s ease;
 }
+
 .progress-striped .progress-bar,
 .progress-bar-striped {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     -webkit-background-size: 40px 40px;
     background-size: 40px 40px;
 }
+
 .progress.active .progress-bar,
 .progress-bar.active {
     -webkit-animation: progress-bar-stripes2 2s linear infinite;
     -o-animation: progress-bar-stripes2 2s linear infinite;
     animation: progress-bar-stripes2 2s linear infinite;
 }
+
 .progress-bar-success {
     background-color: #5cb85c;
 }
+
 .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
+
 .progress-bar-info {
     background-color: #5bc0de;
 }
+
 .progress-striped .progress-bar-info {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
+
 .progress-bar-warning {
     background-color: #f0ad4e;
 }
+
 .progress-striped2 .progress-bar-warning2 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
+
 .progress-bar-danger2 {
     background-color: #d9534f;
 }
+
 .progress-striped2 .progress-bar-danger2 {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
+
 audio,
 canvas,
 progress,
@@ -691,9 +721,11 @@ video {
     display: inline-block;
     vertical-align: baseline;
 }
+
 .progress2:last-child {
     margin: 0;
 }
+
 .progress2 .progress-bar2 {
     background-color: #5c4084;
     position: relative;
@@ -705,17 +737,19 @@ video {
     margin-bottom: 37px;
     height: 5px;
 }
+
 .progress2 .progress-bar2 {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$brand-primary-color+0,3ce790+100 */
     background: $brand-primary-color; /* Old browsers */
     background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%', GradientType=1); /* IE6-9 */
     position: relative;
     border-radius: 4px;
     height: 5px;
 }
+
 .progress2 .progress-bar2 span {
     position: absolute;
     top: -20px;
@@ -727,20 +761,25 @@ video {
     color: #000;
     font-weight: 700;
 }
+
 .demo h1 {
     font-size: 16px;
     font-weight: 700;
 }
+
 .fit-image {
     width: 100%;
     object-fit: cover
 }
+
 .progre_s {
     padding: 0 150px;
 }
+
 .owl-buttons {
     display: none;
 }
+
 .owl-carousel:hover .owl-buttons {
     display: block;
 }
@@ -759,10 +798,12 @@ video {
     position: absolute;
     top: 0;
 }
+
 .owl-theme .owl-controls .owl-buttons .owl-prev {
     left: 0;
     padding-left: 20px;
 }
+
 .owl-theme .owl-controls .owl-buttons .owl-next {
     right: 0;
     padding-right: 20px;
@@ -893,14 +934,16 @@ video {
 .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
 }
-.wrap{
+
+.wrap {
     margin-top: 70px;
     padding: 0;
     background-image: url(/img/ptrn.png);
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -923,8 +966,8 @@ video {
     color: #212121;
 }
 
-#hero h1 span{
-    color:$brand-primary-color;
+#hero h1 span {
+    color: $brand-primary-color;
 }
 
 #hero h2 {
@@ -933,8 +976,8 @@ video {
     font-size: 16px;
 }
 
-#hero h2 span{
-    font-weight:700;
+#hero h2 span {
+    font-weight: 700;
 }
 
 #hero .btn-get-started {
@@ -964,20 +1007,24 @@ video {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-.mob{
-    display:none;
+.mob {
+    display: none;
 }
+
 .offer p {
     padding-left: 4px;
 }
+
 .list {
     padding: 0;
 }
+
 .list li {
     text-transform: capitalize;
     list-style: none;
     padding: 0 0 10px;
 }
+
 .list li i {
     color: #fff;
     background: $brand-primary-color;
@@ -987,6 +1034,7 @@ video {
     border-radius: 100%;
     font-size: 12px;
 }
+
 input#others {
     position: relative;
     opacity: 1;
@@ -995,6 +1043,7 @@ input#others {
     top: -7px;
     cursor: auto;
 }
+
 @media (max-width: 1366px) {
     .nav-menu .drop-down .drop-down ul {
         left: -90%;
@@ -1006,30 +1055,32 @@ input#others {
         content: "\ea9d";
     }
 }
+
 @media (max-width: 1170px) {
-    .box .row{
+    .box .row {
         padding: 0;
     }
-    .box .chkbox{
-        padding-right:0;
+    .box .chkbox {
+        padding-right: 0;
     }
-    .box2 .row{
-        padding: 0 85px!important;
+    .box2 .row {
+        padding: 0 85px !important;
     }
-    .box2 .chkbox{
-        width:50%;
+    .box2 .chkbox {
+        width: 50%;
     }
-    .about .section-title h2{
-        padding: 100px 0 0 0!important;
+    .about .section-title h2 {
+        padding: 100px 0 0 0 !important;
     }
-    .demo{
-        margin: 50px 0 0!important;
+    .demo {
+        margin: 50px 0 0 !important;
     }
-    #footer i{
-        font-size: 20px!important;
-        width: 39px!important;
+    #footer i {
+        font-size: 20px !important;
+        width: 39px !important;
     }
 }
+
 @media (max-width: 1024px) {
     .counts .image {
         text-align: center;
@@ -1038,11 +1089,13 @@ input#others {
         max-width: 70%;
     }
 }
+
 @media (max-width: 1000px) {
     .about .section-title h2 {
         padding: 70px 0 0 0;
     }
 }
+
 @media (max-width: 992px) {
     .portfolio-details .portfolio-info {
         padding-top: 20px;
@@ -1057,16 +1110,17 @@ input#others {
         padding-right: 0;
         padding-left: 35px;
     }
-    .box2 .row{
-        padding: 0 85px!important;
+    .box2 .row {
+        padding: 0 85px !important;
     }
-    .box2 .chkbox{
+    .box2 .chkbox {
         display: inline;
     }
     .progre_s {
         padding: 0;
     }
 }
+
 @media (max-width: 991px) {
     #hero .animated {
         -webkit-animation: none;
@@ -1084,12 +1138,12 @@ input#others {
     .about .section-title h2 {
         padding: 0;
     }
-    .intro{
-        padding: 70px 0 0!important;
+    .intro {
+        padding: 70px 0 0 !important;
     }
     #footer .col-lg-2 {
         text-align: center;
-        margin:20px 0 0;
+        margin: 20px 0 0;
     }
 }
 
@@ -1119,7 +1173,7 @@ input#others {
     #hero .hero-img img {
         width: 70%;
     }
-    .card{
+    .card {
         padding: 20px !important;
     }
 
@@ -1130,16 +1184,16 @@ input#others {
         font-size: 18px;
         padding: 0 20px;
     }
-    .progress{
+    .progress {
         margin-bottom: 0;
     }
-    #msform fieldset{
+    #msform fieldset {
         padding-bottom: 0;
     }
-    #msform{
+    #msform {
         padding: 35px 25px 25px;
     }
-    #progress_show{
+    #progress_show {
         top: -27px;
     }
     .mob .count-box img {
@@ -1151,73 +1205,73 @@ input#others {
     #msform {
         padding: 12px 25px 25px;
     }
-    .box .row{
+    .box .row {
         padding: 0;
     }
-    #hero h2{
+    #hero h2 {
         margin-bottom: 0;
     }
-    #msform .action-button{
+    #msform .action-button {
         width: 100%;
     }
     .progre_s {
         padding: 0;
     }
-    #msform input, #msform textarea{
+    #msform input, #msform textarea {
         margin-bottom: 0;
     }
-    .mob{
-        display:block!important;
+    .mob {
+        display: block !important;
     }
     .mob .count-box span, .mob .count-box p {
-        margin:0!important
+        margin: 0 !important
     }
-    .desktop{
-        display:none;
+    .desktop {
+        display: none;
     }
-    .wrap{
+    .wrap {
         background-image: url(/img/mob-slider-bg.jpg);
         background-size: contain;
         background-position: bottom;
     }
     .testimonials .testimonial-item .testimonial-img {
-        width: 70px!important;
+        width: 70px !important;
     }
     .testimonials .testimonial-item {
-        padding: 60px 60px 0!important;
+        padding: 60px 60px 0 !important;
     }
     .section-title h2 {
-        font-size: 30px!important;
+        font-size: 30px !important;
     }
     .about .section-title h2 {
-        padding: 0 95px!important;
-        text-align: center!important;
+        padding: 0 95px !important;
+        text-align: center !important;
     }
     .about {
-        background-image: url('/img/about-mob-bg.jpg')!important;
+        background-image: url('/img/about-mob-bg.jpg') !important;
         background-size: cover !important;
     }
     .about img {
         display: none;
     }
     .about .col-lg-6 {
-        padding-right: 15px!important;
+        padding-right: 15px !important;
     }
-    .demo{
-        padding: 30px!important;
-        margin: 30px 0 20px!important;
+    .demo {
+        padding: 30px !important;
+        margin: 30px 0 20px !important;
     }
-    .intro{
-        padding: 70px 0 0!important;
+    .intro {
+        padding: 70px 0 0 !important;
     }
-    .fs-title{
+    .fs-title {
         line-height: 25px;
     }
-    .progress{
+    .progress {
         margin: 7px 0 0;
     }
-    .slider-wrapper{
-        margin: 30px auto 60px!important;
+    .slider-wrapper {
+        margin: 30px auto 60px !important;
     }
     #footer .col-lg-2 {
         width: 100%;
@@ -1258,10 +1312,10 @@ input#others {
         -webkit-order: 1;
         order: 1;
     }
-    #footer i{
-        width: 33px!important;
-        height: 33px!important;
-        font-size: 16px!important;
+    #footer i {
+        width: 33px !important;
+        height: 33px !important;
+        font-size: 16px !important;
         line-height: 13px;
     }
     [data-aos-delay] {
@@ -1276,14 +1330,14 @@ input#others {
     .breadcrumbs ol li {
         display: inline-block;
     }
-    #msform .action-button{
+    #msform .action-button {
         margin: 0;
     }
 }
 
 @media (max-width: 767px) {
     #header .logo img {
-        height: 25px!important;
+        height: 25px !important;
     }
     .topicon {
         display: none;
@@ -1299,8 +1353,8 @@ input#others {
         position: static;
         left: auto;
     }
-    .mob{
-        display:none;
+    .mob {
+        display: none;
     }
     #hero {
         margin-top: 0;
@@ -1322,40 +1376,43 @@ input#others {
         display: none !important;
     }
 }
+
 @media (max-width: 472px) {
-    #hero h1{
+    #hero h1 {
         padding: 0 10px;
         font-size: 27px;
         line-height: 30px;
     }
 }
+
 @media (max-width: 430px) {
     .box2 .row {
         padding: 0 !important;
     }
-    #msform .action-button{
+    #msform .action-button {
         padding: 20px 0;
     }
-    #header .logo img{
+    #header .logo img {
         height: 30px;
     }
-    .intro img{
+    .intro img {
         max-width: 300px;
     }
 }
 
 @media (max-width: 380px) {
-    .testimonials .testimonial-item{
-        margin: 30px 0!important;
-        min-height: 400px!important;
+    .testimonials .testimonial-item {
+        margin: 30px 0 !important;
+        min-height: 400px !important;
     }
 }
+
 @media (max-width: 360px) {
     .offer span {
         padding-left: 5px;
     }
-    #msform .action-button{
-        margin: 0!important;
+    #msform .action-button {
+        margin: 0 !important;
     }
     header .container {
         padding: 0 5px;
@@ -1364,12 +1421,13 @@ input#others {
         height: 30px !important;
     }
 }
+
 @media (max-width: 320px) {
-    .testimonials .testimonial-item{
+    .testimonials .testimonial-item {
         margin: 30px 0;
         min-height: 460px;
     }
-    .nav-menu .call a{
+    .nav-menu .call a {
         margin: 0;
     }
     #counts {
@@ -1462,26 +1520,29 @@ section {
 }
 
 
-
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about{
+.about {
     background: url('/img/ptrn2.jpg');
     padding-bottom: 0;
     background-size: cover;
 }
+
 .about .section-title h2 {
     text-align: left;
     padding: 137px 0 0 0;
 }
+
 .about .col-lg-6 {
     padding-right: 0;
 }
+
 .about p {
     color: #000;
     font-weight: 500;
 }
+
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
@@ -1536,15 +1597,23 @@ section {
     color: #fff;
     text-decoration: none;
 }
+
 .demo {
     background: #fff;
     padding: 67px;
     border-radius: 25px;
     margin: 70px 0 0;
 }
+
 .success strong {
-    font-size: 30px;
+    @media(min-width: 774px){
+        font-size: 30px;
+    }
+    @media(max-width: 773px){
+        font-size: 20px;
+    }
 }
+
 .form-card .fa.fa-check {
     color: #fff;
     font-size: 30px;
@@ -1552,6 +1621,7 @@ section {
     padding: 12px;
     border-radius: 100%;
 }
+
 .progress-bar {
     float: left;
     width: 0;
@@ -1565,6 +1635,7 @@ section {
     -o-transition: width .6s ease;
     transition: width .6s ease;
 }
+
 .progress-bar_new {
     float: left;
     width: 0;
@@ -1578,38 +1649,43 @@ section {
     -o-transition: width .6s ease;
     transition: width .6s ease;
 }
+
 .progress {
     overflow: visible;
     height: 5px;
 }
+
 .progress {
     overflow: hidden;
     background-color: #f5f5f5;
     border-radius: 4px;
 }
+
 .progress .progress-bar {
     background-color: #2bdfa8;
     position: relative;
     border-radius: 4px;
 }
+
 .progress .progress-bar_new {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$brand-primary-color+0,3ce790+100 */
     background: $brand-primary-color; /* Old browsers */
     background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%', GradientType=1); /* IE6-9 */
     position: relative;
     border-radius: 4px;
     height: 5px;
 }
+
 .progress .progress-bar span {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/$brand-primary-color+0,3ce790+100 */
     background: $brand-primary-color; /* Old browsers */
     background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%', GradientType=1); /* IE6-9 */
     position: absolute;
     bottom: -20px;
     font-size: 10px;
@@ -1618,6 +1694,7 @@ section {
     right: -1.4em;
     border-radius: 2px;
 }
+
 .progress .progress-bar span:after {
     bottom: 100%;
     left: 50%;
@@ -1632,11 +1709,13 @@ section {
     border-width: 5px;
     margin-left: -5px;
 }
+
 .progre_s span {
     color: $brand-primary-color;
     font-weight: 500;
     font-size: 16px;
 }
+
 .slider-wrapper {
     max-width: 800px;
     display: inherit;
@@ -1657,6 +1736,7 @@ section {
     position: absolute;
     transform: translateY(-1px);
 }
+
 .ui-slider-range:after {
     content: '';
     width: 100%;
@@ -1687,9 +1767,11 @@ section {
     box-shadow: inset -2px -2px 6px 2px rgba(0, 0, 0, 0.1);
     transition: width 0.1s;
 }
+
 .ui-slider-handle:focus {
     outline: none;
 }
+
 .ui-slider-handle:active {
     cursor: grabbing;
     cursor: -moz-grabbing;
@@ -1730,6 +1812,7 @@ section {
     padding-left: 5px;
     width: 100%;
 }
+
 .range-value sup {
     top: 0;
     font-size: 16px;
@@ -1739,6 +1822,7 @@ section {
     width: 1px;
     display: inline-block;
 }
+
 .range-divider:after {
     width: 1px;
     height: 100%;
@@ -1761,6 +1845,7 @@ section {
     line-height: 15px;
     transition: right 0.2s;
 }
+
 .range-alert.active {
     right: -15px;
 }
@@ -1773,6 +1858,7 @@ section {
     color: #a6a6a6;
     letter-spacing: 0.05em;
 }
+
 .marker:after {
     content: '';
     width: 1px;
@@ -1789,55 +1875,69 @@ section {
     background: #9b9b9b;
     height: 2px;
 }
+
 .ui-slider-handle {
-    background: $brand-primary-color!important;
-    border: 0px none!important;
-    border-radius: 100%!important;
-    top: -10px!important;
+    background: $brand-primary-color !important;
+    border: 0px none !important;
+    border-radius: 100% !important;
+    top: -10px !important;
 }
+
 .breadcrumb-outer {
     padding-bottom: 30px;
     margin-top: 20px;
 }
+
 .newbread {
     background: $brand-primary-color;
 }
-.breadcrumb{
+
+.breadcrumb {
     background: transparent;
 }
-.breadcrumb-item a, .breadcrumb-item+.breadcrumb-item::before, .breadcrumb-item.active{
+
+.breadcrumb-item a, .breadcrumb-item + .breadcrumb-item::before, .breadcrumb-item.active {
     color: #fff;
 }
+
 .innerpage {
     padding-top: 0;
 }
+
 .offer p {
     padding-left: 4px;
 }
+
 button.close_btn {
     background: transparent;
     border: 0px none;
     font-size: 23px;
 }
-.modal{
+
+.modal {
     background: rgba(0, 0, 0, 0.7);
 }
+
 #myModal p {
     font-weight: 500;
 }
-.left-val, .right-val{
+
+.left-val, .right-val {
     padding-top: 16px;
     font-size: 14px;
     color: #a6a6a6;
     letter-spacing: 0.05em;
 }
+
 .left-val {
     float: left;
 }
-.right-val{
+
+.right-val {
     float: right;
 }
-.price-picker{
+
+.price-picker {
     padding: 8px 0;
     text-align: center;
     display: inline-block;
@@ -1867,6 +1967,7 @@ button.close_btn {
 .marker-100 {
     right: 0;
 }
+
 .marker-100:after {
     display: none;
 }
@@ -1894,6 +1995,7 @@ button.close_btn {
     transform-origin: 50% 50%;
     transition: top 0.15s;
 }
+
 .gear-large:after {
     position: absolute;
     content: '';
@@ -1905,14 +2007,17 @@ button.close_btn {
     background: #e8e8e8;
     border-radius: 100px;
 }
+
 .gear-large:nth-child(2) {
     background: #d2d2d2;
     left: auto;
     right: 18px;
 }
+
 .gear-large:nth-child(2) .gear-tooth {
     background: #d2d2d2;
 }
+
 .gear-large.active {
     top: 4px;
 }
@@ -1928,15 +2033,19 @@ button.close_btn {
     background: #d2d2d2;
     border-radius: 2px;
 }
+
 .gear-tooth:nth-child(2) {
     transform: rotate(90deg) translate(-50%, -50%);
 }
+
 .gear-tooth:nth-child(3) {
     transform: rotate(45deg) translate(-50%, -50%);
 }
+
 .gear-tooth:nth-child(4) {
     transform: rotate(-45deg) translate(-50%, -50%);
 }
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1963,7 +2072,7 @@ button.close_btn {
 .counts .content .count-box img {
     display: block;
     float: left;
-    box-shadow: 0 12px 6px -6px rgba(29,41,116,.2);
+    box-shadow: 0 12px 6px -6px rgba(29, 41, 116, .2);
     margin-right: 37px;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -2000,32 +2109,40 @@ button.close_btn {
     color: #6f6f6f;
 }
 
-.intro{
-    text-align:center;
+.intro {
+    text-align: center;
     background-image: url('/img/footer-bg.jpg');
     background-size: cover;
     padding: 70px 0;
     background-position: 50%;
 
 }
+
 .intro img {
     margin: 0 0 30px;
 }
+
 .intro p {
     font-size: 12px;
     color: #fff;
 }
+
 .footer-links {
     padding: 0 0 25px;
 }
+
 .footer-links a {
     color: #fff;
 }
+
 .footer-links a::after {
     content: 'I';
     padding: 0 5px;
 }
-.footer-links :last-child a:after { display:none }
+
+.footer-links :last-child a:after {
+    display: none
+}
 
 /*--------------------------------------------------------------
 # Services
@@ -2248,15 +2365,18 @@ button.close_btn {
     color: #e1f0fa;
     font-size: 26px;
 }
+
 .cimage {
     border: 12px solid #f0f3f3;
     float: left;
     border-radius: 100%;
     margin-right: 10px;
 }
+
 .checkedstar {
     color: #ffb400;
 }
+
 .testimonials .testimonial-item .quote-icon-left {
     display: inline-block;
     left: -5px;
@@ -2273,7 +2393,7 @@ button.close_btn {
 .testimonials .testimonial-item p {
     margin: 15px auto 15px auto;
     float: left;
-    color:#212121;
+    color: #212121;
     font-size: 15px;
     font-weight: 500;
 }
@@ -2295,7 +2415,6 @@ button.close_btn {
 .testimonials .owl-dot.active {
     background-color: $brand-complementary-color !important;
 }
-
 
 
 /*--------------------------------------------------------------
@@ -2873,6 +2992,7 @@ button.close_btn {
     color: #fff;
     font-size: 16px;
 }
+
 #footer i {
     color: $brand-primary-color;
     background: #fff;
@@ -2882,6 +3002,7 @@ button.close_btn {
     text-align: center;
     border-radius: 100%;
 }
+
 #footer .credits {
     font-size: 13px;
     padding-top: 5px;
@@ -2900,33 +3021,37 @@ button.close_btn {
 #footer .footer-links a:hover {
     color: $brand-primary-color;
 }
-.progre_s span   {
-    margin-left:20%;
+
+.progre_s span {
+    margin-left: 20%;
 }
-.prog_success{
+
+.prog_success {
     background: $brand-primary-color !important;
     background: -moz-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%) !important;
-    background: -webkit-linear-gradient(left, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%) !important;
-    background: linear-gradient(to right, $brand-primary-color 0%,lighten($brand-primary-color, 27%) 100%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%',GradientType=1 ) !important;
+    background: -webkit-linear-gradient(left, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%) !important;
+    background: linear-gradient(to right, $brand-primary-color 0%, lighten($brand-primary-color, 27%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$brand-primary-color', endColorstr='lighten($brand-primary-color, 27%', GradientType=1) !important;
 }
-.owl-carousel div{
+
+.owl-carousel div {
     //width:300px !important;//Owl width issue
 }
+
 #message_validate {
     color: #ff6000;
     font-weight: 700;
 }
-#range_slide
-{
-    padding:0px !important
+
+#range_slide {
+    padding: 0px !important
 }
 
-.text-brand-primary{
+.text-brand-primary {
     color: $brand-primary-color;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     width: auto;
     background: #ff6000;
     font-weight: bold;
@@ -2941,20 +3066,34 @@ button[type="submit"]{
 }
 
 
-span.myphonenumber{
-    @media(max-width: 450px){
+span.myphonenumber {
+    @media(max-width: 450px) {
         display: none;
     }
 }
 
 
-#header{
-    @media(max-width: 450px){
+#header {
+    @media(max-width: 450px) {
         padding-right: 2.7vw;
     }
 }
 
-.button-label:not(.btn-warning){
-    background: lighten(#6c757d, 15.3%);
-    border-color: lighten(#545b62, 15.3%)
+.button-label:not(.btn-warning) {
+    @media(min-width: 774px) {
+        background: lighten(#6c757d, 18%);
+        border-color: lighten(#545b62, 18%);
+    }
+    @media(max-width: 773px) {
+        background: lighten(#6c757d, 21.6%);
+        border-color: lighten(#545b62, 21.6%);
+    }
+}
+
+.card {
+    word-wrap: normal;
+}
+
+#msform .action-button {
+    border-radius: 5px;
 }

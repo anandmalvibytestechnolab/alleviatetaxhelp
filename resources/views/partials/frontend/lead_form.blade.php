@@ -14,7 +14,7 @@
     {{--<input type="hidden" name="subid" value="" id="subid" />--}}
     {{--<input type="hidden" name="neustar" value="" id="neustar" />--}}
     {{--<input type="hidden" name="referrer" value="" id="referrer" />--}}
-    <div class='progre_s' style='text-align:left'>
+    <div class='progre_s' style='text-align:left; display: none'>
         <span style='margin-left:17%'>20%</span>
         <div class="progress" id='progress_tab'>
             <div class="progress-bar_new" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
@@ -30,7 +30,7 @@
         <div class="form-card">
             <div class="row">
                 <div class="col-12 steps-outer">
-                    <h3 class="steps">Step 1:</h3>
+{{--                    <h3 class="steps">Step 1:</h3>--}}
                     {{--                    <h3 class="fs-title">Which of the following caused your tax debt?</h3>--}}
                     <h3 class="fs-title">Was one of the following part of what caused your tax debt?</h3>
                     <span class="apply">( select all that apply )</span>
@@ -68,28 +68,28 @@
             <div class="box">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label">Unfiled Taxes
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Unfiled Taxes
                             <input type="checkbox" name='current_sit' value="Unfiled Taxes" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label">Owe More Than Expected
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Owe More Than Expected
                             <input type="checkbox" name='current_sit' value="Owe More Than Expected" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label">Business Tax Issues
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Business Tax Issues
                             <input type="checkbox" name='current_sit' value="Business Tax Issues" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label">Self-Employed
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Self-Employed
                             <input type="checkbox" name='current_sit' value="self Employed" class="d-none">
                         </label>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label">Others
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Others
                             <input type="checkbox" name='current_sit' value="self Employed" class="d-none" data-display-current-situation-text-field>
                         </label>
                         <input type="checkbox" name='current_sit' value='Others' id="other" class="d-none">
@@ -105,7 +105,7 @@
             <div class="row">
 
                 <div class="col-12 steps-outer">
-                    <h3 class="steps">Step 2:</h3>
+{{--                    <h3 class="steps">Step 2:</h3>--}}
 
                     {{--                    <h3 class="fs-title">How Much In Unpaid Taxes Do You Owe?</h3>--}}
                     <h3 class="fs-title">Approximately, how much does the IRS claim you owe?</h3>
@@ -113,12 +113,12 @@
                 </div>
             </div>
 
-            <p class="price-picker">$500</p>
+            <p class="price-picker">$10000</p>
 
 
-            <input type="hidden" name='tax_debt' id="price-picker_s" value="500">
+            <input type="hidden" name='tax_debt' id="price-picker_s" value="10000">
             <div class="range-slider">
-                <input type="range" class="custom-range" min="0" max="100000" step="500" id="customRange2" value="500">
+                <input type="range" class="custom-range" min="0" max="100000" step="500" id="customRange2" value="10000">
                 <!-------div id="slider"></div>
                 <input type="hidden" class="taxval"------>
                 <div class="range-value">
@@ -136,19 +136,19 @@
             <div class="row">
 
                 <div class="col-12 steps-outer">
-                    <h3 class="steps">Step 3:</h3>
+{{--                    <h3 class="steps">Step 3:</h3>--}}
                     <h3 class="fs-title">Are you enrolled in any IRS debt forgiveness program?</h3>
                 </div>
             </div>
             <div class="box2">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-6 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label-radio">Yes
+                    <div class="col-12 col-md-6 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2-radio">Yes
                             <input type="radio" name='enrolled_irs' class="d-none" value='Yes' id="trda">
                         </label>
                     </div>
-                    <div class="col-6 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label-radio">No
+                    <div class="col-12 col-md-6 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2-radio">No
                             <input type="radio" name='enrolled_irs' class="d-none" value='No' id="trdb">
                         </label>
                     </div>
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="80" data-value='forth_slide' data-last='third_slide' value="Submit"/>
+        <input type="button" id='btn' name="next" class="next_s action-button" data-id="80" data-value='forth_slide' data-last='third_slide' value="Next"/>
     </fieldset>
 {{--    <fieldset id='forth_slide' class='field_set'>--}}
 {{--        <div class="form-card">--}}
@@ -196,7 +196,7 @@
             <div class="row">
 
                 <div class="col-12 steps-outer">
-                    <h3 class="steps">Step 5:</h3>
+{{--                    <h3 class="steps">Step 5:</h3>--}}
 
                     <h4 class="fs-title">Please enter your contact information to get started on your <strong class="text-brand-primary">free consultation</strong>.</h4>
 
@@ -272,7 +272,7 @@
                     </label>
 
 
-                    <label class="col-sm-6"><input type="text" name="zip_code" id='Zip' placeholder="Zip Code*"/></label>
+{{--                    <label class="col-sm-6"><input type="text" name="zip_code" id='Zip' placeholder="Zip Code*"/></label>--}}
 
                     <label class="col-sm-12 secure"> <i class="fa fa-lock"></i> Your email is safe and secure</label>
                     <label class="chkbox col-sm-12 offer"><p>Please send special offers from <span class="text-uppercase">Alleviate Tax</span></p>
