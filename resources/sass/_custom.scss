@@ -39,3 +39,31 @@ ul.parsley-errors-list{
     display: none;
   }
 }
+
+.man-bg{
+    @media(min-width: 768px){
+        background: url(/img/man.png) no-repeat right top;
+        background-size: contain;
+    }
+}
+
+.box .chkbox.offer{
+    @media(max-width: 768px){
+        padding-bottom: 0 !important;
+
+        p{
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.mobile-call-cta{
+    padding-right: .9rem;
+    font-size: 12px !important;
+    *{
+    font-size: 12px !important;
+    }
+    i{
+        font-size: 18px !important;
+    }
+}

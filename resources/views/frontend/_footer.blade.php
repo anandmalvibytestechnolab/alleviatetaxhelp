@@ -35,9 +35,9 @@
                 </div>
             </div>
             <div class="col-lg-2">
-                <a href="https://www.facebook.com/benefittaxsolutions/"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/IRSTaxSolutions"><i class="fa fa-twitter"></i></a>
-
+                <a href="https://facebook.com/alleviatetax"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/alleviatetax?lang=en"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/alleviate_tax/"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
     </div>

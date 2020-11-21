@@ -229,7 +229,7 @@ a:hover {
 }
 
 .steps-outer {
-    padding: 0 0 30px;
+    padding: 0 0 10px;
 }
 
 .chkbox {
@@ -502,9 +502,12 @@ a:hover {
 .fs-title {
     font-size: 25px;
     color: #212121;
-    margin-bottom: 15px;
     font-weight: 500;
-    text-align: center
+    text-align: center;
+
+    @media(min-width: 769px){
+        margin-bottom: 15px;
+    }
 }
 
 .apply {
@@ -1101,7 +1104,7 @@ input#others {
         padding-top: 20px;
     }
     .form-card {
-        margin: 0 0 20px;
+        margin: 0 0 0;
     }
     .box .chkbox {
         max-width: 100%;
@@ -1182,7 +1185,7 @@ input#others {
     }
     .fs-title {
         font-size: 18px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .progress {
         margin-bottom: 0;
@@ -1230,7 +1233,7 @@ input#others {
         display: none;
     }
     .wrap {
-        background-image: url(/img/mob-slider-bg.jpg);
+        //background-image: url(/img/mob-slider-bg.jpg);
         background-size: contain;
         background-position: bottom;
     }
@@ -1238,17 +1241,33 @@ input#others {
         width: 70px !important;
     }
     .testimonials .testimonial-item {
-        padding: 60px 60px 0 !important;
+        padding: 20px 20px 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        display: flex;
+        flex-flow: column;
+
+        p:first-of-type {
+            margin-top: 1.8rem;
+        }
+    }
+    .testimonial-wrap {
+        height: 100%;
+    }
+    .owl-item {
+        min-height: 100%;
+    }
+    .owl-stage {
+        display: flex;
     }
     .section-title h2 {
         font-size: 30px !important;
     }
     .about .section-title h2 {
-        padding: 0 95px !important;
         text-align: center !important;
     }
     .about {
-        background-image: url('/img/about-mob-bg.jpg') !important;
+        //background-image: url('/img/about-mob-bg.jpg') !important;
         background-size: cover !important;
     }
     .about img {
@@ -1380,7 +1399,7 @@ input#others {
 @media (max-width: 472px) {
     #hero h1 {
         padding: 0 10px;
-        font-size: 27px;
+        font-size: 25px;
         line-height: 30px;
     }
 }
@@ -1402,8 +1421,8 @@ input#others {
 
 @media (max-width: 380px) {
     .testimonials .testimonial-item {
-        margin: 30px 0 !important;
-        min-height: 400px !important;
+        //margin: 30px 0 !important;
+        //min-height: 400px !important;
     }
 }
 
@@ -1606,10 +1625,10 @@ section {
 }
 
 .success strong {
-    @media(min-width: 774px){
+    @media(min-width: 774px) {
         font-size: 30px;
     }
-    @media(max-width: 773px){
+    @media(max-width: 773px) {
         font-size: 20px;
     }
 }
@@ -3079,7 +3098,8 @@ span.myphonenumber {
     }
 }
 
-.button-label:not(.btn-warning) {
+.button-label:not(.btn-warning), .button-label-radio:not(.btn-warning) {
+    border-width: 3px;
     @media(min-width: 774px) {
         background: lighten(#6c757d, 18%);
         border-color: lighten(#545b62, 18%);
@@ -3087,6 +3107,11 @@ span.myphonenumber {
     @media(max-width: 773px) {
         background: lighten(#6c757d, 21.6%);
         border-color: lighten(#545b62, 21.6%);
+    }
+
+    &:hover {
+        background: #e0a800;
+        border-color: #d39e00;
     }
 }
 
@@ -3096,4 +3121,64 @@ span.myphonenumber {
 
 #msform .action-button {
     border-radius: 5px;
+}
+
+
+#first_slide {
+    .btn.btn-secondary.d-flex.button-label.py-3.py-md-5 {
+        @media(min-width: 775px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.testimonial-item {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    p:first-of-type {
+        //margin-top: 1.8rem;
+    }
+
+    @media(max-width: 768px) {
+        margin-top: 0 !important;
+    }
+}
+
+
+.owl-carousel .owl-stage-outer {
+    @media(max-width: 768px) {
+        overflow: inherit !important;
+    }
+}
+
+section#testimonials {
+    @media(max-width: 768px) {
+        .owl-dots {
+            margin-top: 36px;
+        }
+    }
+}
+
+
+section#counts {
+    @media(max-width: 768px) {
+        padding-top: 0;
+    }
+}
+
+
+.about .section-title h2 {
+    @media(min-width: 768px) {
+        .about .section-title h2 {
+            padding: 0 95px !important;
+        }
+        br{
+            display: none;
+        }
+    }
+    @media(max-width: 767px) {
+
+    }
 }

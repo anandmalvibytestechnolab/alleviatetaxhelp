@@ -24,7 +24,7 @@
 
         <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 <p id='progress_show'>20%</p>
-    </div-----> <br> <!-- fieldsets -->
+    </div-----> <!-- fieldsets -->
 
     <fieldset id="first_slide" class='field_set'>
         <div class="form-card">
@@ -68,28 +68,28 @@
             <div class="box">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Unfiled Taxes
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Unfiled Taxes
                             <input type="checkbox" name='current_sit' value="Unfiled Taxes" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Owe More Than Expected
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Owe More Than Expected
                             <input type="checkbox" name='current_sit' value="Owe More Than Expected" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Business Tax Issues
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Business Tax Issues
                             <input type="checkbox" name='current_sit' value="Business Tax Issues" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Self-Employed
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Self-Employed
                             <input type="checkbox" name='current_sit' value="self Employed" class="d-none">
                         </label>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2">Others
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Others
                             <input type="checkbox" name='current_sit' value="self Employed" class="d-none" data-display-current-situation-text-field>
                         </label>
                         <input type="checkbox" name='current_sit' value='Others' id="other" class="d-none">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <input type="button" id='btn_first' name="next" class="next_s action-button" data-id="40" data-value='second_slide' data-last='first_slide' value="Next"/>
+        <input type="button" id='btn_first' name="next" class="next_s action-button" data-id="25" data-value='second_slide' data-last='first_slide' value="Next"/>
     </fieldset>
     <fieldset id='second_slide' class='field_set'>
         <div class="form-card">
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <p class="price-picker">$10000</p>
+            <p class="price-picker">$10,000</p>
 
 
             <input type="hidden" name='tax_debt' id="price-picker_s" value="10000">
@@ -129,7 +129,7 @@
 
 
         </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="60" data-value='third_slide' data-last='second_slide' value="Next"/>
+        <input type="button" id='btn' name="next" class="next_s action-button" data-id="50" data-value='third_slide' data-last='second_slide' value="Next"/>
     </fieldset>
     <fieldset id='third_slide' class='field_set'>
         <div class="form-card">
@@ -143,12 +143,12 @@
             <div class="box2">
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-md-6 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2-radio">Yes
+                        <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2">Yes
                             <input type="radio" name='enrolled_irs' class="d-none" value='Yes' id="trda">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-2-radio">No
+                        <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2">No
                             <input type="radio" name='enrolled_irs' class="d-none" value='No' id="trdb">
                         </label>
                     </div>
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="80" data-value='forth_slide' data-last='third_slide' value="Next"/>
+        <input type="button" id='btn' name="next" class="next_s action-button" data-id="75" data-value='forth_slide' data-last='third_slide' value="Next"/>
     </fieldset>
 {{--    <fieldset id='forth_slide' class='field_set'>--}}
 {{--        <div class="form-card">--}}

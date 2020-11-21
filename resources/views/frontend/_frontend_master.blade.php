@@ -20,8 +20,15 @@
 
         <div class="nav-menu d-lg-block">
             <ul class="couter">
-                <li class="calltitle">CALL NOW FOR IMMEDIATE HELP</li>
-                <li class="call"><a class="ringpoolteltag" href="tel:18339042888"><i class="fa fa-phone"></i> <span class="myphonenumber">1-833-904-2888</span></a></li>
+                <li class="calltitle text-uppercase d-none d-md-block">
+                    <span>Ready for your free phone consultation now?</span><br>
+                    <span><i class="fa fa-phone text-success"></i> <span class="myphonenumber">1-833-904-2888</span></span>
+                </li>
+                <li class="text-uppercase d-block d-md-none mobile-call-cta">
+                    <a class="ringpoolteltag" href="tel:18339042888">
+                        <span>Click to call to speak to a <br>tax expert now <i class="fa fa-phone text-success"></i></span>
+                    </a>
+                </li>
             </ul>
         </div>
 
