@@ -14,7 +14,8 @@
     {{--<input type="hidden" name="subid" value="" id="subid" />--}}
     {{--<input type="hidden" name="neustar" value="" id="neustar" />--}}
     {{--<input type="hidden" name="referrer" value="" id="referrer" />--}}
-    <div class='progre_s' style='text-align:left; display: none'>
+    <div class='progre_s mb-0 mb-md-5' style='text-align:left; display: none'>
+
         <span style='margin-left:17%'>20%</span>
         <div class="progress" id='progress_tab'>
             <div class="progress-bar_new" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
@@ -30,7 +31,7 @@
         <div class="form-card">
             <div class="row">
                 <div class="col-12 steps-outer">
-{{--                    <h3 class="steps">Step 1:</h3>--}}
+                    {{--                    <h3 class="steps">Step 1:</h3>--}}
                     {{--                    <h3 class="fs-title">Which of the following caused your tax debt?</h3>--}}
                     <h3 class="fs-title">Was one of the following part of what caused your tax debt?</h3>
                     <span class="apply">( select all that apply )</span>
@@ -105,7 +106,7 @@
             <div class="row">
 
                 <div class="col-12 steps-outer">
-{{--                    <h3 class="steps">Step 2:</h3>--}}
+                    {{--                    <h3 class="steps">Step 2:</h3>--}}
 
                     {{--                    <h3 class="fs-title">How Much In Unpaid Taxes Do You Owe?</h3>--}}
                     <h3 class="fs-title">Approximately, how much does the IRS claim you owe?</h3>
@@ -136,7 +137,7 @@
             <div class="row">
 
                 <div class="col-12 steps-outer">
-{{--                    <h3 class="steps">Step 3:</h3>--}}
+                    {{--                    <h3 class="steps">Step 3:</h3>--}}
                     <h3 class="fs-title">Are you enrolled in any IRS debt forgiveness program?</h3>
                 </div>
             </div>
@@ -165,38 +166,38 @@
         </div>
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="75" data-value='forth_slide' data-last='third_slide' value="Next"/>
     </fieldset>
-{{--    <fieldset id='forth_slide' class='field_set'>--}}
-{{--        <div class="form-card">--}}
-{{--            <div class="row">--}}
+    {{--    <fieldset id='forth_slide' class='field_set'>--}}
+    {{--        <div class="form-card">--}}
+    {{--            <div class="row">--}}
 
-{{--                <div class="col-12 steps-outer">--}}
-{{--                    <h3 class="steps">Step 4:</h3>--}}
+    {{--                <div class="col-12 steps-outer">--}}
+    {{--                    <h3 class="steps">Step 4:</h3>--}}
 
-{{--                    <h3 class="fs-title">Is your current monthly income more than $1,000?</h3>--}}
+    {{--                    <h3 class="fs-title">Is your current monthly income more than $1,000?</h3>--}}
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="box2">--}}
-{{--                <div class="row">--}}
-{{--                    <label class="chkbox col-sm-2">Yes--}}
-{{--                        <input type="checkbox" name="current_monthly_income" value="Over 1000" id="frta" onclick="document.getElementById('frtb').checked = false;">--}}
-{{--                        <span class="checkmark"></span>--}}
-{{--                    </label>--}}
-{{--                    <label class="chkbox col-sm-2">No--}}
-{{--                        <input type="checkbox" name="current_monthly_income" value="Under 1000" id="frtb" onclick="document.getElementById('frta').checked = false;">--}}
-{{--                        <span class="checkmark"></span>--}}
-{{--                    </label>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <input type="button" id='btn' name="next" class="next_s action-button" data-id="100" data-value='fifth_slide' data-last='forth_slide' value="Submit"/>--}}
-{{--    </fieldset>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--            <div class="box2">--}}
+    {{--                <div class="row">--}}
+    {{--                    <label class="chkbox col-sm-2">Yes--}}
+    {{--                        <input type="checkbox" name="current_monthly_income" value="Over 1000" id="frta" onclick="document.getElementById('frtb').checked = false;">--}}
+    {{--                        <span class="checkmark"></span>--}}
+    {{--                    </label>--}}
+    {{--                    <label class="chkbox col-sm-2">No--}}
+    {{--                        <input type="checkbox" name="current_monthly_income" value="Under 1000" id="frtb" onclick="document.getElementById('frta').checked = false;">--}}
+    {{--                        <span class="checkmark"></span>--}}
+    {{--                    </label>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--        <input type="button" id='btn' name="next" class="next_s action-button" data-id="100" data-value='fifth_slide' data-last='forth_slide' value="Submit"/>--}}
+    {{--    </fieldset>--}}
     <fieldset id='forth_slide' class='field_set'>
         <div class="form-card">
             <div class="row">
 
                 <div class="col-12 steps-outer">
-{{--                    <h3 class="steps">Step 5:</h3>--}}
+                    {{--                    <h3 class="steps">Step 5:</h3>--}}
 
                     <h4 class="fs-title">Please enter your contact information to get started on your <strong class="text-brand-primary">free consultation</strong>.</h4>
 
@@ -213,66 +214,11 @@
                     <label class="col-sm-6"><input type="tel" name="primary_phone" onKeyup="addDashes(this)" id='phone' placeholder="Phone Number*"/></label>
 
                     <label class="col-sm-6">
-
-
-                        <select name="state" id="states">
-                            <option value="">Select State</option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="DC">District Of Columbia</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IN">Indiana</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NV">Nevada</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="OH">Ohio</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="OR">Oregon</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="TX">Texas</option>
-                            <option value="UT">Utah</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WA">Washington</option>
-                            <option value="WV">West Virginia</option>
-                            <option value="WI">Wisconsin</option>
-                            <option value="WY">Wyoming</option>
-                        </select>
+                        {!! Form::select('states', config('states'), $user_state, ['id' => 'states']) !!}
                     </label>
 
 
-{{--                    <label class="col-sm-6"><input type="text" name="zip_code" id='Zip' placeholder="Zip Code*"/></label>--}}
+                    {{--                    <label class="col-sm-6"><input type="text" name="zip_code" id='Zip' placeholder="Zip Code*"/></label>--}}
 
                     <label class="col-sm-12 secure"> <i class="fa fa-lock"></i> Your email is safe and secure</label>
                     <label class="chkbox col-sm-12 offer"><p>Please send special offers from <span class="text-uppercase">Alleviate Tax</span></p>
@@ -286,7 +232,8 @@
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="" data-value='sixth_slide' data-last='fifth_slide' value="Submit"/>
         <p id='messag_validate'></p>
         <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to <span class="text-uppercase">Alleviate Tax</span>'s Terms and Conditions and Privacy Policy
-            and agree to have your information shared with ALLEVIATE TAX and for them or their authorized 3rd party to contact you (including through automated means; e.g.,
+            and agree to have your information shared with ALLEVIATE TAX and for them or their authorized 3rd party to contact you (including through automated means;
+            e.g.,
             autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone
             number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of
             purchase.</p>

@@ -14,6 +14,7 @@
         "guzzlehttp/guzzle": "^7.0",
         "laravel/framework": "^7.22.2",
         "laravel/tinker": "^2.0",
+        "maxmind-db/reader": "~1.0",
         "laravelcollective/html": "^6.0"
     },
     "require-dev": {

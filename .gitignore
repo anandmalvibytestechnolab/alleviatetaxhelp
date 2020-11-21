@@ -18,3 +18,4 @@ storage/debugbar/
 public/js/*.LICENSE.txt
 public/*/*.map
 .history/
+storage/maxmind/
