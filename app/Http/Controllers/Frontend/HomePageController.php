@@ -29,7 +29,6 @@ class HomePageController extends Controller
                 return $info['subdivisions'][0]['iso_code'];
             }
         } catch (\Exception $e) {
-            d($e->getMessage());
             log_error_to_file('maxmind-db-errors', $e->getMessage());
         }
         $reader->close();
