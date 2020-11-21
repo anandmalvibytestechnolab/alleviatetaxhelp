@@ -21,6 +21,7 @@ class HomePageController extends Controller
             $reader = new Reader($databaseFile);
             //$ipAddress = '174.128.240.189';//Colorado
             $info = $reader->get($ipAddress);
+            d($info);
             if(!empty($info) && !empty($info['subdivisions']) &&
                 !empty($info['subdivisions'][0]) &&
                 !empty($info['subdivisions'][0]['iso_code']) &&
