@@ -19,3 +19,5 @@ public/js/*.LICENSE.txt
 public/*/*.map
 .history/
 storage/maxmind/
+/nbproject/private/
+storage
