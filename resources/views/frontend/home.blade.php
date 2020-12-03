@@ -304,4 +304,11 @@
 
 @section('javascript')
     <script src="{!! get_javascript_file('home') !!}"></script>
+    <script>
+        $(document).ready( function() {
+            $("#msform").submit(function(){
+                $('#final_form_loader').css('visibility', 'visible');
+            });
+        });
+    </script>
 @endsection

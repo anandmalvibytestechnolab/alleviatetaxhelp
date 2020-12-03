@@ -1,5 +1,8 @@
 <form id="msform" action="{!! route('FE_LEAD_STORE', $_GET) !!}" method="post">
 @csrf
+    <div class="text-primary spinner-border" id="final_form_loader" style="width: 3rem; height: 3rem; visibility:hidden;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
 <!-- <input type="hidden" name="ckm_offer_id" value="4"> -->
     <input type="hidden" name="current_situation" id="current_situation" value="">
     <input type="hidden" id="ref_url" name="ref_url" value="<?php echo request()->headers->get('referer'); ?>"/>

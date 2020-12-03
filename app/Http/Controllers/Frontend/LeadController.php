@@ -32,7 +32,6 @@ class LeadController extends Controller
      */
     public function store(Request $request)
     {
-        
         $validData = request()->validate($this->getStoreRules());
         $validData['user_ip_address'] = $request->ip();
         $validData['opt_in'] = ($request->input('wants_special_offers') == 'on') ? 1 : 0;
