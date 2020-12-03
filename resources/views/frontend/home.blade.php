@@ -4,7 +4,9 @@
     <div class="col-lg-12 pt-1 pt-md-5 pt-lg-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
         <!---  <img src="/img/b-icon.png" class="topicon" alt=""> --->
         <h1 data-aos="fade-up"><span>Alleviate</span> Saves Clients Tens Of Millions <br>Annually in Tax Debt</h1>
+        <!-- Removed on 25 Nov 2020
         <h2 data-aos="fade-up" data-aos-delay="400" class="main-subtitle">Do you need help with <span>your tax problems?</span> Let our tax professionals help you.</h2>
+        -->
         <div data-aos="fade-up" data-aos-delay="800">
             <div class="container-fluid">
                 <div class="row justify-content-center">
@@ -30,10 +32,36 @@
                             <h2>Get to Know <br> Alleviate Tax</h2>
                         </div>
                         <p>
-                            At Alleviate Tax Solutions we've been helping thousands of citizens with their tax problems. We have a solution for all your tax problems, from wage garnishment to bank levies and even completing your back taxes, we have tax professionals that can help you!</p>
-                        <p>
-                            Our core values are integrity and trust, the encouragement of innovation, teamwork and the continuing personal development of everyone at BTS.
+                            Alleviate Tax is your one-stop solution to resolving tax debt. 
+                            Our tax experts will stop the IRS from coming after you and seizing your accounts. 
+                            We will deal with the IRS so that you don't have to. 
+                            Our proven strategies will resolve your tax debts for good. We will work to reduce your tax debt, 
+                            stop wage garnishments, and remove bank levies.
                         </p>
+                        <p>
+                            Call now for a free discovery call to share the story of your tax debt situation. 
+                            We will create a strategy based on your unique circumstances and will beat the price of any tax resolution firm. 
+                            Plus, enjoy peace of mind knowing that we offer a money-back guarantee to any unsatisfied client.
+                        </p>
+                        <p>
+                            Some people choose to go directly to the IRS to address their tax debts. However, 
+                            having a professional firm like Alleviate Tax in your corner typically leads to a better outcome 
+                            because we understand the nuances of tax laws that the average person does not.
+                        </p>
+                        <p>
+                            Our knowledge and experience give us the tools to negotiate with the IRS to reduce your tax debts, 
+                            eliminate wage garnishments, and remove levies. Schedule your free consultation today to get started. 
+                            Freedom from your tax debt is just a phone call away.
+                        </p>
+                        <p>
+                            Take the first step towards freedom from tax debt by booking an appointment today. 
+                            The Alleviate Tax team is standing by to fight for you.
+                        </p>
+                        <p>
+                            If you’d like to speak with one of our tax analysts now, call us at (1800)789-8909. 
+                            We’re open Monday – Friday 8:00AM – 4:30PM PST. Or text “taxhelp” to (949)444-5555.
+                        </p>
+                        <!--
                         <div class="demo">
                             <h1>Tax Debt Relief</h1>
                             <div class="progress2">
@@ -60,6 +88,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 man-bg" data-aos="fade-up" data-aos-delay="300">
                     </div>
@@ -84,14 +113,14 @@
                 <div class="testimonial-wrap">
                     <div class="testimonial-item">
 {{--                        <div class="cimage">--}}
-{{--                            <img src="/img/c3.gif" class="testimonial-img" alt="">--}}
+{{--                            <img src="/img/c2.gif" class="testimonial-img" alt="">--}}
 {{--                        </div>--}}
                         <div class="d-flex flex-column align-items-center w-100">
-                            <h3>Bill D (WA)</h3>
+                            <h3>Moe M. (NY)</h3>
                             @include('partials.stars')
                         </div>
                         <p>
-                            If you are trying to find the right tax help or advise this is the place to handle your tax problems or concerns. They are very up on current tax laws and regulations, and always professional. Plus the fee they charge is very fair!
+                            The folks at Alleviate tax relief were so awesome, I talked with John the guy was so patient and understanding he stayed with me on the phone 3 different times and spent more then 30 minutes each time explaining things to me ,calming me down reassuring me that he will do his very best for me and that he has alot of experience with the IRS...they were very comforting and polite...I would recommend Alleviate to anyone from any state…they are the best...
                         </p>
                     </div>
                 </div>
@@ -114,14 +143,14 @@
                 <div class="testimonial-wrap">
                     <div class="testimonial-item">
 {{--                        <div class="cimage">--}}
-{{--                            <img src="/img/c2.gif" class="testimonial-img" alt="">--}}
+{{--                            <img src="/img/c3.gif" class="testimonial-img" alt="">--}}
 {{--                        </div>--}}
                         <div class="d-flex flex-column align-items-center w-100">
-                            <h3>Moe M. (NY)</h3>
+                            <h3>Bill D (WA)</h3>
                             @include('partials.stars')
                         </div>
                         <p>
-                            The folks at Alleviate tax relief were so awesome, I talked with John the guy was so patient and understanding he stayed with me on the phone 3 different times and spent more then 30 minutes each time explaining things to me ,calming me down reassuring me that he will do his very best for me and that he has alot of experience with the IRS...they were very comforting and polite...I would recommend Alleviate to anyone from any state…they are the best...
+                            If you are trying to find the right tax help or advise this is the place to handle your tax problems or concerns. They are very up on current tax laws and regulations, and always professional. Plus the fee they charge is very fair!
                         </p>
                     </div>
                 </div>
@@ -144,6 +173,19 @@
                             <div class="section-title">
                                 <h2>Why You Shouldn’t Ignore Your Tax Debt</h2>
                             </div>
+                            <p class="mb-md-3">
+                                Ignoring problems will not make them go away. The same goes for the money that you owe the IRS.
+                                In fact, your tax problems only get worse if you ignore attempts by the IRS to collect.
+                            </p>
+                            <p class="mb-md-3">
+                                When a tax debt goes unpaid, penalties and fees continue to accrue.
+                                This means that your balance will increase over time, making it even harder to pay off.
+                            </p>
+                            <p class="mb-md-3">
+                                If the IRS feels that you are not addressing your tax debt,
+                                it will take steps to collect the money from your wages and assets.
+                                These methods can be both painful and embarrassing.
+                            </p>
                             <div class="row">
                                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                                     <div class="count-box row">
@@ -151,8 +193,12 @@
                                             <img src="/img/icon01.gif" class="" alt="">
                                         </div>
                                         <div class="col-10">
-                                            <span>Tax Debt Relief</span>
-                                            <p>Get professional help with your back taxes.</p><p>Talk to one our tax specialist and find out how we can help.</p>
+                                            <span>Garnished wages</span>
+                                            <p>The IRS can take up to 25% of every paycheck to pay down your debt.</p>
+                                            <p>
+                                                Although the law prevents an employer from firing you due to wage garnishment, 
+                                                it can lead to some difficult conversations with your boss.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -163,8 +209,16 @@
                                             <img src="/img/icon02.gif" class="" alt="">
                                         </div>
                                         <div class="col-10">
-                                            <span>Stop Wage Gargnishment</span>
-                                            <p>If your wages are garnished, you can put a stop to it today. Call us today and find out about your rights!</p>
+                                            <span>Levies on accounts</span>
+                                            <p>
+                                                When the IRS levies your bank account, 
+                                                they can take all of the money you have in the account to pay towards your balance.
+                                            </p>
+                                            <p>
+                                                The IRS does not care that you have bills to pay. 
+                                                With a zero balance in your account, checks and electronic payments could bounce. 
+                                                The creates even more fees and embarrassing conversations.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -175,20 +229,13 @@
                                             <img src="/img/icon03.gif" class="" alt="">
                                         </div>
                                         <div class="col-10">
-                                            <span>Stop Bank Levy</span>
-                                            <p>Find out how bank levies work and how to stop them.  We can stop your bank levies by filing a claim of exemptions.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                    <div class="count-box row">
-                                        <div class="col-2">
-                                            <img src="/img/icon04.gif" class="" alt="">
-                                        </div>
-                                        <div class="col-10">
-                                            <span>Settle For Less</span>
-                                            <p>You don't have to pay in full and there are ways you can settle for less than what you owe.</p>
+                                            <span>Liens on properties</span>
+                                            <p>
+                                                Tax liens on your home or other property could make it harder to sell or refinance. 
+                                                These tax liens are part of the public record and will show up whenever someone does 
+                                                a background search on you. This could negatively affect your credit score and ability 
+                                                to get approved for a loan. Even worse, it could disqualify you from certain jobs.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

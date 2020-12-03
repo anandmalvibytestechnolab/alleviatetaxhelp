@@ -1,7 +1,10 @@
-<form id="msform" action="{!! route('FE_LEAD_STORE') !!}" method="post">
+<form id="msform" action="{!! route('FE_LEAD_STORE', $_GET) !!}" method="post">
 @csrf
 <!-- <input type="hidden" name="ckm_offer_id" value="4"> -->
     <input type="hidden" name="current_situation" id="current_situation" value="">
+    <input type="hidden" id="ref_url" name="ref_url" value="<?php echo request()->headers->get('referer'); ?>"/>
+    <input type="hidden" name="page_url" value="<?= $_SERVER['REQUEST_URI'] ?>" />
+    {{--<input type="hidden" id="UrlRefer5" name="UrlRefer5" value="<?php echo URL::previous(); ?>"/>--}}
     {{--<input type="hidden" name="page" id="page" value="http://benefittaxrelief.com/">--}}
     {{--<input type="hidden" name="affid" value="" id="affid" />--}}
     {{--<input type="hidden" name="ckm_offer_id" value="4" id="ckm_offer_id" />--}}
@@ -14,7 +17,7 @@
     {{--<input type="hidden" name="subid" value="" id="subid" />--}}
     {{--<input type="hidden" name="neustar" value="" id="neustar" />--}}
     {{--<input type="hidden" name="referrer" value="" id="referrer" />--}}
-    <div class='progre_s mb-0 mb-md-5' style='text-align:left; display: none'>
+    <div class='progre_s mb-0 mb-md-5' style='text-align:left; display: none; margin-bottom: 90px !important;;'>
 
         <span style='margin-left:17%'>20%</span>
         <div class="progress" id='progress_tab'>
@@ -138,7 +141,7 @@
 
                 <div class="col-12 steps-outer">
                     {{--                    <h3 class="steps">Step 3:</h3>--}}
-                    <h3 class="fs-title">Are you enrolled in any IRS debt forgiveness program?</h3>
+                    <h3 class="fs-title">Are you already enrolled in a payment program with the IRS?</h3>
                 </div>
             </div>
             <div class="box2">
@@ -214,7 +217,7 @@
                     <label class="col-sm-6"><input type="tel" name="primary_phone" onKeyup="addDashes(this)" id='phone' placeholder="Phone Number*"/></label>
 
                     <label class="col-sm-6">
-                        {!! Form::select('states', config('states'), $user_state, ['id' => 'states']) !!}
+                        {!! Form::select('state', config('states'), $user_state, ['id' => 'states']) !!}
                     </label>
 
 
@@ -231,12 +234,14 @@
         </div>
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="" data-value='sixth_slide' data-last='fifth_slide' value="Submit"/>
         <p id='messag_validate'></p>
-        <p class="terms">TERMS: By clicking the "SUBMIT" button, you agree to <span class="text-uppercase">Alleviate Tax</span>'s Terms and Conditions and Privacy Policy
-            and agree to have your information shared with ALLEVIATE TAX and for them or their authorized 3rd party to contact you (including through automated means;
-            e.g.,
-            autodialing, text and pre-recorded messaging) with offers and surveys via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone
-            number is currently listed on any state, federal or corporate Do Not Call list. Message and data rates apply. You understand that consent is not a condition of
-            purchase.</p>
+        <p class="terms">
+            TERMS: By clicking 'Submit', I hereby agree to the receipt of future calls or emails on behalf of
+            <span class="text-uppercase">Alleviate Tax</span>,
+            LLC at the number provided above. I expressly consent and request to receive phone calls,
+            autodialer (and/or pre-recorded) calls and text/SMS messages from the company and waive any prior
+            No Call registrations for the purposes of these calls. Standard text message rates will apply.
+            I also understand that my consent is not a condition of purchase.
+        </p>
     </fieldset>
 
 
