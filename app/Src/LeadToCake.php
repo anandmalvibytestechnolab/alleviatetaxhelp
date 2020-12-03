@@ -41,6 +41,7 @@ class LeadToCake
         $ckmOfferId = $requestData['ckm_offer_id'];
         $ckmRequestId = $requestData['ckm_request_id'];
         $requestData['ckm_offer_id'] = ($ckmOfferId) ? $ckmOfferId : '2';
+        $requestData['offer_id'] = $requestData['ckm_offer_id'];
         $requestData['ckm_request_id'] = ($ckmRequestId) ? $ckmRequestId : $requestData['reqid'];
         $requestData['aff_id'] = $requestData['affid'];
         $requestData['phone_home'] = $requestData['primary_phone'];

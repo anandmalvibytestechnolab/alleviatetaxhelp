@@ -3,7 +3,11 @@
 <!-- <input type="hidden" name="ckm_offer_id" value="4"> -->
     <input type="hidden" name="current_situation" id="current_situation" value="">
     <input type="hidden" id="ref_url" name="ref_url" value="<?php echo request()->headers->get('referer'); ?>"/>
-    <input type="hidden" name="page_url" value="<?= $_SERVER['REQUEST_URI'] ?>" />
+    {{--<input type="hidden" name="page_url" value="<?= $_SERVER['REQUEST_URI'] ?>" />--}}
+    <input type="hidden" name="query_parameters" value="{{ request()->server('QUERY_STRING') }}" />
+    <input type="hidden" name="ip_address" value="{{ request()->ip() }}" />
+    <input type="hidden" name="user_agent" value="{{ request()->server('HTTP_USER_AGENT') }}" />
+    <input type="hidden" name="page_url" value="{{ request()->getPathInfo() }}" />
     {{--<input type="hidden" id="UrlRefer5" name="UrlRefer5" value="<?php echo URL::previous(); ?>"/>--}}
     {{--<input type="hidden" name="page" id="page" value="http://benefittaxrelief.com/">--}}
     {{--<input type="hidden" name="affid" value="" id="affid" />--}}

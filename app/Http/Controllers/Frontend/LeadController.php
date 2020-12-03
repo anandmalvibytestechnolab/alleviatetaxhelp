@@ -35,6 +35,7 @@ class LeadController extends Controller
         
         $validData = request()->validate($this->getStoreRules());
         $validData['user_ip_address'] = $request->ip();
+        $validData['opt_in'] = ($request->input('wants_special_offers') == 'on') ? 1 : 0;
 
         // Get query paramters request data for Lead
         $customFields = $this->leadToCake->prepareFields($request);
@@ -79,6 +80,10 @@ class LeadController extends Controller
             'zip_code' => ['nullable'],
             'page_url' => ['nullable'],
             'ref_url' => ['nullable'],
+            'query_parameters' => ['nullable'],
+            'ip_address' => ['nullable'],
+            'user_agent' => ['nullable'],
+            'wants_special_offers' => ['nullable'],
         ];
     }
 
