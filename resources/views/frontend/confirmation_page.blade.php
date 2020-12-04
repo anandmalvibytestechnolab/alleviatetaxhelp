@@ -27,6 +27,9 @@
                                         </div>
                                         <br>
                                         <div class="row justify-content-center">
+                                            @if (request()->query('tax_debt') > 9999)
+                                                <iframe src="{{ config('app.cake_url_iframe') }}?o=2&t=TRANSACTION_ID&r={{ request()->query('reqid') }}" height="1" width="1" frameborder="0"></iframe>
+                                            @endif
                                             <div class="col-12 text-center">
                                                 <h5 class="purple-text text-center">Someone from Alleviate Tax will be calling you shortly, or when business hours resume. If you would rather call or text now, call
                                                     <a href="tel:+18002353333" target="_blank" class="text-info">18002353333</a> (we’re open Monday – Friday from 8AM – 4:30PM PST) or text

@@ -3182,3 +3182,75 @@ section#counts {
 
     }
 }
+.custom_progress {
+    margin-bottom: 90px !important;
+    @media(max-width: 767px) {
+        margin-bottom: 40px !important;
+    }
+}
+
+.margin_left0 img {
+    margin-bottom: 30px !important;
+}
+
+.count-box.margin_left0.row {
+    img {
+        @media(max-width: 767px) {
+           margin-right: 20px;
+        }
+    }
+    @media(max-width: 767px) {
+        padding-left: 10px;
+        width: auto;
+    }
+    span {
+        @media(max-width: 767px) {
+            padding-top: 35px
+        }
+    }
+    p {
+        margin-left: 0;
+    }
+}
+
+.margin_left0 {
+    .height51 {
+        height:20px;
+        @media(max-width: 767px) {
+            height:auto !important;
+        }
+    }   
+    .height45 {
+        height: 93px;
+        @media(max-width: 767px) {
+            height:auto !important;
+        }
+    }   
+}
+
+.speak_para {
+    background: #22324033;
+    border-radius: 5px;
+    padding: 5px;
+    border-top: #3c3c86 solid 3px;
+    font-size: 18px;
+    margin-bottom: 20px !important;
+    @media(max-width: 767px) { 
+        font-size: 1em;
+        margin-bottom: 0px !important;
+    }
+}
+
+.form_custompad0 {
+    @media(max-width: 767px) { 
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.ignor_padding {
+    @media(max-width: 767px) {
+        padding: 0 10px;
+        padding-bottom: 15px;
+    }
+}

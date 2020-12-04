@@ -21,9 +21,11 @@ document.querySelector('[data-display-current-situation-text-field]').addEventLi
 });
 
 document.querySelector('[data-value="second_slide"]').addEventListener('click', function(){
+    /* Commented below code due to added multiselect as array before it was only single select
     var optionsChecked = !!document.querySelectorAll('input[name="current_sit"]:checked').length;
     if(!optionsChecked){
         return;
     }
+    */
     document.querySelector('.progre_s').style.display = 'block';
 });

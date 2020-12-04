@@ -4,7 +4,7 @@
     <section class="wrap">
         <section id="hero" class="d-flex align-items-center">
 
-            <div class="container">
+            <div class="container form_custompad0">
                 <div class="row">
                     @yield('hero_content')
                 </div>

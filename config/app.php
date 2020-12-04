@@ -56,6 +56,9 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
+    'cake_url'          => 'https://alvtx-trk.com/d.ashx',
+    'cake_url_iframe'   => 'https://alvtx-trk.com/p.ashx',
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

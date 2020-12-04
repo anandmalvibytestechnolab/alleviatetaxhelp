@@ -17,12 +17,16 @@ class LeadToCake
      */
     public function postToCake($requestData)
     {
-        $response = Http::get('https://alvtx-trk.com/d.ashx', $requestData);
-        if ($response->status() == 200) {
-            $body = $response->body();
-            return $this->cakeResponseObserver($body, $response);
+        try {
+            $response = Http::get(config('app.cake_url'), $requestData);
+            if ($response->status() == 200) {
+                $body = $response->body();
+                return $this->cakeResponseObserver($body, $response);
+            }
+            return $this->defaultReturn($response, '', '');
+        } catch (\Exception $exception) {
+            return $this->defaultReturn([], 'YES', $exception);
         }
-        return $this->defaultReturn($response);
     }
 
     /**
@@ -90,7 +94,7 @@ class LeadToCake
      */
     private function htmlObserver($body, $response) : array
     {
-        return $this->defaultReturn($response);
+        return $this->defaultReturn($response, '', '');
         $doc = new \DOMDocument();
         libxml_use_internal_errors(true);
         $doc->loadHTML($body); // loads your html
@@ -131,13 +135,40 @@ class LeadToCake
         return $response;
     }
 
-    private function defaultReturn($response)
+    /**
+     * Prepare custom default response of CAKE to save into DB
+     *
+     * @param   mixed $response
+     * @param   string $isExe
+     * @param   mixed $exception
+     * @author  Anand Malvi <anand.malvi@bytestechnolab.in>
+     * @return  array
+     */
+    private function defaultReturn($response, $isExe, $exception) : array
     {
         return [
             'redirect' => route('FE_CONFIRMATION_PAGE_SHOW'),
-            'cake_response' => $response->body(),
+            'cake_response' => ($isExe == 'YES') ? $this->getCustomException($exception) : $response->body(),
             'leadid' => '',
-            'cake_status' => $response->status()
+            'cake_status' => ($isExe == 'YES') ? 'INTERNAL_EXCEPTION' : $response->status()
         ];
+    }
+
+    /**
+     * Get the details of occurred Exception
+     *
+     * @param   mixed $exception
+     * @author  Anand Malvi <anand.malvi@bytestechnolab.in>
+     * @return  mixed
+     */
+    private function getCustomException($exception)
+    {
+        $result = [
+            'code' => $exception->getCode(),
+            'line' => $exception->getLine(),
+            'file' => $exception->getFile(),
+            'message' => $exception->getMessage()
+        ];
+        return json_encode($result);
     }
 }

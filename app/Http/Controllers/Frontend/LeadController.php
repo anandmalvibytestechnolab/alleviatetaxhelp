@@ -33,8 +33,7 @@ class LeadController extends Controller
     public function store(Request $request)
     {
         $validData = request()->validate($this->getStoreRules());
-        $validData['user_ip_address'] = $request->ip();
-        $validData['opt_in'] = ($request->input('wants_special_offers') == 'on') ? 1 : 0;
+        $this->requestObserver($request, $validData);
 
         // Get query paramters request data for Lead
         $customFields = $this->leadToCake->prepareFields($request);
@@ -100,5 +99,26 @@ class LeadController extends Controller
         $result['cake_lead_id'] = $result['leadid'];
         unset($result['leadid']);
         return array_merge($result, $requestData);
+    }
+
+    /**
+     * Used to manage and prepare the request data based on requirement
+     * Only Manipulating request data
+     *
+     * @param   Request $request
+     * @param   array $validData
+     * @author  Anand Malvi <anand.malvi@bytestechnolab.in>
+     * @return  array
+     */
+    private function requestObserver($request, &$validData) : array
+    {
+        $validData['user_ip_address'] = $request->ip();
+        $validData['opt_in'] = ($request->input('wants_special_offers') == 'on') ? 1 : 0;
+        $validData['enrolled'] = strtolower($request->input('enrolled_irs'));
+        $currentSit = (count($request->input('current_sit')) > 1) ?
+            implode('|', $request->input('current_sit')) : $request->input('current_sit')[0];
+        $validData['current_sit'] = $currentSit;
+        $validData['why_reason'] = $currentSit;
+        return $validData;
     }
 }

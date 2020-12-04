@@ -1,6 +1,6 @@
 <form id="msform" action="{!! route('FE_LEAD_STORE', $_GET) !!}" method="post">
 @csrf
-    <div class="text-primary spinner-border" id="final_form_loader" style="width: 3rem; height: 3rem; visibility:hidden;" role="status">
+    <div class="text-primary spinner-border" id="final_form_loader" style="width: 3rem; height: 3rem; display: none" role="status">
         <span class="sr-only">Loading...</span>
     </div>
 <!-- <input type="hidden" name="ckm_offer_id" value="4"> -->
@@ -24,7 +24,7 @@
     {{--<input type="hidden" name="subid" value="" id="subid" />--}}
     {{--<input type="hidden" name="neustar" value="" id="neustar" />--}}
     {{--<input type="hidden" name="referrer" value="" id="referrer" />--}}
-    <div class='progre_s mb-0 mb-md-5' style='text-align:left; display: none; margin-bottom: 90px !important;;'>
+    <div class='progre_s mb-0 mb-md-5 custom_progress' style='text-align:left; display: none;'>
 
         <span style='margin-left:17%'>20%</span>
         <div class="progress" id='progress_tab'>
@@ -80,30 +80,30 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Unfiled Taxes
-                            <input type="checkbox" name='current_sit' value="Unfiled Taxes" class="d-none">
+                            <input type="checkbox" name='current_sit[]' value="unf" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Owe More Than Expected
-                            <input type="checkbox" name='current_sit' value="Owe More Than Expected" class="d-none">
+                            <input type="checkbox" name='current_sit[]' value="owe" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Business Tax Issues
-                            <input type="checkbox" name='current_sit' value="Business Tax Issues" class="d-none">
+                            <input type="checkbox" name='current_sit[]' value="biz" class="d-none">
                         </label>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Self-Employed
-                            <input type="checkbox" name='current_sit' value="self Employed" class="d-none">
+                            <input type="checkbox" name='current_sit[]' value="1099" class="d-none">
                         </label>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Others
-                            <input type="checkbox" name='current_sit' value="self Employed" class="d-none" data-display-current-situation-text-field>
+                            <input type="checkbox" name='current_sit[]' value="oth" class="d-none" data-display-current-situation-text-field>
                         </label>
-                        <input type="checkbox" name='current_sit' value='Others' id="other" class="d-none">
+                        <!--<input type="checkbox" name='current_sit[]' value='Others' id="other" class="d-none">-->
                         <input type="text" name="other_current_situation" id='others' placeholder="Please describe" class="d-none"/>
                     </div>
                 </div>
