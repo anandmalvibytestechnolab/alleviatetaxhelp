@@ -54,10 +54,12 @@
                 <button type="button" class="close_btn" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Alleviate Tax <br>
-                    4 Park Plaza / Suite 2050 <br>
-                    Irvine, CA 92614 <br>
-                    Contact us at <a href="mailto:wecare@alleviatetaxservice.com">wecare@alleviatetaxservice.com</a></p>
+                <p>
+                    Alleviate Tax<br>
+                    1133 Camelback St, #10967,<br>
+                    Newport Beach, CA 92658<br>
+                    Contact us at <a href="mailto:wecare@alleviatetaxservice.com">wecare@alleviatetaxservice.com</a>
+                </p>
             </div>
         </div>
 
