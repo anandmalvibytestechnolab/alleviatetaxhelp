@@ -115,7 +115,9 @@
                             @include('partials.stars')
                         </div>
                         <p>
+                            <i class="fa fa-quote-left"></i>
                             The folks at Alleviate tax relief were so awesome, I talked with John the guy was so patient and understanding he stayed with me on the phone 3 different times and spent more then 30 minutes each time explaining things to me ,calming me down reassuring me that he will do his very best for me and that he has alot of experience with the IRS...they were very comforting and polite...I would recommend Alleviate to anyone from any state…they are the best...
+                            <i class="fa fa-quote-right"></i>
                         </p>
                     </div>
                 </div>
@@ -130,7 +132,9 @@
                             @include('partials.stars')
                         </div>
                         <p>
+                        <i class="fa fa-quote-left"></i>
                             I started my experience last year with Matthew J from Alleviate tax. He is the real reason why I chose Alleviate Tax over 3 other companies to help me with this horrible problem. He is very professional, persistent and kept me informed each step of the way. Your company and those of us that get to work with him are so very fortunate.
+                        <i class="fa fa-quote-right"></i>
                         </p>
                     </div>
                 </div>
@@ -145,7 +149,9 @@
                             @include('partials.stars')
                         </div>
                         <p>
+                        <i class="fa fa-quote-left"></i>
                             If you are trying to find the right tax help or advise this is the place to handle your tax problems or concerns. They are very up on current tax laws and regulations, and always professional. Plus the fee they charge is very fair!
+                        <i class="fa fa-quote-right"></i>
                         </p>
                     </div>
                 </div>
