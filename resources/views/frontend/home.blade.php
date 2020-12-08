@@ -95,6 +95,31 @@
 @endsection
 
 @section('counts_section')
+    <div class="money">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+                            <div class="guarant dark_light">
+                                <i><a href="javascript:void(0)"><img src="img/gur_icon3.png" alt="#"/></a></i>
+                                <h3>Free 2020 Tax Prep</h3>
+                                <p>Alleviate Tax is experience with  licensed enrolled agentes and tax attorneys. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                            <div class="guarant">
+                                <i><a href="javascript:void(0)"><img src="img/gur_icon1.png" alt="#"/></a></i>
+                                <h3>Money Back Guarantee</h3>
+                                <p>Alleviate Tax is committed to providing a safe and secure site that you can trust. We take your privacy seriously. We do not sell or share your information with third parties.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
         <div class="container-fluid">

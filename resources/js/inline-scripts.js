@@ -27,7 +27,8 @@ $(document).on('input', '#customRange2', function () {
 
     document.querySelector('.price-picker').innerText = `$${selectedValue}`;
     document.querySelector('#price-picker_s').setAttribute('value', selectedValue);
-    console.log(selectedValue);
+    //print-slider-
+    //console.log(selectedValue);
 });
 
 

@@ -12,3 +12,4 @@ window.AOS = require('./aos');
 require('./main');
 require('./inline-scripts');
 require('./custom');
+require('./custom_slider');

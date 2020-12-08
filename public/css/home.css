@@ -10354,10 +10354,9 @@ a:hover {
   padding: 0px !important;
 }
 
-.range-slider #slider {
-  display: none;
-}
-
+/*.range-slider #slider {
+    display: none;
+}*/
 #msform input:focus,
 #msform textarea:focus {
   box-shadow: none;
@@ -13252,6 +13251,87 @@ button[type=submit] {
     padding: 0 10px;
     padding-bottom: 15px;
   }
+}
+
+.money {
+  padding-top: 60px;
+}
+
+.guarant {
+  box-shadow: 0 0px 31px rgba(0, 0, 0, 0.06);
+  padding: 20px 35px 30px 35px;
+  background: #ffffff;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  height: 410px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .guarant {
+    height: 450px;
+  }
+}
+
+.guarant::before {
+  position: absolute;
+  content: "";
+  background: url(../img/gur_before.png);
+  background-repeat: no-repeat;
+  height: 228px;
+  width: 186px;
+  top: 0;
+  right: 0;
+}
+
+.guarant::after {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to right, #ffc80b, #f9d868);
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 239px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: -5px;
+  border-radius: 20px;
+}
+
+.dark_light::after {
+  background-image: linear-gradient(to right, #404040 50%, #79757e);
+}
+
+.guarant i img {
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.guarant h3 {
+  color: #2f2f2f;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+}
+@media (max-width: 1199px) {
+  .guarant h3 {
+    font-size: 18px;
+  }
+}
+
+.guarant p {
+  color: #2f2f2f;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
 }
 
 /*!

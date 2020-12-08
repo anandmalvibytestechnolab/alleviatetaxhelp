@@ -128,16 +128,23 @@
 
 
             <input type="hidden" name='tax_debt' id="price-picker_s" value="10000">
+            <!--
             <div class="range-slider">
                 <input type="range" class="custom-range" min="0" max="100000" step="500" id="customRange2" value="10000">
-                <!-------div id="slider"></div>
-                <input type="hidden" class="taxval"------>
                 <div class="range-value">
                     <span class="left-val">$0</span>
                     <span class="right-val">$100,000</i></span>
                 </div>
             </div>
-
+            -->
+            <div class="range-slider">
+                <div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 7.53769%;"></span></div>
+                <input type="hidden" class="taxval" class="custom-range">
+                <div class="range-value">
+                    <span class="left-val">$0</span>
+                    <span class="right-val">>$100,000</span>
+                </div>
+            </div>
 
         </div>
         <input type="button" id='btn' name="next" class="next_s action-button" data-id="50" data-value='third_slide' data-last='second_slide' value="Next"/>
