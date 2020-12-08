@@ -30,6 +30,7 @@ document.querySelector('[data-value="second_slide"]').addEventListener('click', 
     document.querySelector('.progre_s').style.display = 'block';
 });
 
+/*
 var taxVal = ["5000", "7500", "10000", "20000", "50000", "100000"];
 var amount = new Intl.NumberFormat();
 $("#slider").slider({
@@ -42,7 +43,6 @@ $("#slider").slider({
         console.log(selectedValue + 'anand');
         document.querySelector('.price-picker').innerText = `$${selectedValue}`;
         document.querySelector('#price-picker_s').setAttribute('value', selectedValue);
-        /*
         if (ui.value <= 500) {
             $(".price-picker").text('Under ' + '$' + ui.value);
         } else if (ui.value >= 100000) {
@@ -68,9 +68,9 @@ $("#slider").slider({
         if (ui.value >= 100000) {
             return $("#tax_debt").val(taxVal[5]);
         }
-        */
     },
     create: function (event, ui) {
         $(this).slider('value');
     }
 });
+*/

@@ -22297,146 +22297,50 @@ document.querySelector('[data-value="second_slide"]').addEventListener('click', 
   */
   document.querySelector('.progre_s').style.display = 'block';
 });
+/*
 var taxVal = ["5000", "7500", "10000", "20000", "50000", "100000"];
 var amount = new Intl.NumberFormat();
 $("#slider").slider({
-  min: 0,
-  max: 100000,
-  step: 500,
-  value: 10000,
-  slide: function slide(event, ui) {
-    var selectedValue = new Intl.NumberFormat('en-US', {
-      maximumSignificanDigits: 0
-    }).format(ui.value);
-    console.log(selectedValue + 'anand');
-    document.querySelector('.price-picker').innerText = "$".concat(selectedValue);
-    document.querySelector('#price-picker_s').setAttribute('value', selectedValue);
-    /*
-    if (ui.value <= 500) {
-        $(".price-picker").text('Under ' + '$' + ui.value);
-    } else if (ui.value >= 100000) {
-        $(".price-picker").text('$' + amount.format(ui.value) + ' or more');
-    } else {
-        $(".price-picker").text('$' + amount.format(ui.value));
+    min: 0,
+    max: 100000,
+    step: 500,
+    value: 10000,
+    slide: function (event, ui) {
+        let selectedValue = new Intl.NumberFormat('en-US', {maximumSignificanDigits: 0}).format(ui.value);
+        console.log(selectedValue + 'anand');
+        document.querySelector('.price-picker').innerText = `$${selectedValue}`;
+        document.querySelector('#price-picker_s').setAttribute('value', selectedValue);
+        if (ui.value <= 500) {
+            $(".price-picker").text('Under ' + '$' + ui.value);
+        } else if (ui.value >= 100000) {
+            $(".price-picker").text('$' + amount.format(ui.value) + ' or more');
+        } else {
+            $(".price-picker").text('$' + amount.format(ui.value));
+        }
+        if (ui.value < 4999) {
+            return $("#tax_debt").val(taxVal[0]);
+        }
+        if (ui.value >= 5000 && ui.value < 9999) {
+            return $("#tax_debt").val(taxVal[1]);
+        }
+        if (ui.value >= 10000 && ui.value < 19999) {
+            return $("#tax_debt").val(taxVal[2]);
+        }
+        if (ui.value >= 20000 && ui.value < 49999) {
+            return $("#tax_debt").val(taxVal[3]);
+        }
+        if (ui.value >= 50000 && ui.value < 99999) {
+            return $("#tax_debt").val(taxVal[4]);
+        }
+        if (ui.value >= 100000) {
+            return $("#tax_debt").val(taxVal[5]);
+        }
+    },
+    create: function (event, ui) {
+        $(this).slider('value');
     }
-    if (ui.value < 4999) {
-        return $("#tax_debt").val(taxVal[0]);
-    }
-    if (ui.value >= 5000 && ui.value < 9999) {
-        return $("#tax_debt").val(taxVal[1]);
-    }
-    if (ui.value >= 10000 && ui.value < 19999) {
-        return $("#tax_debt").val(taxVal[2]);
-    }
-    if (ui.value >= 20000 && ui.value < 49999) {
-        return $("#tax_debt").val(taxVal[3]);
-    }
-    if (ui.value >= 50000 && ui.value < 99999) {
-        return $("#tax_debt").val(taxVal[4]);
-    }
-    if (ui.value >= 100000) {
-        return $("#tax_debt").val(taxVal[5]);
-    }
-    */
-  },
-  create: function create(event, ui) {
-    $(this).slider('value');
-  }
 });
-
-/***/ }),
-
-/***/ "./resources/js/custom_slider.js":
-/*!***************************************!*\
-  !*** ./resources/js/custom_slider.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function ($) {
-  $.support.touch = 'ontouchend' in document;
-
-  if (!$.support.touch) {
-    return;
-  }
-
-  var mouseProto = $.ui.mouse.prototype,
-      _mouseInit = mouseProto._mouseInit,
-      _mouseDestroy = mouseProto._mouseDestroy,
-      touchHandled;
-
-  function simulateMouseEvent(event, simulatedType) {
-    if (event.originalEvent.touches.length > 1) {
-      return;
-    }
-
-    event.preventDefault();
-    var touch = event.originalEvent.changedTouches[0],
-        simulatedEvent = document.createEvent('MouseEvents');
-    simulatedEvent.initMouseEvent(simulatedType, !0, !0, window, 1, touch.screenX, touch.screenY, touch.clientX, touch.clientY, !1, !1, !1, !1, 0, null);
-    event.target.dispatchEvent(simulatedEvent);
-  }
-
-  mouseProto._touchStart = function (event) {
-    var self = this;
-
-    if (touchHandled || !self._mouseCapture(event.originalEvent.changedTouches[0])) {
-      return;
-    }
-
-    touchHandled = !0;
-    self._touchMoved = !1;
-    simulateMouseEvent(event, 'mouseover');
-    simulateMouseEvent(event, 'mousemove');
-    simulateMouseEvent(event, 'mousedown');
-  };
-
-  mouseProto._touchMove = function (event) {
-    if (!touchHandled) {
-      return;
-    }
-
-    this._touchMoved = !0;
-    simulateMouseEvent(event, 'mousemove');
-  };
-
-  mouseProto._touchEnd = function (event) {
-    if (!touchHandled) {
-      return;
-    }
-
-    simulateMouseEvent(event, 'mouseup');
-    simulateMouseEvent(event, 'mouseout');
-
-    if (!this._touchMoved) {
-      simulateMouseEvent(event, 'click');
-    }
-
-    touchHandled = !1;
-  };
-
-  mouseProto._mouseInit = function () {
-    var self = this;
-    self.element.bind({
-      touchstart: $.proxy(self, '_touchStart'),
-      touchmove: $.proxy(self, '_touchMove'),
-      touchend: $.proxy(self, '_touchEnd')
-    });
-
-    _mouseInit.call(self);
-  };
-
-  mouseProto._mouseDestroy = function () {
-    var self = this;
-    self.element.unbind({
-      touchstart: $.proxy(self, '_touchStart'),
-      touchmove: $.proxy(self, '_touchMove'),
-      touchend: $.proxy(self, '_touchEnd')
-    });
-
-    _mouseDestroy.call(self);
-  };
-})(jQuery);
+*/
 
 /***/ }),
 
@@ -22472,9 +22376,7 @@ __webpack_require__(/*! ./main */ "./resources/js/main.js");
 
 __webpack_require__(/*! ./inline-scripts */ "./resources/js/inline-scripts.js");
 
-__webpack_require__(/*! ./custom */ "./resources/js/custom.js");
-
-__webpack_require__(/*! ./custom_slider */ "./resources/js/custom_slider.js");
+__webpack_require__(/*! ./custom */ "./resources/js/custom.js"); //require('./custom_slider');
 
 /***/ }),
 
