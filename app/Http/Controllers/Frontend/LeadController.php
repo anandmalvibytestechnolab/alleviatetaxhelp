@@ -82,6 +82,9 @@ class LeadController extends Controller
             'ip_address' => ['nullable'],
             'user_agent' => ['nullable'],
             'wants_special_offers' => ['nullable'],
+            'xxTrustedFormToken' => ['nullable'],
+            'xxTrustedFormCertUrl' => ['nullable'],
+            'xxTrustedFormPingUrl' => ['nullable'],
         ];
     }
 

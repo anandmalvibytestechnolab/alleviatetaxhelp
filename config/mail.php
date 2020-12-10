@@ -106,5 +106,7 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
+    'send_mail' => env('SEND_MAIL', false),
+    'send_email_to' => env('SEND_MAIL_TO', 'hello@example.com'),
 
 ];
