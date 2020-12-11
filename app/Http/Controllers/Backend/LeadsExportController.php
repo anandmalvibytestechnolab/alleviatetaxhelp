@@ -2,25 +2,22 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Exports\UsersExport;
+use Carbon\Carbon;
+use Illuminate\Support\Str;
+use Maatwebsite\Excel\Facades\Excel;
 
 class LeadsExportController extends BaseLeadController
 {
     public function index()
     {
-        $date = strftime('%d.%m.%Y-%H.%M.%S', time());
-        if (session('start_date') && session('end_date')) {
-            $start_date = session('start_date') . ' 00:00:00';
-            $end_date = session('end_date') . ' 23:59:59';
-            $rows = $this->fetchLeads($start_date, $end_date, session('email') ?? null, session('campaign') ?? null, null, false);
-        } else {
-            $rows = [];//Initial request
-        }
-
-        return response()->view('backend.lead_index', [
-            'rows' => $rows,
-            'is_excel_export' => true,
-        ])->header('Content-Type', 'application/vnd.ms-excel; charset=utf-8')->header('Content-Disposition', "attachment;Filename=h5_leads{$date}.xls");
+        $page = request()->query('page');
+        $fileName = $page . '_' . time() . Str::random();
+        $today = Carbon::today()->toDateString();
+        $start_date = (session('start_date')) ? session('start_date') : $today . ' 00:00:00';
+        $end_date = (session('end_date')) ? session('end_date') : $today . ' 23:59:59';
+        $rows = $this->fetchLeads($start_date, $end_date, '', 'YES', $page);
+        $data = ['data' => $rows, 'page' => $page];
+        return Excel::download(new UsersExport($data), $fileName . '.csv');
     }
 }

@@ -21,3 +21,4 @@ public/*/*.map
 storage/maxmind/
 /nbproject/private/
 storage
+composer.lock

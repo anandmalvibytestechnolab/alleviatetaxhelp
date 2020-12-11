@@ -31,6 +31,8 @@ class HomePageController extends Controller
         } catch (\Exception $e) {
             log_error_to_file('maxmind-db-errors', $e->getMessage());
         }
-        $reader->close();
+        if (isset($reader)) {
+            $reader->close();
+        }
     }
 }

@@ -35,7 +35,7 @@ class LeadsController extends BaseLeadController
         $this->rules = [
             'start_date' => ['required', 'date_format:"Y-m-d"'],
             'end_date' => ['required', 'date_format:"Y-m-d"'],
-            'email' => ['email', 'nullable'],
+            //'email' => ['email', 'nullable'],
             'url' => ['nullable'],
         ];
     }
@@ -44,7 +44,7 @@ class LeadsController extends BaseLeadController
     {
         $this->leadModel = $this->getLeadModel();
         return view('backend.lead_index')->with([
-            'rows' => $this->fetchLeads(session('start_date'), session('end_date'), session('email'), session('url')),
+            'rows' => $this->fetchLeads(session('start_date'), session('end_date'), '', session('url')),
             'is_excel_export' => false,
             'rows_count' => $this->rowsCount,
             'readable_lead_model' => $this->getReadableLeadModel(get_last_url_segment()),
@@ -68,8 +68,8 @@ class LeadsController extends BaseLeadController
         $validData['end_date'] ? $this->leadsEndDate = $validData['end_date'] . ' 23:59:59' : null;
         $validData['end_date'] ? session(['end_date' => $validData['end_date'] . ' 23:59:59']) : null;
 
-        $validData['email'] ? $this->queriedEmail = $validData['email'] : null;
-        $validData['email'] ? session(['email' => $validData['email']]) : session()->forget('email');
+        //$validData['email'] ? $this->queriedEmail = $validData['email'] : null;
+        //$validData['email'] ? session(['email' => $validData['email']]) : session()->forget('email');
 
 //        $validData['url'] ? $this->queriedCampaign = $validData['url'] : null;
 //        $validData['url'] ? session(['url' => $validData['url']]) : session()->forget('url');

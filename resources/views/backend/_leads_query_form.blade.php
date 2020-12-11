@@ -24,6 +24,7 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -34,6 +35,7 @@
                     {!! $additional_filters ?? null!!}
 
                 </div>
+                -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Filter Records</button>

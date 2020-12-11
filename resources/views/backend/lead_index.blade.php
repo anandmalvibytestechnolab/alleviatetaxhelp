@@ -15,7 +15,7 @@
             <i class="fa fa-search" aria-hidden="true"></i>
         </button>
         @if($rows->total())
-            <a href="{!! route('BE_LEADS_EXPORT_INDEX') !!}" class="btn btn-primary"><i class="fa fa-file-excel" aria-hidden="true"></i></a>
+            <a href="{!! route('BE_LEADS_EXPORT_INDEX', 'page='.get_last_url_segment()) !!}" class="btn btn-primary"><i class="fa fa-file-excel" aria-hidden="true"></i></a>
         @endif
     @endif
 @endsection
