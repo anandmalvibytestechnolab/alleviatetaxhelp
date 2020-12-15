@@ -6,6 +6,8 @@ use App\Events\EmailNotificationEvent;
 use App\Jobs\ProcessMailJob;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
+use App\Mail\CcpaEmail;
+use Illuminate\Support\Facades\Mail;
 
 class FireEmailNotification
 {
@@ -29,6 +31,13 @@ class FireEmailNotification
         if (!config('mail.send_mail')) {
             return '';
         }
-        dispatch(new ProcessMailJob($event->model));
+        Mail::to($event->model['to_email'])->send(new CcpaEmail($event->model));
+        /**
+         * Commented below line due to pending installation of Laravel supervisor
+         * Will un-comment once it will be installed and queue process will be started.
+         *
+            dispatch(new ProcessMailJob($event->model));
+         *
+         * */
     }
 }
