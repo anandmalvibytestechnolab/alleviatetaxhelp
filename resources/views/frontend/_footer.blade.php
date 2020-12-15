@@ -58,7 +58,7 @@
                     Alleviate Tax<br>
                     1133 Camelback St, #10967,<br>
                     Newport Beach, CA 92658<br>
-                    Contact us at <a href="mailto:wecare@alleviatetaxservice.com">wecare@alleviatetaxservice.com</a>
+                    Contact us at <a href="mailto:help@alleviatetaxservice.com">help@alleviatetaxservice.com</a>
                 </p>
             </div>
         </div>
