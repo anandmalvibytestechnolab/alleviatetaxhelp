@@ -2,7 +2,7 @@
 
 @section('wrap')
     <section class="wrap">
-        <section id="hero" class="d-flex align-items-center">
+        <section id="hero" class="d-flex align-items-center padd_bo0">
 
             <div class="container form_custompad0">
                 <div class="row">

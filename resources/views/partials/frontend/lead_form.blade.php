@@ -77,7 +77,7 @@
             {{--                </div>--}}
             {{--            </div>--}}
             <div class="box">
-                <div class="row">
+                <div class="row btn_bgw_bb">
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Unfiled Taxes
                             <input type="checkbox" name='current_sit[]' value="unf" class="d-none">
@@ -109,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <input type="button" id='btn_first' name="next" class="next_s action-button" data-id="25" data-value='second_slide' data-last='first_slide' value="Next"/>
+        <input type="button" id='btn_first' name="next" class="next_s action-button padd-big" data-id="25" data-value='second_slide' data-last='first_slide' value=">> Next <<"/>
     </fieldset>
     <fieldset id='second_slide' class='field_set'>
         <div class="form-card">
@@ -145,7 +145,7 @@
             </div>-->
 
         </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="50" data-value='third_slide' data-last='second_slide' value="Next"/>
+        <input type="button" id='btn' name="next" class="next_s action-button padd-big" data-id="50" data-value='third_slide' data-last='second_slide' value=">> Next <<"/>
     </fieldset>
     <fieldset id='third_slide' class='field_set'>
         <div class="form-card">
@@ -158,13 +158,13 @@
             </div>
             <div class="box2">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-md-6 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2">Yes
+                    <div class="col-6 col-md-6 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2 d_ju_cen">Yes
                             <input type="radio" name='enrolled_irs' class="d-none" value='Yes' id="trda">
                         </label>
                     </div>
-                    <div class="col-12 col-md-6 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2">No
+                    <div class="col-6 col-md-6 p-lg-3">
+                        <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2 d_ju_cen">No
                             <input type="radio" name='enrolled_irs' class="d-none" value='No' id="trdb">
                         </label>
                     </div>
@@ -179,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="75" data-value='forth_slide' data-last='third_slide' value="Next"/>
+        <input type="button" id='btn' name="next" class="next_s action-button padd-big" data-id="75" data-value='forth_slide' data-last='third_slide' value=">> Next <<"/>
     </fieldset>
     {{--    <fieldset id='forth_slide' class='field_set'>--}}
     {{--        <div class="form-card">--}}
@@ -244,7 +244,7 @@
             </div>
 
         </div>
-        <input type="button" id='btn' name="next" class="next_s action-button" data-id="" data-value='sixth_slide' data-last='fifth_slide' value="Submit"/>
+        <input type="button" id='btn' name="next" class="next_s action-button padd-big" data-id="" data-value='sixth_slide' data-last='fifth_slide' value=">> Submit <<"/>
         <p id='messag_validate'></p>
         <p class="terms">
             TERMS: By clicking 'Submit', I hereby agree to the receipt of future calls or emails on behalf of

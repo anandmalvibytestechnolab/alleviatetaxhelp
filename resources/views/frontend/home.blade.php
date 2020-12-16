@@ -10,8 +10,8 @@
         <div data-aos="fade-up" data-aos-delay="800">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 text-center p-0 mt-0 mt-md-3 mb-2">
-                        <div class="card px-0 pt-4 pb-0 mt-0 mt-md-3 mb-3">
+                    <div class="col-sm-12 text-center p-0 mt-0 mt-md-3 mb-2 margi_bo0">
+                        <div class="card px-0 pt-4 pb-0 mt-0 mt-md-3 mb-3 margi_bo0">
                             @include('partials.frontend.lead_form')
                         </div>
                     </div>
@@ -52,9 +52,10 @@
                             Take the first step towards freedom from tax debt by booking an appointment today. 
                             The Alleviate Tax team is standing by to fight for you. 
                         </p>
+                          <span class="btn_top"><a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a></span>
                         <p class="speak_para">
                             If you’d like to speak with one of our tax analysts now, call us at (1800)789-8909. 
-                            We’re open Monday – Friday 8:00AM – 4:30PM PST. Or text “taxhelp” to (949)444-5555. 
+                            We’re open Monday – Friday 8:00AM – 4:30PM PST. Or text <span class="text-uppercase">“taxhelp”</span> to (949)444-5555.
                         </p>
                         <!--
                         <div class="demo">
@@ -98,7 +99,11 @@
     <div class="money">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12">
+                <div class="col-lg-8 offset-lg-2 col-md-12" data-aos="fade-up" class="aos-init aos-animate">
+                    <div class="free2020">
+                        <figure><img src="img/top_img.png" alt="#"/></figure>
+                    </div>
+                    <!--
                     <div class="row">
                         <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
                             <div class="guarant dark_light">
@@ -115,6 +120,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -266,6 +272,7 @@
                                                 to get approved for a loan. Even worse, it could disqualify you from certain jobs.
                                             </p>
                                         </div>
+                                        <span class="btn_top_right"><a href="#" class="back-to-top">Get Help Now</a></span>
                                     </div>
                                 </div>
                             </div>

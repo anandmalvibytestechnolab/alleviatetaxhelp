@@ -13408,6 +13408,87 @@ input[type=range]::-ms-fill-lower {
   background: #2a6495;
 }
 
+.btn_bgw_bb .button-label:not(.btn-warning) {
+  background: #fff;
+  color: #000;
+  border: #272974 solid 4px;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding-right: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+
+.btn_bgw_bb label {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.d_ju_cen {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.padd-big {
+  font-size: 25px !important;
+  padding: 15px 60px !important;
+  background: #272974 !important;
+  box-shadow: 0px 5px 10px -1px #a7b2ff !important;
+}
+
+@media (max-width: 767px) {
+  .padd_bo0 {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .margi_bo0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.free2020 {
+  text-align: center;
+}
+.free2020 .free2020 figure {
+  margin: 0;
+}
+
+.btn_top {
+  display: flex;
+}
+.btn_top .back-to-top {
+  position: relative;
+  margin: 0 auto;
+  margin-right: 0;
+}
+.btn_top .back-to-top i {
+  width: 50px;
+}
+
+.btn_top_right a {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px !important;
+  width: 150px;
+  height: 43px;
+  border-radius: 4px;
+  background: #272974;
+  color: #fff !important;
+  transition: all 0.4s !important;
+  font-weight: bold !important;
+  margin-right: 20px;
+  margin-bottom: -35px !important;
+}
+@media (max-width: 767px) {
+  .btn_top_right a {
+    margin-bottom: -20px !important;
+  }
+}
+
 /*!
 * @package IcoFont
 * @version 1.0.1

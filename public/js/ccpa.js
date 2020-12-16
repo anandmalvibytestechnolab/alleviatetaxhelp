@@ -36259,7 +36259,7 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /opt/lampp/htdocs/alleviatetaxservice/resources/js/ccpa.js */"./resources/js/ccpa.js");
+module.exports = __webpack_require__(/*! /var/www/tax-benefits/resources/js/ccpa.js */"./resources/js/ccpa.js");
 
 
 /***/ })

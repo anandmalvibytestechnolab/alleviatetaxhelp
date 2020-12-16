@@ -33773,10 +33773,10 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /opt/lampp/htdocs/alleviatetaxservice/resources/js/home.js */"./resources/js/home.js");
-__webpack_require__(/*! /opt/lampp/htdocs/alleviatetaxservice/resources/sass/home.scss */"./resources/sass/home.scss");
-__webpack_require__(/*! /opt/lampp/htdocs/alleviatetaxservice/resources/sass/login.scss */"./resources/sass/login.scss");
-module.exports = __webpack_require__(/*! /opt/lampp/htdocs/alleviatetaxservice/resources/sass/platform.scss */"./resources/sass/platform.scss");
+__webpack_require__(/*! /var/www/tax-benefits/resources/js/home.js */"./resources/js/home.js");
+__webpack_require__(/*! /var/www/tax-benefits/resources/sass/home.scss */"./resources/sass/home.scss");
+__webpack_require__(/*! /var/www/tax-benefits/resources/sass/login.scss */"./resources/sass/login.scss");
+module.exports = __webpack_require__(/*! /var/www/tax-benefits/resources/sass/platform.scss */"./resources/sass/platform.scss");
 
 
 /***/ })
