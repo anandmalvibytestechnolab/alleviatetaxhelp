@@ -18,7 +18,12 @@
                                 <br>
                                 <fieldset id="first_slide" class="field_set">
                                     <div class="form-card success">
-                                        <h2 class="text-center"><strong>Thank you for submitting your information to us.</strong></h2>
+                                        <h2 class="text-center">
+                                            <strong>
+                                                Thank you for submitting your inquiry.</br>
+                                                We’ll take care of that and get back to you if your request needs a response.
+                                            </strong>
+                                        </h2>
                                         <br>
                                         <div class="row justify-content-center">
                                             <i class="fa fa-check"></i>

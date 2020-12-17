@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                                 <label for="requestor">The Requestor is a:</label><br>
-                                <input name="requestor" id="requestor" type="radio" value="California Resident" data-parsley-required data-parsley-required-message="Please select the type of requestor"> California Resident<br>
+                                <input checked="checked" name="requestor" id="requestor" type="radio" value="California Resident" data-parsley-required data-parsley-required-message="Please select the type of requestor"> California Resident<br>
                                 <input name="requestor" id="requestor" type="radio" value="Duly authorized third-party representative of a California Resident" data-parsley-required data-parsley-reqiured-message="Please select the type of requestor"> Duly authorized third-party representative of a California Resident<br>
                                 <label for="requestor" generated="true" class="error"></label>
                             </div>
@@ -186,5 +186,39 @@
 @endsection
 
 @section('javascript')
-    <script src="{!! get_javascript_file('ccpa') !!}"></script>
+<script src="{!! get_javascript_file('ccpa') !!}"></script>
+<script>
+$(document).ready(function() {
+    $('#msformx').submit(function(e) {
+        $("#error_msg1").remove();
+        $("#error_msg2").remove();
+        $("#error_msg3").remove();
+        $("#error_msg4").remove();
+        var isValidated = false;
+        var firstName = $('#first_name').val();
+        if (firstName.length < 1) {
+            $('#first_name').after('<span id="error_msg1" class="error alert-danger">First Name field is required</span>');
+            isValidated = true;
+        }
+        var lastName = $('#last_name').val();
+        if (lastName.length < 1) {
+            $('#last_name').after('<span id="error_msg2"  class="error alert-danger">Last Name field is required</span>');
+            isValidated = true;
+        }
+        var email = $('#email_address').val();
+        if (email.length < 1) {
+            $('#email_address').after('<span id="error_msg3"  class="error alert-danger">Email Address field is required</span>');
+            isValidated = true;
+        }
+        var phone = $('#primary_phone').val();
+        if (phone.length < 1) {
+            $('#primary_phone').after('<span id="error_msg4" class="error alert-danger">Phone number field is required</span>');
+            isValidated = true;
+        }
+        if (isValidated) {
+            e.preventDefault();
+        }
+    });
+});
+</script>
 @endsection
