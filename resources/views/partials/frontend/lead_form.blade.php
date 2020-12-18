@@ -79,30 +79,45 @@
             <div class="box">
                 <div class="row btn_bgw_bb">
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <div class="d_flex">
+                            <i><img src="img/Q1/unfiled.PNG" alt="alt"/></i>
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Unfiled Taxes
                             <input type="checkbox" name='current_sit[]' value="unf" class="d-none">
                         </label>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
-                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Owe More Than Expected
+                        <div class="d_flex">
+                            <i><img src="img/Q1/owe_more.PNG" alt="alt"/></i>
+                        <label class="btn btn-secondary d-flex button-label py-3 py-md-5 paddtobo0">Owe More Than Expected
                             <input type="checkbox" name='current_sit[]' value="owe" class="d-none">
                         </label>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <div class="d_flex">
+                            <i><img src="img/Q1/biz_tax_issues.PNG" alt="alt"/></i>
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Business Tax Issues
                             <input type="checkbox" name='current_sit[]' value="biz" class="d-none">
                         </label>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <div class="d_flex">
+                            <i><img src="img/Q1/self_empl.PNG" alt="alt"/></i>
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Self-Employed
                             <input type="checkbox" name='current_sit[]' value="1099" class="d-none">
                         </label>
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 p-lg-3">
+                        <div class="d_flex">
+                            <i><img src="img/Q1/other.PNG" alt="alt"/></i>
                         <label class="btn btn-secondary d-flex button-label py-3 py-md-5">Others
                             <input type="checkbox" name='current_sit[]' value="oth" class="d-none" data-display-current-situation-text-field>
                         </label>
+                         </div>
                         <!--<input type="checkbox" name='current_sit[]' value='Others' id="other" class="d-none">-->
                         <input type="text" name="other_current_situation" id='others' placeholder="Please describe" class="d-none"/>
                     </div>
@@ -157,13 +172,13 @@
                 </div>
             </div>
             <div class="box2">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-6 col-md-6 p-lg-3">
+                <div class="row culomn-reva btn_bgw_bb d-flex justify-content-center">
+                    <div class="col-12 col-md-6 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2 d_ju_cen">Yes
                             <input type="radio" name='enrolled_irs' class="d-none" value='Yes' id="trda">
                         </label>
                     </div>
-                    <div class="col-6 col-md-6 p-lg-3">
+                    <div class="col-12 col-md-6 p-lg-3">
                         <label class="btn btn-secondary d-flex button-label-radio py-3 py-md-2 d_ju_cen">No
                             <input type="radio" name='enrolled_irs' class="d-none" value='No' id="trdb">
                         </label>

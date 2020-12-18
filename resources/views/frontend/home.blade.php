@@ -52,7 +52,7 @@
                             Take the first step towards freedom from tax debt by booking an appointment today. 
                             The Alleviate Tax team is standing by to fight for you. 
                         </p>
-                          <span class="btn_top"><a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a></span>
+                          <span class="btn_top"><a href="#" class="back-to-top">Get Help Now</a></span>
                         <p class="speak_para">
                             If you’d like to speak with one of our tax analysts now, call us at (1800)789-8909. 
                             We’re open Monday – Friday 8:00AM – 4:30PM PST. Or text <span class="text-uppercase">“taxhelp”</span> to (949)444-5555.
@@ -100,27 +100,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-12" data-aos="fade-up" class="aos-init aos-animate">
-                    <div class="free2020">
-                        <figure><img src="img/top_img.png" alt="#"/></figure>
-                    </div>
-                    <!--
                     <div class="row">
                         <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
-                            <div class="guarant dark_light">
-                                <i><a href="javascript:void(0)"><img src="img/gur_icon3.png" alt="#"/></a></i>
-                                <h3>Free 2020 Tax Prep</h3>
-                                <p>Alleviate Tax is experience with  licensed enrolled agentes and tax attorneys. </p>
-                            </div>
+                             <div class="free2020">
+                        <figure><img src="img/top_img.png" alt="#"/></figure>
+                    </div>
                         </div>
                         <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-                            <div class="guarant">
-                                <i><a href="javascript:void(0)"><img src="img/gur_icon1.png" alt="#"/></a></i>
-                                <h3>Money Back Guarantee</h3>
-                                <p>Alleviate Tax is committed to providing a safe and secure site that you can trust. We take your privacy seriously. We do not sell or share your information with third parties.</p>
-                            </div>
+                             <div class="free2020">
+                        <figure><img src="img/top_img3.png" alt="#"/></figure>
+                    </div>
                         </div>
                     </div>
-                    -->
                 </div>
             </div>
         </div>
