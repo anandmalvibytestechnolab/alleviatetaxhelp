@@ -101,12 +101,12 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-12" data-aos="fade-up" class="aos-init aos-animate">
                     <div class="row">
-                        <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+                        <div class="col-6 col-sm-6 col-md-6" data-aos="fade-right" data-aos-delay="300">
                              <div class="free2020">
                         <figure><img src="img/top_img.png" alt="#"/></figure>
                     </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                        <div class="col-6 col-sm-6 col-md-6" data-aos="fade-left" data-aos-delay="300">
                              <div class="free2020">
                         <figure><img src="img/top_img3.png" alt="#"/></figure>
                     </div>

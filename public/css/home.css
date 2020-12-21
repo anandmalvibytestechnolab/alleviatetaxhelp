@@ -13428,6 +13428,31 @@ input[type=range]::-ms-fill-lower {
 .btn_bgw_bb label {
   display: flex !important;
   justify-content: center !important;
+  align-items: center !important;
+}
+
+@media (max-width: 767px) {
+  .jfy_cleft .button-label:not(.btn-warning) {
+    justify-content: left !important;
+  }
+}
+
+@media (max-width: 364px) {
+  .jfy_cleft .btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .jfy_cleft label {
+    justify-content: left !important;
+    padding: 12px 8px !important;
+  }
+}
+@media (max-width: 767px) {
+  .jfy_cleft label i {
+    padding-right: 5px;
+  }
 }
 
 .d_ju_cen {
@@ -13470,8 +13495,8 @@ input[type=range]::-ms-fill-lower {
 }
 @media (max-width: 767px) {
   .free2020 figure img {
-    width: 210px;
-    height: 210px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -13479,9 +13504,9 @@ input[type=range]::-ms-fill-lower {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  font-size: 17px !important;
-  width: 150px;
-  height: 45px;
+  font-size: 23px !important;
+  width: 190px;
+  height: 62px;
   border-radius: 4px;
   background: #272974;
   color: #fff !important;
@@ -13490,7 +13515,6 @@ input[type=range]::-ms-fill-lower {
   margin-bottom: 20px !important;
   position: inherit;
   margin: 0 auto;
-  margin-right: 0;
 }
 
 .btn_top_right {
@@ -13500,9 +13524,9 @@ input[type=range]::-ms-fill-lower {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  font-size: 18px !important;
-  width: 184px;
-  height: 60px;
+  font-size: 23px !important;
+  width: 190px;
+  height: 62px;
   border-radius: 4px;
   background: #272974;
   color: #fff !important;
@@ -13515,8 +13539,9 @@ input[type=range]::-ms-fill-lower {
 @media (max-width: 767px) {
   .btn_top_right a {
     margin-bottom: -20px !important;
-    width: 150px;
-    height: 43px;
+    width: 200px;
+    height: 65px;
+    font-size: 22px !important;
   }
 }
 
@@ -13531,10 +13556,6 @@ input[type=range]::-ms-fill-lower {
 
 .row.btn_bgw_bb {
   padding: 0 !important;
-}
-
-.d_flex i {
-  float: left;
 }
 
 .d_flex i img {
