@@ -24,7 +24,7 @@ class LeadController extends Controller
     }
 
     /**
-     * Create lead with all form data
+     * Create lead with all form data.
      *
      * @param   Request $request
      * @author  Anand Malvi <anand.malvi@bytestechnolab.in>
