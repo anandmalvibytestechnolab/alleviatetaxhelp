@@ -10,7 +10,7 @@ class HomePageController extends Controller
 {
     public function show()
     {
-        return view('frontend.home')->with(['user_state' => $this->getUserState()]);
+        return view('layouts.index');
     }
 
     private function getUserState()

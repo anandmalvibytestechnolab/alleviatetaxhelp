@@ -12,12 +12,27 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .js('resources/js/home.js', 'public/js')
-    .js('resources/js/ccpa.js', 'public/js')
-    .sass('resources/sass/home.scss', 'public/css')
-    .sass('resources/sass/login.scss', 'public/css')
-    .js('resources/js/backend.home.js', 'public/js')
-    .sass(`resources/sass/platform.scss`, `public/css`)
+    // SASS-CSS
+    .sass(`resources/sass/bootstrap.min.scss`, `public/css`)
+    .sass(`resources/sass/owl.carousel.scss`, `public/css`)
+    .sass(`resources/sass/style.scss`, `public/css`)
+    .sass(`resources/sass/responsive.scss`, `public/css`)
+    // JS
+//    .js('resources/js/jquery.min.js', 'public/js')
+//    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/bootstrap.bundle.min.js', 'public/js')
+    .js('resources/js/owl.carousel.js', 'public/js')
+//    .js('resources/js/jquery.easing.min.js', 'public/js')
+    .js('resources/js/custom.js', 'public/js')
+    .js('resources/js/custom_second.js', 'public/js')
+
+
+//    .js('resources/js/home.js', 'public/js')
+//    .js('resources/js/ccpa.js', 'public/js')
+//    .sass('resources/sass/home.scss', 'public/css')
+//    .sass('resources/sass/login.scss', 'public/css')
+//    .js('resources/js/backend.home.js', 'public/js')
+//    .sass(`resources/sass/platform.scss`, `public/css`)
 ;
 
 
